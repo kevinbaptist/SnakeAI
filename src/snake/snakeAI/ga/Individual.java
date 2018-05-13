@@ -5,6 +5,7 @@ public abstract class Individual<P extends Problem, I extends Individual> implem
     protected double fitness;
     protected P problem;
     protected int totalFoodSnake1;//TODO: EU ADicionei nao estava
+    protected int totalMovements;//TODO: Eu adicionei, não estava: para usar nas estistica de escrever no ficheiro
 
     public Individual(P problem) {
         this.problem = problem;
@@ -32,4 +33,8 @@ public abstract class Individual<P extends Problem, I extends Individual> implem
 
     @Override
     public abstract I clone();
+
+    public int getTotalMovements(){
+        return totalMovements;
+    }
 }

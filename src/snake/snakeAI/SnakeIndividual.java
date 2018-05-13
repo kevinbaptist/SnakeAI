@@ -6,7 +6,7 @@ import snake.snakeAI.ga.RealVectorIndividual;
 import snake.snakeAI.nn.SnakeAIAgent;
 
 public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeIndividual> {
-    protected int totalMovements;
+
     private int maxFood;
 
     protected static final int WEIGHT_FOOD = 1000;

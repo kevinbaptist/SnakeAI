@@ -13,10 +13,12 @@ public class StatisticBestAverage<E extends Individual, P extends Problem<E>> im
     private final double[] fitness;
     private final double [] totalFood;
     private int run;
+    private final double[] movements;
     
     public StatisticBestAverage(int numRuns) {
         fitness = new double[numRuns];
         totalFood = new double[numRuns];
+        movements = new double[numRuns];
     }
 
     @Override
@@ -27,6 +29,7 @@ public class StatisticBestAverage<E extends Individual, P extends Problem<E>> im
     public void runEnded(GAEvent e) {
         GeneticAlgorithm<E, P> ga = e.getSource();
         totalFood[run] = ga.getBestInRun().getTotalFoodSnake1();
+        movements[run] = ga.getBestInRun().getTotalMovements();
         fitness[run++] = ga.getBestInRun().getFitness();
 
     }
@@ -36,12 +39,20 @@ public class StatisticBestAverage<E extends Individual, P extends Problem<E>> im
 
         double avg_fitness = Maths.average(fitness);
         double avg_food = Maths.average(totalFood);
-        double sd = Maths.standardDeviation(fitness, avg_fitness);
+        double sd_fitness = Maths.standardDeviation(fitness, avg_fitness);
 
-        avg_food /= 10;
+        double  sd_food = Maths.standardDeviation(totalFood, avg_food);
+
+        double avg_movements = Maths.average(movements);
+        double sd_movements = Maths.standardDeviation(movements, avg_movements);
+
 
         //TODO:alteracao do texto dos experimentos
-
-        snake.snakeAI.ga.utils.FileOperations.appendToTextFile("statistic_average_fitness.xls", e.getSource() + "\t" + avg_fitness + "\t" + avg_food+  "\t"+ sd + "\r\n");
+        snake.snakeAI.ga.utils.FileOperations.appendToTextFile("statistic_average_fitness.xls",
+                e.getSource() + "\t" +
+                        avg_fitness + "\t" + sd_fitness  + "\t"+
+                        avg_food+ "\t" + sd_food + "\t"+
+                        avg_movements + "\t"+ sd_movements +
+                        "\r\n");
     }    
 }
