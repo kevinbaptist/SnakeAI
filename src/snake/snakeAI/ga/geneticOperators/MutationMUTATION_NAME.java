@@ -20,7 +20,7 @@ public class MutationMUTATION_NAME <I extends RealVectorIndividual> extends Muta
 
         for (int i = 0; i < ind.getNumGenes(); i++) {
             if (GeneticAlgorithm.random.nextDouble() < probability) {
-                delta = GeneticAlgorithm.getRandom(-0.1, 0.1);
+                delta = GeneticAlgorithm.getRandom(-0.5, 0.5);
                 ind.setGene(i, ind.getGene(i) +delta);//TODO: GeneticAlgorithm.random.nextDouble()*2 -1
             }
         }

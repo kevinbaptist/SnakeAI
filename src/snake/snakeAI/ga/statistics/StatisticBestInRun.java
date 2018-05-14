@@ -23,6 +23,7 @@ public class StatisticBestInRun<I extends Individual, P extends Problem<I>> impl
         GeneticAlgorithm<I, P> ga = e.getSource();
         if (bestInExperiment == null || ga.getBestInRun().compareTo(bestInExperiment) > 0) {
             bestInExperiment = (I) ga.getBestInRun().clone();
+
         }
     }
 
