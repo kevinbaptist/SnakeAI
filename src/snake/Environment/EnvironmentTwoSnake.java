@@ -3,6 +3,7 @@ package snake.Environment;
 import snake.Cell;
 import snake.SnakeType;
 import snake.snakeAI.nn.SnakeAIAgent;
+import snake.snakeAI.nn.SnakeAIAgentSecond;
 
 import java.awt.*;
 
@@ -10,13 +11,14 @@ public class EnvironmentTwoSnake extends Environment {
     private SnakeAIAgent snakeAIAgent1;
 
 
-    public EnvironmentTwoSnake(int size, int maxIterations, int numInputs, int numHiddenUnits, int numOutputs) {
-        super(size, maxIterations, numInputs, numHiddenUnits, numOutputs);
-
-
-
-        snakeAIAgent1 = new SnakeAIAgent(grid[0][1], Color.GREEN,numInputs, numHiddenUnits, numOutputs, this);
-
+    public EnvironmentTwoSnake(int size, int maxIterations, int numInputs, int numHiddenUnits, int numOutputs, SnakeType type) {
+        super(size, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
+        if(type == SnakeType.TWO_AI_EQUAL){
+            snakeAIAgent1 = new SnakeAIAgent(grid[0][1], Color.GREEN,numInputs, numHiddenUnits, numOutputs, this);
+        }
+        if(type == SnakeType.TWO_AI_DIF){
+            snakeAIAgent1 = new SnakeAIAgentSecond(grid[0][1], Color.GREEN,numInputs, numHiddenUnits, numOutputs, this);
+        }
     }
 
 
@@ -40,7 +42,9 @@ public class EnvironmentTwoSnake extends Environment {
         return cell;
 
     }
-
+    public SnakeAIAgent getSnakeAIAgent(){
+        return snakeAIAgent1;
+    }
 
     @Override
     protected void cleanGrid() {

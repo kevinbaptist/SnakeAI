@@ -49,10 +49,13 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
         this.type = type;
         GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS;
 
-        if (type == SnakeType.AI)
-            environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs);
-        if (type == SnakeType.TWO_AI_EQUAL)
-            environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs);
+
+        if (type == SnakeType.AI || type == SnakeType.AI1 ){
+            environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
+        }
+
+        if (type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF)
+            environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
 
 
 
@@ -60,14 +63,10 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
 
     @Override
     public SnakeIndividual getNewIndividual() {
-        if (type == SnakeType.AI)
+        if (type == SnakeType.AI || type == SnakeType.AI1)
             return new SnakeIndividual(this, GENOME_SIZE /*TODO?*/);
         return new SnakeIdentical(this,GENOME_SIZE);
     }
-
-
-
-
 
     public Environment getEnvironment() {
         return environment;
