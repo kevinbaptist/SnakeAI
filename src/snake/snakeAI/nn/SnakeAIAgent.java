@@ -8,30 +8,30 @@ import java.util.Random;
 
 public class SnakeAIAgent extends SnakeAgent {
    
-    final private int inputLayerSize;
-    final private int hiddenLayerSize;
-    final private int outputLayerSize;
+    final protected int inputLayerSize;
+    final protected int hiddenLayerSize;
+    final protected int outputLayerSize;
 
     /**
      * Network inputs array.
      */
-    final private int[] inputs;
+    final protected int[] inputs;
     /**
      * Hiddden layer weights.
      */
-    final private double[][] w1;
+    final protected double[][] w1;
     /**
      * Output layer weights.
      */
-    final private double[][] w2;
+    final protected double[][] w2;
     /**
      * Hidden layer activation values.
      */
-    final private double[] hiddenLayerOutput;
+    final protected double[] hiddenLayerOutput;
     /**
      * Output layer activation values.
      */
-    final private int[] output;
+    final protected int[] output;
 
     public SnakeAIAgent(Cell cell, Color color,int inputLayerSize, int hiddenLayerSize, int outputLayerSize, Environment environment) {
         super(cell, color, environment);
@@ -77,7 +77,7 @@ public class SnakeAIAgent extends SnakeAgent {
      * vector "inputs".
      *
      */
-    private void forwardPropagation(int[] instance) {
+    protected void forwardPropagation(int[] instance) {
         // TODO
         double soma;
         for (int i = 0; i < hiddenLayerSize; i++) {

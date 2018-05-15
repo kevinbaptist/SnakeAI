@@ -4,6 +4,7 @@ import gui.MainFrame;
 import snake.*;
 import snake.snakeAI.SnakeProblem;
 import snake.snakeAI.nn.SnakeAIAgent;
+import snake.snakeAI.nn.SnakeAIAgentSecond;
 import snake.snakeAdhoc.SnakeAdhocAgent;
 import snake.snakeRandom.SnakeRandomAgent;
 
@@ -61,14 +62,16 @@ public  class Environment {
     }
 
 
-    public Environment(int size, int maxIterations, int numInputs, int numHiddenUnits, int numOutputs) {
+    public Environment(int size, int maxIterations, int numInputs, int numHiddenUnits, int numOutputs, SnakeType type) {
         this(size, maxIterations, SnakeType.AI);
 
-        agent = new SnakeAIAgent(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
+        if(type == SnakeType.AI1){
+            agent = new SnakeAIAgentSecond(getCell(0,0), Color.YELLOW,17, 8, 4, this);
+        }else{
+            agent = new SnakeAIAgent(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
+        }
 
     }
-
-
 
     protected void cleanGrid(){
         for (Cell cell: agent.getBody()) {
@@ -88,10 +91,8 @@ public  class Environment {
 
     }
 
-
-
     // TODO MODIFY TO PLACE ADHOC OR AI SNAKE AGENTS
-    protected Cell placeAgents(SnakeType type) {
+    protected Cell placeAgents(SnakeType type) { //Todo tirar
         //antes de colocar um agente necessário limpar a grelha
         cleanGrid();
 
@@ -107,9 +108,6 @@ public  class Environment {
 
         return cell;
     }
-
-
-
 
     public void simulate() {
         int i;
@@ -235,7 +233,9 @@ public  class Environment {
         return food;
     }
 
-
+    public SnakeAgent getAgent() {
+        return agent;
+    }
 
 
     public int getMovementNumber() {
@@ -270,5 +270,9 @@ public  class Environment {
     //TODO: retirar, apenas para debug
     public Cell[][] getGrid(){
         return grid;
+    }
+
+    public SnakeAIAgentSecond getSnakeAIAgentSecond() {
+        return (SnakeAIAgentSecond) agent;
     }
 }

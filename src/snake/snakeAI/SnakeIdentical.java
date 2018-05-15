@@ -16,8 +16,6 @@ public class SnakeIdentical extends SnakeIndividual {
     public SnakeIdentical(SnakeIdentical original) {
         super(original);
 
-        this.totalFoodSnake1 = original.totalFoodSnake1;
-        this.totalMovements = original.totalMovements;
         this.totalFoodSnake2 = original.totalFoodSnake2;
     }
 

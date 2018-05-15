@@ -12,6 +12,7 @@ public abstract class SnakeAgent {
 
     private ArrayList<Cell> body;
     protected int totalFood;
+    protected int totalMovimentos;
 
     public ArrayList<Cell> getBody() {
         return body;
@@ -21,6 +22,7 @@ public abstract class SnakeAgent {
         this.environment = environment;
         this.color = color;
         totalFood = 0;
+        totalMovimentos = 0;
 
         if (head == null)
             return;
@@ -64,7 +66,7 @@ public abstract class SnakeAgent {
         } else if (action == Action.EAST && head.getColumn() != environment.getNumColumns() - 1) {
             nextCell = environment.getEastCell(head);
         }
-
+        totalMovimentos ++;
         if (nextCell != null  && !nextCell.hasAgent()) {
             if (nextCell.hasFood()){
                 //gerar nova comida
@@ -106,8 +108,6 @@ public abstract class SnakeAgent {
         }
     }
 
-
-
     private void update(Cell cell, SnakeAgent agent){
         if (!hasBody()){
             moveHead(cell, agent);
@@ -118,6 +118,10 @@ public abstract class SnakeAgent {
 
     public Color getColor() {
         return color;
+    }
+
+    public int getTotalMovimentos() {
+        return totalMovimentos;
     }
 
     private void moveAllBody(Cell cell, SnakeAgent agent) {
@@ -153,6 +157,7 @@ public abstract class SnakeAgent {
         head.setAgent(this);
 
         totalFood = 0;
+        totalMovimentos = 0;
 //        isDead = false;
 
     }
