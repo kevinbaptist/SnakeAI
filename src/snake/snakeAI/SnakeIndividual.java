@@ -3,7 +3,7 @@ package snake.snakeAI;
 import snake.Environment.Environment;
 import snake.SnakeType;
 import snake.snakeAI.ga.RealVectorIndividual;
-import snake.snakeAI.nn.SnakeAIAgent;
+import snake.snakeAI.nn.SnakeAI;
 
 public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeIndividual> {
 
@@ -35,7 +35,7 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
         totalMovements = totalFoodSnake1 =  maxFood=0;
         Environment ambiente = problem.getEnvironment();
 
-        SnakeAIAgent aiAgent = ambiente.getAgentAI();
+        SnakeAI aiAgent = ambiente.getAgentAI();
 
         for (int i = 0; i < problem.getNumEvironmentSimulations();i++) {
 

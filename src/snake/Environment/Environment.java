@@ -1,8 +1,7 @@
 package snake.Environment;
 
-import gui.MainFrame;
 import snake.*;
-import snake.snakeAI.SnakeProblem;
+import snake.snakeAI.nn.SnakeAI;
 import snake.snakeAI.nn.SnakeAIAgent;
 import snake.snakeAI.nn.SnakeAIAgentSecond;
 import snake.snakeAdhoc.SnakeAdhocAgent;
@@ -10,7 +9,6 @@ import snake.snakeRandom.SnakeRandomAgent;
 
 import java.awt.Color;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 
@@ -28,6 +26,7 @@ public  class Environment {
 
     protected int movementNumber;
     protected int totalFood;
+    private SnakeType type;
 
     protected boolean stop;
 
@@ -36,7 +35,7 @@ public  class Environment {
         this.grid = new Cell[size][size];
         movementNumber = 0;
         totalFood = 0;
-
+        this.type = type;
         stop = false;
 
         for (int i = 0; i < grid.length; i++) {
@@ -71,6 +70,11 @@ public  class Environment {
             agent = new SnakeAIAgent(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
         }
 
+
+    }
+
+    public SnakeType getType() {
+        return type;
     }
 
     protected void cleanGrid(){
@@ -262,8 +266,8 @@ public  class Environment {
         stop = false;
     }
 
-    public SnakeAIAgent getAgentAI(){
-        return (SnakeAIAgent) agent;
+    public SnakeAI getAgentAI(){
+        return (SnakeAI) agent;
     }
 
 

@@ -57,8 +57,6 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
         if (type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF)
             environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
 
-
-
     }
 
     @Override

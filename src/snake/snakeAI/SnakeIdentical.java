@@ -2,7 +2,7 @@ package snake.snakeAI;
 
 import snake.Environment.EnvironmentTwoSnake;
 import snake.SnakeType;
-import snake.snakeAI.nn.SnakeAIAgent;
+import snake.snakeAI.nn.SnakeAI;
 
 public class SnakeIdentical extends SnakeIndividual {
     private int totalFoodSnake2;
@@ -30,8 +30,8 @@ public class SnakeIdentical extends SnakeIndividual {
         EnvironmentTwoSnake ambiente = (EnvironmentTwoSnake) problem.getEnvironment();
 
 
-        SnakeAIAgent aiAgent = ambiente.getAgentAI();
-        SnakeAIAgent aiAgent1 = ambiente.getSnakeAIAgent1();
+        SnakeAI aiAgent = ambiente.getAgentAI();
+        SnakeAI aiAgent1 = ambiente.getSnakeAIAgent1();
 
 
         for (int i = 0; i < problem.getNumEvironmentSimulations();i++) {

@@ -4,6 +4,7 @@ import snake.Environment.Environment;
 import snake.Environment.EnvironmentTwoSnake;
 import snake.EnvironmentListener;
 import snake.SnakeType;
+import snake.snakeAI.nn.SnakeAI;
 import snake.snakeAI.nn.SnakeAIAgentSecond;
 
 import java.awt.*;
@@ -30,6 +31,11 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
     JSeparator separator2;
     JSeparator separator3;
     JPanel container = new JPanel();
+
+    int mediaComidas =  0;
+    int mediaComidasSnake2 = 0;
+    int mediaMovimentos = 0;
+
 
     JPanel btnPnl = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
@@ -97,7 +103,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             //TODO
             type = type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF? SnakeType.AI : type;
 
-            iniciarDados(type);
+            iniciarDados(type,1);
             //TODO
 
             worker.cancel(true);
@@ -134,7 +140,9 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
                 environmentPanel.add(labelSegundaria, BorderLayout.NORTH);
             }
 
-            iniciarDados(snakeType);
+
+
+            iniciarDados(snakeType, 0);
 
             //Todo
 
@@ -176,7 +184,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
 
 
                         snakeType = snakeType == SnakeType.TWO_AI_EQUAL || snakeType == SnakeType.TWO_AI_DIF? SnakeType.AI : snakeType;
-                        iniciarDados(snakeType);
+                        iniciarDados(snakeType, i);
                     }
 
                     return null;
@@ -201,7 +209,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
 
     }
 
-    private void iniciarDados(SnakeType snakeType){
+    private void iniciarDados(SnakeType snakeType, int numExecucoes){
         //TODO
         container.removeAll();
 
@@ -210,7 +218,10 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
         container.add(labelSegundaria);
         container.add(separator);
 
-        totalComidas = new JLabel("Comidas: " +  mainFrame.getProblem().getEnvironment().getAgent().getTotalFood() + " | " + "Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
+        mediaComidas += mediaComidas + mainFrame.getProblem().getEnvironment().getAgent().getTotalFood() ;
+        mediaMovimentos +=  mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos();
+
+        totalComidas = new JLabel("Média Comidas: " + mediaComidas / (numExecucoes + 1) + " | " + "Média  Movimentos: " + mediaMovimentos / (numExecucoes + 1));
 
         container.add(totalComidas );
 
@@ -223,7 +234,9 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             container.add(labelSegundaria);
             container.add(separator2);
 
-            totalComidas = new JLabel("Comidas: " +  mainFrame.getProblem().getEnvironment().getAgentAI().getTotalFood() + " | " + "Movimentos: " + mainFrame.getProblem().getEnvironment().getAgentAI().getTotalMovimentos());
+            mediaComidasSnake2 = ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent1().getTotalFood();
+
+            totalComidas = new JLabel("Média Comidas: " + mediaComidasSnake2 / (numExecucoes + 1)  + " | " + "Média Movimentos: " + mediaMovimentos / (numExecucoes + 1));
 
             container.add(totalComidas );
         }
