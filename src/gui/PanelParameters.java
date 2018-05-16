@@ -175,15 +175,17 @@ public class PanelParameters extends PanelAtributesValue {
     public Mutation<SnakeIndividual> getMutationMethod() {
         double mutationProbability = Double.parseDouble(textFieldProbMutation.getText());
         //TODO
-        switch (comboBoxSelectionMethods.getSelectedIndex()){
+
+        System.out.println(comboBoxSelectionMutation.getSelectedIndex());
+        switch (comboBoxSelectionMutation.getSelectedIndex()){
             case 0:
-                return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
+                return new MutationMUTATION_BASIC<>(mutationProbability/*TODO?*/);
             case 1:
                 return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
             case 2:
                 return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
         }
-        return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
+        return null;
     }
 
 
@@ -217,6 +219,7 @@ class JComboBoxSelectionAlgorithm_ActionAdapter implements ActionListener {
         adaptee.actionPerformedSelectionAlgorithm(e);
     }
 }
+
 
 
 class IntegerTextField_KeyAdapter implements KeyListener {
