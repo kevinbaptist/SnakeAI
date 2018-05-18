@@ -18,6 +18,9 @@ Recombination probability: 0.7
 
 //--------------------------------
 
+Snake type: AI1
+
+//--------------------------------
 Mutation: gaussian
 
 Mutation probability: 0.7

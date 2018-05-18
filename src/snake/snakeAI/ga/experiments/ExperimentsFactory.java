@@ -1,5 +1,6 @@
 package snake.snakeAI.ga.experiments;
 
+import snake.SnakeType;
 import snake.snakeAI.ga.GeneticAlgorithm;
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +26,7 @@ public abstract class ExperimentsFactory {
         readStatisticsFile(configFile);
     }
 
-    protected abstract Experiment buildExperiment() throws IOException;
+    protected abstract Experiment buildExperiment(SnakeType type) throws IOException;
 
     public abstract GeneticAlgorithm generateGAInstance(int seed);
 
@@ -33,9 +34,9 @@ public abstract class ExperimentsFactory {
         return orderedParametersVector[0].activeValueIndex < orderedParametersVector[0].getNumberOfValues();
     }
 
-    public Experiment nextExperiment() throws IOException {
+    public Experiment nextExperiment(SnakeType type) throws IOException {
         if (hasMoreExperiments()) {
-            Experiment experiment = buildExperiment();
+            Experiment experiment = buildExperiment(type);
             indicesManaging(orderedParametersVector.length - 1);
             return experiment;
         }

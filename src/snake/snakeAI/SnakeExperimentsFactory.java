@@ -21,6 +21,7 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
     private Recombination<SnakeIndividual> recombination;
     private Mutation<SnakeIndividual> mutation;
     private SnakeProblem problem;
+
     private Experiment<SnakeExperimentsFactory, SnakeProblem> experiment;
 
 
@@ -29,7 +30,7 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
     }
 
     @Override
-    public Experiment buildExperiment() throws IOException {
+    public Experiment buildExperiment(SnakeType type) throws IOException {
         numRuns = Integer.parseInt(getParameterValue("Runs"));
         populationSize = Integer.parseInt(getParameterValue("Population size"));
         maxGenerations = Integer.parseInt(getParameterValue("Max generations"));
@@ -77,7 +78,13 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
     }
 
         //PROBLEM
-        problem = SnakeProblem.buildProblemFromFile(new File(getParameterValue("Problem file")), SnakeType.AI1);
+
+
+
+
+
+
+        problem = SnakeProblem.buildProblemFromFile(new File(getParameterValue("Problem file")), type);
 
         String textualRepresentation = buildTextualExperiment();
 

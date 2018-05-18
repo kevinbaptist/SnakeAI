@@ -202,3 +202,17 @@ Fitness: 53084.4
 Total movements (avarage): 42
 Total Food (avarage): 5
 Total Food (max): 10
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	
+
+Fitness: 60091.8
+Total movements (avarage): 45
+Total Food (avarage): 6
+Total Food (max): 10
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	
+
+Fitness: 48094.2
+Total movements (avarage): 47
+Total Food (avarage): 4
+Total Food (max): 10

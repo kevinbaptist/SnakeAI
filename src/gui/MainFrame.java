@@ -365,7 +365,7 @@ public class MainFrame extends JFrame implements GAListener {
                     while (experimentsFactory.hasMoreExperiments()) {
                         try {
 
-                            Experiment experiment = experimentsFactory.nextExperiment();
+                            Experiment experiment = experimentsFactory.nextExperiment(panelParameters.getAlgorithmSelected());
                             experiment.run();
 
                         } catch (IOException e1) {
