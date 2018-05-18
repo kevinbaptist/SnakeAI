@@ -13,13 +13,13 @@ public class EnvironmentTwoSnake extends Environment {
     private SnakeType type;
 
 
-    public EnvironmentTwoSnake(int size, int maxIterations, int numInputs, int numHiddenUnits, int numOutputs, SnakeType type) {
+    public EnvironmentTwoSnake(int size, int maxIterations, int numInputs, int numHiddenUnits, int numOutputs, int numOutputs2, SnakeType type) {
         super(size, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
         if(type == SnakeType.TWO_AI_EQUAL){
             snakeAIAgent1 = new SnakeAIAgent(grid[0][1], Color.GREEN,numInputs, numHiddenUnits, numOutputs, this);
         }
         if(type == SnakeType.TWO_AI_DIF){
-            snakeAIAgent1 = new SnakeAIAgentSecond(grid[0][1], Color.YELLOW,numInputs, numHiddenUnits, numOutputs, this);
+            snakeAIAgent1 = new SnakeAIAgentSecond(grid[0][1], Color.YELLOW,numInputs, numHiddenUnits, numOutputs2, this);
         }
     }
 

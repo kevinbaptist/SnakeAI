@@ -66,7 +66,7 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
             System.out.println(getParameterValue("Mutation"));
             //TOdo
            switch (getParameterValue("Mutation")){
-                case "basic":
+               case "basic":
                     mutation = new MutationMUTATION_BASIC<>(mutationProbability );
                case "aproximada":
                     mutation = new MutationMUTATION_NAME<>(mutationProbability );

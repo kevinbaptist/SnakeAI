@@ -63,57 +63,16 @@ public class SnakeAIAgentSecond extends SnakeAI {
         int columnFood = food.getColumn();
         int lineFood = food.getLine();
 
+      inputs[12] = perception.getN()!= null && Math.abs(perception.getN().getLine() - lineFood)> 0 ? 0:1;
+        inputs[13] = perception.getE()!= null && Math.abs(perception.getE().getColumn() - columnFood) > 0 ? 0:1;
+        inputs[14] = perception.getS()!= null && Math.abs(perception.getS().getLine() - lineFood) >0 ? 0:1;
+        inputs[15] = perception.getW()!= null && Math.abs(perception.getW().getColumn() - columnFood) >0 ? 0:1;
 /*
         inputs[12] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
         inputs[13] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
         inputs[14] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
         inputs[15] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
-*/
-        inputs[12] = perception.getN()!= null && Math.abs(perception.getN().getLine() - lineFood)> 0 ? 1:0;
-        inputs[13] = perception.getE()!= null && Math.abs(perception.getE().getColumn() - columnFood) > 0 ? 1:0;
-        inputs[14] = perception.getS()!= null && Math.abs(perception.getS().getLine() - lineFood) >0 ? 1:0;
-        inputs[15] = perception.getW()!= null && Math.abs(perception.getW().getColumn() - columnFood) >0 ? 1:0;
-/*
-        inputs[12] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
-        inputs[13] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
-        inputs[14] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
-        inputs[15] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
-        /*inputs[12] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
-        inputs[13] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
-        inputs[14] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
-        inputs[15] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
-*//*
-        inputs[16] = perception.getN()!= null && getTail().getLine() == perception.getN().getLine() ? 1:0;
-        inputs[17] = perception.getE()!= null && getTail().getColumn() == perception.getE().getLine()? 1:0;
-        inputs[18] = perception.getS()!= null && getTail().getLine() == perception.getS().getLine()? 1:0;
-        inputs[19] = perception.getW()!= null && getTail().getColumn() == perception.getW().getLine()? 1:0;
-/*
-        inputs[8] = perception.getN()!= null &&  perception.getN().getLine()  ? 1:0;
-        inputs[10] =perception.getS()!= null &&  perception.getS().hasAgent()? 1:0;
-        inputs[11] = perception.getW()!= null && perception.getW().hasAgent()? 1:0;
-
-        Cell food = environment.getFood().getCell();
-        int columnFood = food.getColumn();
-        int lineFood = food.getLine();
-       /*
-
-
-
-      /* inputs[12] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
-        inputs[13] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
-        inputs[14] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
-        inputs[15] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
-
-       /* inputs[16] = perception.getN()!= null && getTail().getLine() == perception.getN().getLine()  ? 1:0;
-        inputs[17] = perception.getE()!= null && getTail().getColumn() == perception.getE().getColumn()? 1:0;*/
-
-        /*inputs[17] = perception.getN()!= null && !getBody().contains(perception.getN()) ? 1:0;
-        inputs[17] = perception.getE()!= null && !getBody().contains(perception.getE()) ? 1:0;*/
-
-
-
-
-
+       */
         //fazer o forward propagation
         //this.forwardPropagation(inputs);
 
@@ -134,37 +93,5 @@ public class SnakeAIAgentSecond extends SnakeAI {
 
         }
         return Action.values()[ index ];
-       /*
-        this.forwardPropagation(inputs);
-       int index = 0;
-        if(output[0] == 0 && output[1] == 0 ){
-            index = 0;
-        }if(output[0] == 0 && output[1] == 1 ){
-            index = 1;
-        }if(output[0] == 1 && output[1] == 1 ){
-            index = 2;
-        }if(output[0] == 1 && output[1] == 0 ){
-            index = 3;
-        }
-        output_[index] = 1;
-
-
-
-        //fazer o forward propagation
-        /*forwardPropagation(inputs);
-        //fazer os 4 ifs
-        if (output[0] == 0 && output[1] == 0)
-            return Action.NORTH;
-
-        if (output[0] == 0 && output[1] == 1)
-            return Action.EAST;
-
-        if (output[0] == 1 && output[1] == 1)
-            return Action.SOUTH;
-
-        if (output[0] == 1 && output[1] == 0)
-            return Action.WEST;
-        return null;//nunca chega aqui
-        */
     }
 }

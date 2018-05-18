@@ -65,16 +65,10 @@ public  class Environment {
         this(size, maxIterations, SnakeType.AI);
 
         if(type == SnakeType.AI1){
-            agent = new SnakeAIAgentSecond(getCell(0,0), Color.YELLOW,17, 8, 4, this);
+            agent = new SnakeAIAgentSecond(getCell(0,0), Color.YELLOW,numInputs, numHiddenUnits, numOutputs, this);
         }else{
             agent = new SnakeAIAgent(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
         }
-
-
-    }
-
-    public SnakeType getType() {
-        return type;
     }
 
     protected void cleanGrid(){

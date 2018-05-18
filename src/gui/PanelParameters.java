@@ -46,7 +46,7 @@ public class PanelParameters extends PanelAtributesValue {
     String[] recombinationMethods = {"One cut", "Two cuts", "Uniform"};
     JComboBox comboBoxRecombinationMethods = new JComboBox(recombinationMethods);
     JTextField textFieldProbRecombination = new JTextField(PROB_RECOMBINATION, TEXT_FIELD_LENGHT);
-    String[] selectionMutation = {"Mutacao Basica", "Mutacao Aproximada", "Mutacao BYTHEBOOK"};
+    String[] selectionMutation = {"Mutacao Aproximada","Mutacao Basica" , "Mutacao BYTHEBOOK"};
     JComboBox comboBoxSelectionMutation = new JComboBox(selectionMutation);
     JTextField textFieldProbMutation = new JTextField(PROB_MUTATION, TEXT_FIELD_LENGHT);
     //TODO - MORE PARAMETERS?
@@ -176,12 +176,11 @@ public class PanelParameters extends PanelAtributesValue {
         double mutationProbability = Double.parseDouble(textFieldProbMutation.getText());
         //TODO
 
-        System.out.println(comboBoxSelectionMutation.getSelectedIndex());
         switch (comboBoxSelectionMutation.getSelectedIndex()){
             case 0:
-                return new MutationMUTATION_BASIC<>(mutationProbability/*TODO?*/);
-            case 1:
                 return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
+            case 1:
+                return new MutationMUTATION_BASIC<>(mutationProbability/*TODO?*/);
             case 2:
                 return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
         }

@@ -104,6 +104,10 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             type = type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF? SnakeType.AI : type;
 
             iniciarDados(type,1);
+            mediaComidas =  0;
+            mediaComidasSnake2 = 0;
+            mediaMovimentos = 0;
+
             //TODO
 
             worker.cancel(true);
