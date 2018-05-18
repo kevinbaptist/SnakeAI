@@ -36,6 +36,7 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> {
 
     public I run(P problem) {
         population = new Population<>(populationSize, problem);//create_initial_population(P(t))
+
         bestInRun = population.evaluate();//devolve o melhor individuo da populacao
         t = 0;
         fireGenerationEnded(new GAEvent(this));//desenhado no grafico um ponto com o melhor individuo

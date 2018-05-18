@@ -23,7 +23,7 @@ public class PanelParameters extends PanelAtributesValue {
     // TODO MODIFY TO CHANGE THE DEFAULT PARAMETER VALUES
     public static final String SEED = "1";
     public static final String POPULATION_SIZE = "100";
-    public static final String GENERATIONS = "400";
+    public static final String GENERATIONS = "1000";
     public static final String TOURNAMENT_SIZE = "10";
     public static final String PROB_RECOMBINATION = "0.85";
     public static final String PROB_MUTATION = "0.2";
@@ -35,8 +35,8 @@ public class PanelParameters extends PanelAtributesValue {
     String[] selectionMethods = {"Tournament", "Roulette"};
     String[] selectionAlgorithm = {"Snake AdaDhoc",
             "Snake Aleatoria",
-            "Snake AI",
             "Snake AI1",
+            "Snake AI2",
             "Two IdenticalSnakes",
             "Two Diferent Snakes"};
     JComboBox comboBoxSelectionMethods = new JComboBox(selectionMethods);
@@ -46,7 +46,7 @@ public class PanelParameters extends PanelAtributesValue {
     String[] recombinationMethods = {"One cut", "Two cuts", "Uniform"};
     JComboBox comboBoxRecombinationMethods = new JComboBox(recombinationMethods);
     JTextField textFieldProbRecombination = new JTextField(PROB_RECOMBINATION, TEXT_FIELD_LENGHT);
-    String[] selectionMutation = {"Mutacao Basica", "Mutacao Aproximada", "Mutacao BYTHEBOOK"};
+    String[] selectionMutation = {"Mutacao Aproximada", "Mutacao Basica" , "Mutacao BYTHEBOOK"};
     JComboBox comboBoxSelectionMutation = new JComboBox(selectionMutation);
     JTextField textFieldProbMutation = new JTextField(PROB_MUTATION, TEXT_FIELD_LENGHT);
     //TODO - MORE PARAMETERS?
@@ -116,9 +116,9 @@ public class PanelParameters extends PanelAtributesValue {
             case 1:
                 return SnakeType.RANDOM;
             case 2:
-                return SnakeType.AI;
-            case 3:
                 return SnakeType.AI1;
+            case 3:
+                return SnakeType.AI2;
             case 4:
                 return SnakeType.TWO_AI_EQUAL;
             case 5:
@@ -175,15 +175,16 @@ public class PanelParameters extends PanelAtributesValue {
     public Mutation<SnakeIndividual> getMutationMethod() {
         double mutationProbability = Double.parseDouble(textFieldProbMutation.getText());
         //TODO
-        switch (comboBoxSelectionMethods.getSelectedIndex()){
+
+        switch (comboBoxSelectionMutation.getSelectedIndex()){
             case 0:
                 return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
             case 1:
-                return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
+                return new MutationMUTATION_BASIC<>(mutationProbability/*TODO?*/);
             case 2:
                 return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
         }
-        return new MutationMUTATION_NAME<>(mutationProbability/*TODO?*/);
+        return null;
     }
 
 
@@ -217,6 +218,7 @@ class JComboBoxSelectionAlgorithm_ActionAdapter implements ActionListener {
         adaptee.actionPerformedSelectionAlgorithm(e);
     }
 }
+
 
 
 class IntegerTextField_KeyAdapter implements KeyListener {

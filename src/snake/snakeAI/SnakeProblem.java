@@ -13,6 +13,7 @@ import java.util.List;
 public class SnakeProblem implements Problem<SnakeIndividual> {
     private static final int NUM_NN_INPUTS = 17; // TODO THIS IS A FAKE NUMBER; PLEASE ADAPT TO YOUR CASE
     private static final int NUM_NN_OUTPUTS = 2; // TODO THIS IS A FAKE NUMBER; PLEASE ADAPT TO YOUR CASE
+    private static final int NUM_NN_OUTPUTS_SNAKE_2 = 4; // TODO THIS IS A FAKE NUMBER; PLEASE ADAPT TO YOUR CASE
     private static int GENOME_SIZE;// = NUM_NN_INPUTS*NUM_NN_OUTPUTS*10; //TODO: Apenas para o meu caso
 
 
@@ -47,23 +48,30 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
         this.numEnvironmentRuns = numEnvironmentRuns;
 
         this.type = type;
-        GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS;
+        switch (type){
+            case AI1:
+                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS;
+                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
+                break;
+            case AI2:
+                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_2;
+                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, NUM_NN_OUTPUTS_SNAKE_2, type);
+                break;
+            case TWO_AI_EQUAL:
+                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS;
+                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, NUM_NN_OUTPUTS_SNAKE_2, type);
+                break;
+            case TWO_AI_DIF:
+                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_2;
+                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, NUM_NN_OUTPUTS_SNAKE_2, type);
+                break;
 
-
-        if (type == SnakeType.AI || type == SnakeType.AI1 ){
-            environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
         }
-
-        if (type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF)
-            environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
-
-
-
     }
 
     @Override
     public SnakeIndividual getNewIndividual() {
-        if (type == SnakeType.AI || type == SnakeType.AI1)
+        if (type == SnakeType.AI1 || type == SnakeType.AI2)
             return new SnakeIndividual(this, GENOME_SIZE /*TODO?*/);
 
 

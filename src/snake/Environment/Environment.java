@@ -4,7 +4,6 @@ import gui.MainFrame;
 import snake.*;
 import snake.snakeAI.SnakeProblem;
 import snake.snakeAI.nn.SnakeAIAgent;
-import snake.snakeAI.nn.SnakeAIAgentSecond;
 import snake.snakeAdhoc.SnakeAdhocAgent;
 import snake.snakeRandom.SnakeRandomAgent;
 
@@ -66,11 +65,10 @@ public  class Environment {
         this(size, maxIterations, SnakeType.AI);
 
         if(type == SnakeType.AI1){
-            agent = new SnakeAIAgentSecond(getCell(0,0), Color.YELLOW,17, 8, 4, this);
+            agent = new SnakeAIAgentSecond(getCell(0,0), Color.YELLOW,numInputs, numHiddenUnits, numOutputs, this);
         }else{
             agent = new SnakeAIAgent(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
         }
-
     }
 
     protected void cleanGrid(){
@@ -91,8 +89,10 @@ public  class Environment {
 
     }
 
+
+
     // TODO MODIFY TO PLACE ADHOC OR AI SNAKE AGENTS
-    protected Cell placeAgents(SnakeType type) { //Todo tirar
+    protected Cell placeAgents() { //Todo tirar
         //antes de colocar um agente necessário limpar a grelha
         cleanGrid();
 

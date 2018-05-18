@@ -15,7 +15,6 @@ public class SnakeIdentical extends SnakeIndividual {
 
     public SnakeIdentical(SnakeIdentical original) {
         super(original);
-
         this.totalFoodSnake2 = original.totalFoodSnake2;
     }
 
@@ -35,7 +34,7 @@ public class SnakeIdentical extends SnakeIndividual {
         for (int i = 0; i < problem.getNumEvironmentSimulations();i++) {
 
             //inicializar o ambiente
-            ambiente.initialize(i, SnakeType.AI);
+            ambiente.initialize(i, SnakeType.AI1);
 
 
             aiAgent.setWeights(genome);
