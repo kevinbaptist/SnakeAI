@@ -20,12 +20,13 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> {
     private boolean stopped;
     private I bestInRun;
 
+    private int seed;
     public GeneticAlgorithm(int populationSize, int maxGenerations, SelectionMethod<I, P> selection,
             Recombination<I> recombination,
             Mutation<I> mutation,
-            Random rand) {
-
-        random = rand;
+            int seed) {
+        this.seed = seed;
+        random = new Random(seed);
         this.populationSize = populationSize;
         this.maxGenerations = maxGenerations;
         this.selection = selection;
@@ -37,7 +38,7 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> {
     public I run(P problem) {
         population = new Population<>(populationSize, problem);//create_initial_population(P(t))
 
-        bestInRun = population.evaluate();//devolve o melhor individuo da populacao
+        bestInRun = population.evaluate(seed);//devolve o melhor individuo da populacao
         t = 0;
         fireGenerationEnded(new GAEvent(this));//desenhado no grafico um ponto com o melhor individuo
 
@@ -47,7 +48,7 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> {
             mutation(populationAux);
             
             population = generateNewPopulation(population, populationAux);//<=> population = populationAux;
-            I bestInGen = population.evaluate();//para desenhar o melhor individuo de cada geracao
+            I bestInGen = population.evaluate(seed);//para desenhar o melhor individuo de cada geracao
             if (bestInGen.compareTo(bestInRun) > 0) {
                 bestInRun = (I) bestInGen.clone();
             }
@@ -108,11 +109,13 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("Seed: " + seed + "\n");
         sb.append("Population size:" + populationSize + "\n");
         sb.append("Max generations:" + maxGenerations + "\n");
         sb.append("Selection:" + selection + "\n");
         sb.append("Recombination:" + recombination + "\n");
         sb.append("Mutation:" + mutation + "\n");
+
         return sb.toString();
     }
 
@@ -146,7 +149,7 @@ public class GeneticAlgorithm<I extends Individual, P extends Problem<I>> {
         }
     }
 
-    //TODO: add kevin
+    //TODO: add
     public static double getRandom(double min, double max){
         return min + (max - min) * random.nextDouble();
     }

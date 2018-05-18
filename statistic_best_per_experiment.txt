@@ -223,3 +223,19 @@ Fitness: 70115.2
 Total movements (avarage): 57
 Total Food (avarage): 7
 Total Food (max): 13
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1	
+
+Seed used: 2
+Fitness: 71135.2
+Total movements (avarage): 67
+Total Food (avarage): 7
+Total Food (max): 19
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1	
+
+Seed used: 4
+Fitness: 75160.4
+Total movements (avarage): 80
+Total Food (avarage): 7
+Total Food (max): 15

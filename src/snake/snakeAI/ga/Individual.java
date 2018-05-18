@@ -7,6 +7,7 @@ public abstract class Individual<P extends Problem, I extends Individual> implem
     protected int totalFoodSnake1;//TODO: EU ADicionei nao estava
     protected int totalMovements;//TODO: Eu adicionei, não estava: para usar nas estistica de escrever no ficheiro
 
+    protected int seed;
     public Individual(P problem) {
         this.problem = problem;
     }
@@ -15,9 +16,11 @@ public abstract class Individual<P extends Problem, I extends Individual> implem
         this.problem = original.problem;
         this.fitness = original.fitness;
         this.totalFoodSnake1 = original.totalFoodSnake1;
+        this.totalMovements = original.totalMovements;
+        this.seed = original.seed;
     }
 
-    public abstract double computeFitness();
+    public abstract double computeFitness(int seed);
     
     public abstract int getNumGenes();
     
@@ -38,6 +41,8 @@ public abstract class Individual<P extends Problem, I extends Individual> implem
         return totalMovements;
     }
 
-
+    public int getSeed(){
+        return seed;
+    }
 
 }

@@ -21,7 +21,7 @@ public class SnakeDiferent extends SnakeIndividual {
 
 
     @Override
-    public double computeFitness() {
+    public double computeFitness(int seed) {
 
         int foodSnake;
 
@@ -62,7 +62,7 @@ public class SnakeDiferent extends SnakeIndividual {
         fitness =  totalFoodSnake1*WEIGHT_FOOD + totalFoodSnake2*WEIGHT_FOOD
                 + Math.abs(diferencaComida) * (-500);
 
-
+        this.seed = seed;
         return fitness;
 
 

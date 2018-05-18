@@ -23,13 +23,12 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
     public SnakeIndividual(SnakeIndividual original) {
         super(original);
         //TODO
-        this.totalFoodSnake1 = original.totalFoodSnake1;
-        this.totalMovements = original.totalMovements;
+
         this.maxFood = original.maxFood;
     }
 
     @Override
-    public double computeFitness() {
+    public double computeFitness(int seed) {
         //TODO
         int food;
 
@@ -61,7 +60,7 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
                 maxFood = food;
 
         }
-
+        this.seed = seed;
         fitness = totalMovements *WEIGHT_MOVEMENT + totalFoodSnake1 *WEIGHT_FOOD;
 
         return fitness;
@@ -77,6 +76,9 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("\nSeed used: ");
+        sb.append(seed);
+
         sb.append("\nFitness: ");
         sb.append(fitness);
         sb.append("\nTotal movements (avarage): ");
@@ -87,6 +89,9 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
 
         sb.append("\nTotal Food (max): ");
         sb.append(maxFood);
+
+
+
         return sb.toString();
     }
 

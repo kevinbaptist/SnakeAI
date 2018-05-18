@@ -204,14 +204,14 @@ public class MainFrame extends JFrame implements GAListener {
             seriesBestIndividual.clear();
             seriesAverage.clear();
 
-            Random random = new Random(Integer.parseInt(panelParameters.textFieldSeed.getText()));
+            Random random = new Random();
             ga = new GeneticAlgorithm<>(
                     Integer.parseInt(panelParameters.textFieldN.getText()),
                     Integer.parseInt(panelParameters.textFieldGenerations.getText()),
                     panelParameters.getSelectionMethod(),
                     panelParameters.getRecombinationMethod(),
                     panelParameters.getMutationMethod(),
-                    random);
+                    Integer.parseInt(panelParameters.textFieldSeed.getText()));
 
             System.out.println(ga);
 
@@ -279,14 +279,13 @@ public class MainFrame extends JFrame implements GAListener {
             while ((rawInput = readFromFile.readLine()) != null) {
                 prepGenoma[i++] = Double.parseDouble(rawInput);
             }
-            Random random = new Random(Integer.parseInt(panelParameters.textFieldSeed.getText()));
             ga = new GeneticAlgorithm<>(
                     Integer.parseInt(panelParameters.textFieldN.getText()),
                     Integer.parseInt(panelParameters.textFieldGenerations.getText()),
                     panelParameters.getSelectionMethod(),
                     panelParameters.getRecombinationMethod(),
                     panelParameters.getMutationMethod(),
-                    random);
+                    Integer.parseInt(panelParameters.textFieldSeed.getText()));
 
 
             ga.addGAListener(this);

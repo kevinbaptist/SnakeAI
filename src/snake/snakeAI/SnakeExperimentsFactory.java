@@ -111,7 +111,7 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
                     selection,
                     recombination,
                     mutation,
-                    new Random(seed));
+                    seed);
 
         for (ExperimentListener statistic : statistics) {
             ga.addGAListener((GAListener) statistic);

@@ -19,10 +19,10 @@ public class Population<I extends Individual, P extends Problem<I>> {
         }
     }
 
-    public I evaluate() {
+    public I evaluate(int seed) {
         best = getIndividual(0);
         for (I individual : individuals) {
-            individual.computeFitness();
+            individual.computeFitness(seed);
 
             if (individual.compareTo(best) > 0) {
                 best = individual;
