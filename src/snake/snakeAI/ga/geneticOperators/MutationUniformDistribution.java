@@ -3,7 +3,7 @@ package snake.snakeAI.ga.geneticOperators;
 import snake.snakeAI.ga.GeneticAlgorithm;
 import snake.snakeAI.ga.RealVectorIndividual;
 
-public class MutationUniformDistribution<I extends RealVectorIndividual> extends Mutation<I> {
+public class MutationUniformDistribution <I extends RealVectorIndividual> extends Mutation<I> {
 
     public MutationUniformDistribution(double probability) {
         super(probability);
@@ -12,9 +12,12 @@ public class MutationUniformDistribution<I extends RealVectorIndividual> extends
     @Override
     public void run(I ind) {
         // TODO
+
+
         for (int i = 0; i < ind.getNumGenes(); i++) {
             if (GeneticAlgorithm.random.nextDouble() < probability) {
-                ind.setGene(i, GeneticAlgorithm.random.nextDouble()*2 -1);
+
+                ind.setGene(i, ind.getGene(i) +GeneticAlgorithm.getRandom(-1, 1));
             }
         }
 
