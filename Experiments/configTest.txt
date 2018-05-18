@@ -1,4 +1,4 @@
-Runs: 3
+Runs: 1
 
 Population size: 100
 
@@ -16,9 +16,7 @@ Recombination: one_cut
 
 Recombination probability: 0.7
 
-//--------------------------------
 
-Snake type: AI1
 
 //--------------------------------
 Mutation: gaussian
