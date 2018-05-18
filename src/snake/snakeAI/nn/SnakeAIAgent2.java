@@ -6,36 +6,16 @@ import snake.Environment.Environment;
 import snake.Perception;
 
 import java.awt.*;
-import java.util.Arrays;
 
-public class SnakeAIAgentSecond extends SnakeAI {
+public class SnakeAIAgent2 extends SnakeAI {
 
 
-    double[] output = new double[4];
-
-    public SnakeAIAgentSecond(Cell cell, Color color, int inputLayerSize, int hiddenLayerSize, int outputLayerSize, Environment environment) {
-        super(cell, color, inputLayerSize, hiddenLayerSize,  outputLayerSize,environment );
+    public SnakeAIAgent2(Cell cell, Color color, int inputLayerSize, int hiddenLayerSize, int outputLayerSize, Environment environment) {
+        super(cell, color, inputLayerSize, hiddenLayerSize, outputLayerSize, environment);
     }
 
 
-    protected void forwardPropagation(int[] instance) {
-        // TODO
-        double sum;
-        for (int i = 0; i < hiddenLayerSize; i++) {
-            sum = 0;
-            for (int j = 0; j < inputLayerSize; j++) {
-                sum += inputs[j] * w1[j][i];
-            }
-            hiddenLayerOutput[i] = 1 / (1 + Math.pow(Math.E, -sum));
-        }
-        for (int i = 0; i < outputLayerSize; i++) {
-            sum = 0;
-            for (int j = 0; j < hiddenLayerSize + 1; j++) {
-                sum += hiddenLayerOutput[j] * w2[j][i];
-            }
-            output[i] = 1 / (1 + Math.pow(Math.E, -sum));
-        }
-    }
+
 
     @Override
     protected Action decide(Perception perception) {
@@ -63,18 +43,12 @@ public class SnakeAIAgentSecond extends SnakeAI {
         int columnFood = food.getColumn();
         int lineFood = food.getLine();
 
-      inputs[12] = perception.getN()!= null && Math.abs(perception.getN().getLine() - lineFood)> 0 ? 0:1;
-        inputs[13] = perception.getE()!= null && Math.abs(perception.getE().getColumn() - columnFood) > 0 ? 0:1;
-        inputs[14] = perception.getS()!= null && Math.abs(perception.getS().getLine() - lineFood) >0 ? 0:1;
-        inputs[15] = perception.getW()!= null && Math.abs(perception.getW().getColumn() - columnFood) >0 ? 0:1;
-/*
+
         inputs[12] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
         inputs[13] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
         inputs[14] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
         inputs[15] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
-       */
-        //fazer o forward propagation
-        //this.forwardPropagation(inputs);
+
 
         forwardPropagation(inputs);
 
@@ -92,6 +66,32 @@ public class SnakeAIAgentSecond extends SnakeAI {
             }
 
         }
-        return Action.values()[ index ];
+        if (index == 0)
+            return Action.NORTH;
+
+        if (index == 1)
+            return Action.EAST;
+
+        if (index == 2)
+            return Action.SOUTH;
+
+        if (index == 3)
+            return Action.WEST;
+        return null;
+//        return Action.values()[ index ];
+
+    }
+
+    @Override
+    protected void forwardPropagation(int[] instance) {
+        super.forwardPropagation(instance);
+        int soma;
+        for (int i = 0; i < outputLayerSize; i++) {
+            soma = 0;
+            for (int j = 0; j < hiddenLayerSize +1; j++) {
+                soma += hiddenLayerOutput[j] * w2[j][i];
+            }
+            output[i] = 1 / (1 + Math.pow(Math.E, -soma));
+        }
     }
 }

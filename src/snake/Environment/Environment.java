@@ -1,15 +1,14 @@
 package snake.Environment;
 
-import gui.MainFrame;
 import snake.*;
-import snake.snakeAI.SnakeProblem;
-import snake.snakeAI.nn.SnakeAIAgent;
+import snake.snakeAI.nn.SnakeAI;
+import snake.snakeAI.nn.SnakeAIAgent1;
+import snake.snakeAI.nn.SnakeAIAgent2;
 import snake.snakeAdhoc.SnakeAdhocAgent;
 import snake.snakeRandom.SnakeRandomAgent;
 
 import java.awt.Color;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 
@@ -62,12 +61,12 @@ public  class Environment {
 
 
     public Environment(int size, int maxIterations, int numInputs, int numHiddenUnits, int numOutputs, SnakeType type) {
-        this(size, maxIterations, SnakeType.AI);
+        this(size, maxIterations, SnakeType.AI1);
 
-        if(type == SnakeType.AI1){
-            agent = new SnakeAIAgentSecond(getCell(0,0), Color.YELLOW,numInputs, numHiddenUnits, numOutputs, this);
-        }else{
-            agent = new SnakeAIAgent(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
+        if(type == SnakeType.AI2){
+            agent = new SnakeAIAgent2(getCell(0,0), Color.YELLOW,numInputs, numHiddenUnits, numOutputs, this);
+        }else if (type == SnakeType.AI1){
+            agent = new SnakeAIAgent1(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
         }
     }
 
@@ -78,11 +77,11 @@ public  class Environment {
     }
 
     //TODO: modified -  kevin
-    public void initialize(int seed, SnakeType type) {
+    public void initialize(int seed) {
 
         random.setSeed(seed);
 //        placeAgents(agentType);
-        placeAgents(type);
+        placeAgents();
 
         placeFood();
 
@@ -92,7 +91,7 @@ public  class Environment {
 
 
     // TODO MODIFY TO PLACE ADHOC OR AI SNAKE AGENTS
-    protected Cell placeAgents() { //Todo tirar
+    protected Cell placeAgents() {
         //antes de colocar um agente necessário limpar a grelha
         cleanGrid();
 
@@ -262,8 +261,8 @@ public  class Environment {
         stop = false;
     }
 
-    public SnakeAIAgent getAgentAI(){
-        return (SnakeAIAgent) agent;
+    public SnakeAI getAgentAI(){
+        return (SnakeAI) agent;
     }
 
 
@@ -272,7 +271,7 @@ public  class Environment {
         return grid;
     }
 
-    public SnakeAIAgentSecond getSnakeAIAgentSecond() {
-        return (SnakeAIAgentSecond) agent;
+    public SnakeAIAgent2 getSnakeAIAgentSecond() {
+        return (SnakeAIAgent2) agent;
     }
 }

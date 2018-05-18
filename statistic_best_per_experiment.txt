@@ -62,3 +62,94 @@ Fitness: 231954.6
 Total movements (avarage): 477
 Total Food (avarage): 23
 Total Food (max): 27
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 211886.0
+Total movements (avarage): 443
+Total Food (avarage): 21
+Total Food (max): 26
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 211886.0
+Total movements (avarage): 443
+Total Food (avarage): 21
+Total Food (max): 26
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21

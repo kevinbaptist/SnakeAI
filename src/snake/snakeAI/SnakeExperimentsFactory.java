@@ -78,7 +78,7 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
 
         //PROBLEM
         //TODO: ADICIONAR outras cobras.::::::::KEVIN
-        problem = SnakeProblem.buildProblemFromFile(new File(getParameterValue("Problem file")), SnakeType.AI);
+        problem = SnakeProblem.buildProblemFromFile(new File(getParameterValue("Problem file")), SnakeType.AI1);
 
         String textualRepresentation = buildTextualExperiment();
 

@@ -4,6 +4,7 @@ import snake.Environment.Environment;
 import snake.SnakeType;
 import snake.snakeAI.ga.RealVectorIndividual;
 import snake.snakeAI.nn.SnakeAI;
+import snake.snakeAI.nn.SnakeAIAgent1;
 
 public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeIndividual> {
 
@@ -40,7 +41,7 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
         for (int i = 0; i < problem.getNumEvironmentSimulations();i++) {
 
             //inicializar o ambiente
-            ambiente.initialize(i, SnakeType.AI);
+            ambiente.initialize(i);
 
 
             aiAgent.setWeights(genome);

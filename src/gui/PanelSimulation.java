@@ -99,7 +99,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
                 mainFrame.manageButtons(false, false, false, true, true, false, false, true);
 
             //TODO
-            type = type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF? SnakeType.AI : type;
+            type = type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF? SnakeType.AI1 : type;
 
             iniciarDados(type,1);
             mediaComidas =  0;
@@ -120,33 +120,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
 
         try {
             environment = mainFrame.getProblem().getEnvironment();
-
-            //TODO
-            SnakeType snakeType = mainFrame.getPanelParameters().getAlgorithmSelected();
-
-            snakeType = snakeType == SnakeType.TWO_AI_EQUAL || snakeType == SnakeType.TWO_AI_DIF? SnakeType.AI : snakeType;
-
-            //Reset
-            environmentPanel.removeAll();
-
-            //Cabeçalho
-            snakeOriginal = new JLabel("Snake em Execução : " +   snakeType);
-            environmentPanel.add(snakeOriginal, BorderLayout.NORTH);
-
-            snakeOriginal.setVisible(false);
-            snakeOriginal.setVisible(true);
-
-            if( mainFrame.getPanelParameters().getAlgorithmSelected() !=  snakeType) {
-
-                labelSegundaria = new JLabel("/ " + snakeType);
-                environmentPanel.add(labelSegundaria, BorderLayout.NORTH);
-            }
-
-
-
-            iniciarDados(snakeType, 0);
-
-            //Todo
+            iniciarDadosCorreto();
 
             environment.addEnvironmentListener(this);
 
@@ -159,34 +133,26 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
                 @Override
                 public Void doInBackground() {
                     int environmentSimulations = mainFrame.getProblem().getNumEvironmentSimulations();
+
                     SnakeType snakeType = mainFrame.getPanelParameters().getAlgorithmSelected();
 
-                    //TODO: voltar ca que devem estar coisas a mais
-                    if (snakeType == SnakeType.AI1 || snakeType == SnakeType.AI2){
-                        mainFrame.getBestInRun().getGenome();
+                    //TODO VLOLTAR A VER: voltar ca que devem estar coisas a mais
+                    if (snakeType != SnakeType.ADOC && snakeType != SnakeType.RANDOM){
                         environment.getAgentAI().setWeights(mainFrame.getBestInRun().getGenome());
                     }
-                    else if( snakeType == SnakeType.TWO_AI_EQUAL || snakeType == SnakeType.TWO_AI_DIF){
-                        mainFrame.getBestInRun().getGenome();
-                        environment.getAgentAI().setWeights(mainFrame.getBestInRun().getGenome());
+                    if( snakeType == SnakeType.TWO_AI_EQUAL ){
                         ((EnvironmentTwoSnake)environment).getSnakeAIAgent1().setWeights(mainFrame.getBestInRun().getGenome());
-                    }
 
-                    SnakeType type =mainFrame.getPanelParameters().getAlgorithmSelected();
+                    }else if(snakeType == SnakeType.TWO_AI_DIF){
+                        ((EnvironmentTwoSnake)environment).getSnakeAIAgent2().setWeights(mainFrame.getBestInRun().getGenome());
+                    }
 
                     for (int i = 0; i < environmentSimulations; i++) {
-                        //TODO:modified Kevin
-                        environment.initialize(i,  type);
-                        //penso que pode ser feito la em cima *(/\)*
-//                        if (mainFrame.getPanelParameters().getAlgorithmSelected() == SnakeType.AI){
-//                            environment.getAgentAI().setWeights(mainFrame.getBestInRun().getGenome());
-//                        }
+                        environment.initialize(i);
                         environmentUpdated();
                         environment.simulate();
 
-
-                        snakeType = snakeType == SnakeType.TWO_AI_EQUAL || snakeType == SnakeType.TWO_AI_DIF? SnakeType.AI : snakeType;
-                        iniciarDados(snakeType, i);
+//                        iniciarDados(snakeType, i);
                     }
 
                     return null;
@@ -211,6 +177,35 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
 
     }
 
+    private void iniciarDadosCorreto() {
+        //TODO
+        SnakeType snakeType = mainFrame.getPanelParameters().getAlgorithmSelected();
+
+        snakeType = snakeType == SnakeType.TWO_AI_EQUAL || snakeType == SnakeType.TWO_AI_DIF? SnakeType.AI1 : snakeType;
+
+        //Reset
+        environmentPanel.removeAll();
+
+        //Cabeçalho
+        snakeOriginal = new JLabel("Snake em Execução : " +   snakeType);
+        environmentPanel.add(snakeOriginal, BorderLayout.NORTH);
+
+        snakeOriginal.setVisible(false);
+        snakeOriginal.setVisible(true);
+
+        if( mainFrame.getPanelParameters().getAlgorithmSelected() !=  snakeType) {
+
+            labelSegundaria = new JLabel("/ " + snakeType);
+            environmentPanel.add(labelSegundaria, BorderLayout.NORTH);
+        }
+
+
+
+//        iniciarDados(snakeType, 0);
+
+        //Todo
+    }
+
     private void iniciarDados(SnakeType snakeType, int numExecucoes){
         //TODO
         container.removeAll();
@@ -220,10 +215,11 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
         container.add(labelSegundaria);
         container.add(separator);
 
-        mediaComidas += mediaComidas + mainFrame.getProblem().getEnvironment().getAgent().getTotalFood() ;
-        mediaMovimentos +=  mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos();
+//        mediaComidas += mediaComidas + mainFrame.getProblem().getEnvironment().getAgent().getTotalFood() ;
+//        mediaMovimentos +=  mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos();
 
-        totalComidas = new JLabel("Média Comidas: " + mediaComidas / (numExecucoes + 1) + " | " + "Média  Movimentos: " + mediaMovimentos / (numExecucoes + 1));
+        totalComidas = new JLabel("Média Comidas: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalFood()
+                + " | " + "Média  Movimentos: " +mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
 
         container.add(totalComidas );
 
@@ -236,9 +232,10 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             container.add(labelSegundaria);
             container.add(separator2);
 
-            mediaComidasSnake2 = ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent1().getTotalFood();
+//            mediaComidasSnake2 = ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent1().getTotalFood();
 
-            totalComidas = new JLabel("Média Comidas: " + mediaComidasSnake2 / (numExecucoes + 1)  + " | " + "Média Movimentos: " + mediaMovimentos / (numExecucoes + 1));
+            totalComidas = new JLabel("Média Comidas: " +
+                    " | " + "Média Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
 
             container.add(totalComidas );
         }

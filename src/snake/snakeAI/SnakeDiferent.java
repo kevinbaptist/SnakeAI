@@ -2,23 +2,23 @@ package snake.snakeAI;
 
 import snake.Environment.EnvironmentTwoSnake;
 import snake.SnakeType;
+import snake.snakeAI.ga.utils.Maths;
 import snake.snakeAI.nn.SnakeAI;
 import snake.snakeAI.nn.SnakeAIAgent1;
+import snake.snakeAI.nn.SnakeAIAgent2;
 
-public class SnakeIdentical extends SnakeIndividual {
+public class SnakeDiferent extends SnakeIndividual {
     private int totalFoodSnake2;
 
-
-
-    public SnakeIdentical(SnakeProblem problem, int size) {
+    public SnakeDiferent(SnakeProblem problem, int size) {
         super(problem, size);
     }
 
-    public SnakeIdentical(SnakeIdentical original) {
+    public SnakeDiferent(SnakeDiferent original) {
         super(original);
-
         this.totalFoodSnake2 = original.totalFoodSnake2;
     }
+
 
     @Override
     public double computeFitness() {
@@ -30,14 +30,13 @@ public class SnakeIdentical extends SnakeIndividual {
 
 
         SnakeAI aiAgent = ambiente.getAgentAI();
-        SnakeAIAgent1 aiAgent1 = ambiente.getSnakeAIAgent1();
+        SnakeAIAgent2 aiAgent1 = ambiente.getSnakeAIAgent2();
 
 
         for (int i = 0; i < problem.getNumEvironmentSimulations();i++) {
 
             //inicializar o ambiente
             ambiente.initialize(i);
-
 
             aiAgent.setWeights(genome);
             aiAgent1.setWeights(genome);
@@ -60,8 +59,8 @@ public class SnakeIdentical extends SnakeIndividual {
         }
 
         int diferencaComida = totalFoodSnake1 - totalFoodSnake2;
-        fitness = totalMovements *WEIGHT_MOVEMENT + totalFoodSnake1*WEIGHT_FOOD + totalFoodSnake2*WEIGHT_FOOD -
-                (diferencaComida < 0? -diferencaComida: diferencaComida)* 10;
+        fitness =  totalFoodSnake1*WEIGHT_FOOD + totalFoodSnake2*WEIGHT_FOOD
+                + Math.abs(diferencaComida) * (-500);
 
 
         return fitness;
@@ -72,8 +71,8 @@ public class SnakeIdentical extends SnakeIndividual {
 
 
     @Override
-    public SnakeIdentical clone() {
-        return new SnakeIdentical(this);
+    public SnakeDiferent clone() {
+        return new SnakeDiferent(this);
     }
 
     @Override
@@ -92,6 +91,4 @@ public class SnakeIdentical extends SnakeIndividual {
 
         return sb.toString();
     }
-
-
 }

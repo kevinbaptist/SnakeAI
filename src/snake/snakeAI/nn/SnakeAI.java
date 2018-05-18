@@ -8,7 +8,7 @@ import snake.SnakeAgent;
 
 import java.awt.*;
 
-public abstract class SnakeAI extends SnakeAgent {
+public abstract  class SnakeAI extends SnakeAgent {
     final protected int inputLayerSize;
     final protected int hiddenLayerSize;
     final protected int outputLayerSize;
@@ -32,10 +32,9 @@ public abstract class SnakeAI extends SnakeAgent {
     /**
      * Output layer activation values.
      */
-    final protected int[] output;
+    final protected double[] output;
 
-
-    public SnakeAI(Cell cell, Color color, int inputLayerSize, int hiddenLayerSize, int outputLayerSize, Environment environment) {
+    public SnakeAI(Cell cell, Color color,int inputLayerSize, int hiddenLayerSize, int outputLayerSize, Environment environment) {
         super(cell, color, environment);
         this.inputLayerSize = inputLayerSize;
         this.hiddenLayerSize = hiddenLayerSize;
@@ -46,8 +45,13 @@ public abstract class SnakeAI extends SnakeAgent {
         w2 = new double[hiddenLayerSize + 1][outputLayerSize]; // + 1 due to the bias entry for the output neurons
         hiddenLayerOutput = new double[hiddenLayerSize + 1];
         hiddenLayerOutput[hiddenLayerSize] = -1; // the bias entry for the output neurons
-        output = new int[outputLayerSize];
+        output = new double[outputLayerSize];
     }
+
+
+
+    protected abstract Action decide(Perception perception);
+
 
     /**
      * Initializes the network's weights
@@ -72,7 +76,25 @@ public abstract class SnakeAI extends SnakeAgent {
 
 
     }
+    
+    /**
+     * Computes the output of the network for the inputs saved in the class
+     * vector "inputs".
+     *
+     */
+    protected void forwardPropagation(int[] instance) {
+        double soma;
+        for (int i = 0; i < hiddenLayerSize; i++) {
+            soma = 0;
+            for (int j = 0; j < inputLayerSize; j++) {
+                soma += instance[j] * w1[j][i];
+            }
+            hiddenLayerOutput[i]=1/(1 + Math.pow(Math.E, -soma));
+        }
+    }
 
-    @Override
-    protected abstract Action decide(Perception perception);
+
+
+
+
 }

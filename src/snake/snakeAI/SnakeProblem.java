@@ -11,18 +11,22 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SnakeProblem implements Problem<SnakeIndividual> {
-    private static final int NUM_NN_INPUTS = 17; // TODO THIS IS A FAKE NUMBER; PLEASE ADAPT TO YOUR CASE
-    private static final int NUM_NN_OUTPUTS = 2; // TODO THIS IS A FAKE NUMBER; PLEASE ADAPT TO YOUR CASE
-    private static final int NUM_NN_OUTPUTS_SNAKE_2 = 4; // TODO THIS IS A FAKE NUMBER; PLEASE ADAPT TO YOUR CASE
-    private static int GENOME_SIZE;// = NUM_NN_INPUTS*NUM_NN_OUTPUTS*10; //TODO: Apenas para o meu caso
+    private static final int NUM_NN_INPUTS = 17;
+    private static final int NUM_NN_OUTPUTS_SNAKE_1 = 2;//TODO: ir buscar ficheiro
+    private static final int NUM_NN_OUTPUTS_SNAKE_2 = 4;
+    private static int GENOME_SIZE;
 
 
 
     final private int environmentSize;
     final private int maxIterations;
-     private int numInputs;
-     private int numHiddenUnits;
-     public int numOutputs;
+    private int numInputs;
+    private int numHiddenUnits1;
+    private int numHiddenUnits2;
+
+    private int numOutputs1;
+    private int numOutputs2;
+
     final private int numEnvironmentRuns;
 
     private Environment environment;//TODO: voltar a colocar final
@@ -43,27 +47,41 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
         this.environmentSize = environmentSize;
         this.maxIterations = maxIterations;
         this.numInputs = NUM_NN_INPUTS;
-        this.numHiddenUnits = numHiddenUnits;
-        this.numOutputs = NUM_NN_OUTPUTS;
+        this.numHiddenUnits1 = numHiddenUnits;
         this.numEnvironmentRuns = numEnvironmentRuns;
 
         this.type = type;
+
         switch (type){
             case AI1:
-                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS;
-                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, type);
+                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_1;
+                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_1;
+                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs1, type);
+
                 break;
+
             case AI2:
+                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_2;
                 GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_2;
-                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, NUM_NN_OUTPUTS_SNAKE_2, type);
+                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs1, type);
                 break;
+
             case TWO_AI_EQUAL:
-                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS;
-                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, NUM_NN_OUTPUTS_SNAKE_2, type);
+                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_1;
+
+                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_1;
+
+                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numHiddenUnits,
+                        numOutputs1, numOutputs1, type);
+
                 break;
+
             case TWO_AI_DIF:
+                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_2;
                 GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_2;
-                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs, NUM_NN_OUTPUTS_SNAKE_2, type);
+
+                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numHiddenUnits,
+                        2, numOutputs1, type);
                 break;
 
         }
@@ -74,9 +92,10 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
         if (type == SnakeType.AI1 || type == SnakeType.AI2)
             return new SnakeIndividual(this, GENOME_SIZE /*TODO?*/);
 
+        if (type == SnakeType.TWO_AI_EQUAL)
+            return new SnakeIdentical(this,GENOME_SIZE);
 
-        return new SnakeIdentical(this,GENOME_SIZE);
-
+        return new SnakeDiferent(this, GENOME_SIZE);
 
 
     }
@@ -135,10 +154,10 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
         sb.append(numInputs);
         sb.append("\n");
         sb.append("Number of hidden units: ");
-        sb.append(numHiddenUnits);
+        sb.append(numHiddenUnits1);
         sb.append("\n");
         sb.append("Number of outputs: ");
-        sb.append(numOutputs);
+        sb.append(numOutputs1);
         sb.append("\n");
         sb.append("Number of environment simulations: ");
         sb.append(numEnvironmentRuns);
