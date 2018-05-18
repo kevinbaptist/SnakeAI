@@ -199,10 +199,6 @@ public class MainFrame extends JFrame implements GAListener {
 
     public void jButtonRun_actionPerformed(ActionEvent e) {
         try {
-            if (problem == null) {
-                JOptionPane.showMessageDialog(this, "You must first choose a problem", "Error!", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
 
             bestIndividualPanel.textArea.setText("");
             seriesBestIndividual.clear();

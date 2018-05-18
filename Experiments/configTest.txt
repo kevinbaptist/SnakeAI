@@ -21,7 +21,7 @@ Recombination probability: 0.7
 Mutation: uniform_distribution
 
 Mutation probability: 0.7
-
+Mutation limit: 0.5
 Delta: 0.02
 
 //--------------------------------

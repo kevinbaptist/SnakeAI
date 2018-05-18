@@ -189,13 +189,12 @@ public class PanelParameters extends PanelAtributesValue {
 
     public Mutation<SnakeIndividual> getMutationMethod() {
         double mutationProbability = Double.parseDouble(textFieldProbMutation.getText());
-        //TODO
 
         switch (comboBoxSelectionMutation.getSelectedIndex()){
             case 0:
                 return new MutationUniformDistribution<>(mutationProbability);
             case 1:
-                return new MutationUniformDistributionWithLimit<>(mutationProbability, 0.5);//TODO: adiciona limite
+                return new MutationUniformDistributionWithLimit<>(mutationProbability, Double.parseDouble(textFieldLimitMutation.getText()));//
             case 2:
                 return new MutationGaussian<>(mutationProbability);
         }

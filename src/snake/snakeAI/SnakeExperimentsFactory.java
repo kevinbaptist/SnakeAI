@@ -68,10 +68,14 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
        switch (getParameterValue("Mutation")){
            case "uniform_distribution":
                 mutation = new MutationUniformDistribution<>(mutationProbability );
+                break;
            case "uniform_distribution_limit":
-                mutation = new MutationUniformDistributionWithLimit<>(mutationProbability, 0.5 );//TODO: valor a vir do ficheiro
+                double limit = Double.parseDouble(getParameterValue("Mutation limit"));
+                mutation = new MutationUniformDistributionWithLimit<>(mutationProbability, limit );//TODO: valor a vir do ficheiro
+               break;
            case "gaussian":
                 mutation = new MutationGaussian<>(mutationProbability);
+                break;
        }
 
         //PROBLEM
