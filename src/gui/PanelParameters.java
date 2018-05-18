@@ -46,7 +46,7 @@ public class PanelParameters extends PanelAtributesValue {
     String[] recombinationMethods = {"One cut", "Two cuts", "Uniform"};
     JComboBox comboBoxRecombinationMethods = new JComboBox(recombinationMethods);
     JTextField textFieldProbRecombination = new JTextField(PROB_RECOMBINATION, TEXT_FIELD_LENGHT);
-    String[] selectionMutation = {"Mutacao Aproximada", "Mutacao Basica" , "Mutacao BYTHEBOOK"};
+    String[] selectionMutation = {"Mutacao uniforme", "Mutacao uniforme com limite" , "Mutacao Gaussian"};
     JComboBox comboBoxSelectionMutation = new JComboBox(selectionMutation);
     JTextField textFieldProbMutation = new JTextField(PROB_MUTATION, TEXT_FIELD_LENGHT);
     //TODO - MORE PARAMETERS?

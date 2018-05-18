@@ -23,6 +23,8 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
     private SnakeProblem problem;
     private Experiment<SnakeExperimentsFactory, SnakeProblem> experiment;
 
+
+    private int seed;
     public SnakeExperimentsFactory(File configFile) throws IOException {
         super(configFile);
     }
@@ -61,10 +63,9 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
 
         //MUTATION
         double mutationProbability = Double.parseDouble(getParameterValue("Mutation probability"));
+
         if (getParameterValue("Mutation").equals("uniform_distribution")) {
-            //TODO OTHER PARAMETERS TO YOUR MUTATION OPERATOR, IF THEY EXIST, ARE FETCHED HERE
-            System.out.println(getParameterValue("Mutation"));
-            //TOdo
+
            switch (getParameterValue("Mutation")){
                case "basic":
                     mutation = new MutationMUTATION_BASIC<>(mutationProbability );
@@ -96,6 +97,7 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
 
     @Override
     public GeneticAlgorithm generateGAInstance(int seed) {
+        this.seed = seed;
         GeneticAlgorithm<SnakeIndividual, SnakeProblem> ga =
                 new GeneticAlgorithm<>(
                     populationSize,
@@ -129,6 +131,7 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
         sb.append("Selection:" + selection + "\t");
         sb.append("Recombination:" + recombination + "\t");
         sb.append("Mutation:" + mutation + "\t");
+        sb.append("seed: " + seed + "\t");
 
         return sb.toString();
     }
