@@ -67,12 +67,12 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
         if (getParameterValue("Mutation").equals("uniform_distribution")) {
 
            switch (getParameterValue("Mutation")){
-               case "basic":
-                    mutation = new MutationMUTATION_BASIC<>(mutationProbability );
-               case "aproximada":
-                    mutation = new MutationMUTATION_NAME<>(mutationProbability );
-               case "bythebook":
-                    mutation = new MutationMUTATION_NAME<>(mutationProbability );
+               case "uniform_distribution":
+                    mutation = new MutationUniformDistribution<>(mutationProbability );
+               case "uniform_distribution_limit":
+                    mutation = new MutationUniformDistributionWithLimit<>(mutationProbability );
+               case "gaussian":
+                    mutation = new MutationUniformDistributionWithLimit<>(mutationProbability );
            }
            //TOdo
         }
