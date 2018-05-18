@@ -7,10 +7,8 @@ import snake.snakeAI.ga.RealVectorIndividual;
 public class MutationUniformDistribution<I extends RealVectorIndividual> extends Mutation<I> {
 
 
-    public MutationUniformDistribution(double probability /*TODO?*/) {
+    public MutationUniformDistribution(double probability) {
         super(probability);
-        // TODO
-
     }
 
     @Override
@@ -25,6 +23,6 @@ public class MutationUniformDistribution<I extends RealVectorIndividual> extends
     
     @Override
     public String toString(){
-        return "Uniform distribution mutation (" + probability /* + TODO?*/;
+        return "Uniform distribution mutation (" + probability ;
     }
 }

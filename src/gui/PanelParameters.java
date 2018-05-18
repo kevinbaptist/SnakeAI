@@ -178,11 +178,11 @@ public class PanelParameters extends PanelAtributesValue {
 
         switch (comboBoxSelectionMutation.getSelectedIndex()){
             case 0:
-                return new MutationUniformDistributionWithLimit<>(mutationProbability/*TODO?*/);
+                return new MutationUniformDistribution<>(mutationProbability);
             case 1:
-                return new MutationUniformDistribution<>(mutationProbability/*TODO?*/);
+                return new MutationUniformDistributionWithLimit<>(mutationProbability, 0.5);//TODO: adiciona limite
             case 2:
-                return new MutationUniformDistributionWithLimit<>(mutationProbability/*TODO?*/);
+                return new MutationGaussian<>(mutationProbability);
         }
         return null;
     }

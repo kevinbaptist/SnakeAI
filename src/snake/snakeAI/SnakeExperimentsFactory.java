@@ -64,18 +64,15 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
         //MUTATION
         double mutationProbability = Double.parseDouble(getParameterValue("Mutation probability"));
 
-        if (getParameterValue("Mutation").equals("uniform_distribution")) {
 
-           switch (getParameterValue("Mutation")){
-               case "uniform_distribution":
-                    mutation = new MutationUniformDistribution<>(mutationProbability );
-               case "uniform_distribution_limit":
-                    mutation = new MutationUniformDistributionWithLimit<>(mutationProbability );
-               case "gaussian":
-                    mutation = new MutationUniformDistributionWithLimit<>(mutationProbability );
-           }
-           //TOdo
-        }
+       switch (getParameterValue("Mutation")){
+           case "uniform_distribution":
+                mutation = new MutationUniformDistribution<>(mutationProbability );
+           case "uniform_distribution_limit":
+                mutation = new MutationUniformDistributionWithLimit<>(mutationProbability, 0.5 );//TODO: valor a vir do ficheiro
+           case "gaussian":
+                mutation = new MutationGaussian<>(mutationProbability);
+       }
 
         //PROBLEM
         //TODO: ADICIONAR outras cobras.::::::::KEVIN

@@ -5,11 +5,11 @@ import snake.snakeAI.ga.RealVectorIndividual;
 
 //PLEASE, MODIFY THE CLASS NAME
 public class MutationUniformDistributionWithLimit<I extends RealVectorIndividual> extends Mutation<I> {
-
+    private double limit;
    
-    public MutationUniformDistributionWithLimit(double probability /*TODO?*/) {
+    public MutationUniformDistributionWithLimit(double probability, double limit) {
         super(probability);
-        // TODO
+        this.limit = limit;
 
     }
 
@@ -20,14 +20,14 @@ public class MutationUniformDistributionWithLimit<I extends RealVectorIndividual
 
         for (int i = 0; i < ind.getNumGenes(); i++) {
             if (GeneticAlgorithm.random.nextDouble() < probability) {
-                delta = GeneticAlgorithm.getRandom(-0.5, 0.5);
-                ind.setGene(i, ind.getGene(i) +delta);//TODO: GeneticAlgorithm.random.nextDouble()*2 -1
+                delta = GeneticAlgorithm.getRandom(-limit, limit);
+                ind.setGene(i, ind.getGene(i) +delta);
             }
         }
     }
     
     @Override
     public String toString(){
-        return "Uniform distribution mutation (" + probability /* + TODO?*/;
+        return "Uniform distribution mutation with limit (" + probability + "), limit: " + limit;
     }
 }
