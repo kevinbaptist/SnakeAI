@@ -16,9 +16,10 @@ public class MutationUniformDistribution<I extends RealVectorIndividual> extends
         // TODO
         for (int i = 0; i < ind.getNumGenes(); i++) {
             if (GeneticAlgorithm.random.nextDouble() < probability) {
-                ind.setGene(i, GeneticAlgorithm.random.nextDouble()*2 -1);//trocar o valor de true para false
+                ind.setGene(i, GeneticAlgorithm.random.nextDouble()*2 -1);
             }
         }
+
     }
     
     @Override

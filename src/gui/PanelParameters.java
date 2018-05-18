@@ -20,7 +20,6 @@ public class PanelParameters extends PanelAtributesValue {
 
     public static final int TEXT_FIELD_LENGHT = 7;
 
-    // TODO MODIFY TO CHANGE THE DEFAULT PARAMETER VALUES
     public static final String SEED = "1";
     public static final String POPULATION_SIZE = "100";
     public static final String GENERATIONS = "1000";
@@ -28,6 +27,7 @@ public class PanelParameters extends PanelAtributesValue {
     public static final String PROB_RECOMBINATION = "0.85";
     public static final String PROB_MUTATION = "0.2";
 
+    public static final String LIMIT_MUTATION = "0.5";
 
     JTextField textFieldSeed = new JTextField(SEED, TEXT_FIELD_LENGHT);
     JTextField textFieldN = new JTextField(POPULATION_SIZE, TEXT_FIELD_LENGHT);
@@ -49,7 +49,9 @@ public class PanelParameters extends PanelAtributesValue {
     String[] selectionMutation = {"Mutacao uniforme", "Mutacao uniforme com limite" , "Mutacao Gaussian"};
     JComboBox comboBoxSelectionMutation = new JComboBox(selectionMutation);
     JTextField textFieldProbMutation = new JTextField(PROB_MUTATION, TEXT_FIELD_LENGHT);
-    //TODO - MORE PARAMETERS?
+
+    JTextField textFieldLimitMutation = new JTextField(LIMIT_MUTATION, TEXT_FIELD_LENGHT);
+
     private MainFrame mainFrame;
 
     public PanelParameters(MainFrame mainFrame) {
@@ -85,16 +87,25 @@ public class PanelParameters extends PanelAtributesValue {
 
         labels.add(new JLabel("Selection mutation: "));
         valueComponents.add(comboBoxSelectionMutation);
+        comboBoxSelectionMutation.addActionListener(new JComboBoxSelectionMutation_ActionAdapter(this));
+
 
         labels.add(new JLabel("Mutation prob.: "));
         valueComponents.add(textFieldProbMutation);
 
-        //TODO - MORE PARAMETERS?
-        labels.add(new JLabel("Selection Algorithm: "));
+        labels.add(new JLabel("Limit mutation: "));
+        valueComponents.add(textFieldLimitMutation);
+        textFieldLimitMutation.addKeyListener(new IntegerTextField_KeyAdapter(null));
+        textFieldLimitMutation.setEnabled(false);
 
+
+        labels.add(new JLabel("Selection Algorithm: "));
         valueComponents.add(comboBoxSelectionAlgorithm);
+
+
+
+
         comboBoxSelectionAlgorithm.addActionListener(new JComboBoxSelectionAlgorithm_ActionAdapter(this));
-//        comboBoxSelectionAlgorithm.addActionListener(actionListenerSelectionAlgorithm);
 
         configure();
 
@@ -108,7 +119,6 @@ public class PanelParameters extends PanelAtributesValue {
 //        }
 //    };
 
-    //TODO: kevin -add
     public SnakeType getAlgorithmSelected() {
         switch (comboBoxSelectionAlgorithm.getSelectedIndex()){
             case 0:
@@ -130,6 +140,11 @@ public class PanelParameters extends PanelAtributesValue {
 
     public void actionPerformedSelectionMethods(ActionEvent e) {
         textFieldTournamentSize.setEnabled(comboBoxSelectionMethods.getSelectedIndex() == 0);
+    }
+
+    public void actionPerformedSelectionMutationMethods(ActionEvent e){
+        //Só fica ativo o limite se for a mutaçao com limite
+        textFieldLimitMutation.setEnabled(comboBoxSelectionMutation.getSelectedIndex() == 1);
     }
 
 
@@ -204,6 +219,20 @@ class JComboBoxSelectionMethods_ActionAdapter implements ActionListener {
     }
 }
 
+
+class JComboBoxSelectionMutation_ActionAdapter implements ActionListener {
+    final private PanelParameters adaptee;
+
+    JComboBoxSelectionMutation_ActionAdapter(PanelParameters adaptee) {
+
+        this.adaptee = adaptee;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        adaptee.actionPerformedSelectionMutationMethods(e);
+    }
+}
 
 class JComboBoxSelectionAlgorithm_ActionAdapter implements ActionListener {
 
