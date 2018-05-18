@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Snake_Pro_UpToDate.iml" filepath="$PROJECT_DIR$/Snake_Pro_UpToDate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SnakeAI.iml" filepath="$PROJECT_DIR$/SnakeAI.iml" />
     </modules>
   </component>
 </project>
