@@ -3,7 +3,6 @@ package snake.snakeAI.ga.geneticOperators;
 import snake.snakeAI.ga.GeneticAlgorithm;
 import snake.snakeAI.ga.RealVectorIndividual;
 
-//PLEASE, MODIFY THE CLASS NAME
 public class MutationUniformDistributionWithLimit<I extends RealVectorIndividual> extends Mutation<I> {
     private double limit;
    

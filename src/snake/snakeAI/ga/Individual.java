@@ -37,4 +37,7 @@ public abstract class Individual<P extends Problem, I extends Individual> implem
     public int getTotalMovements(){
         return totalMovements;
     }
+
+
+
 }

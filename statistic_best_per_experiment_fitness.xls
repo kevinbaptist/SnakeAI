@@ -21,3 +21,9 @@ Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:On
 Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		115218.2	115	1091
 Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		115218.2	115	1091
 Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:snake.snakeAI.ga.geneticOperators.MutationGaussian@78221b26	seed: 0		86181.2	86	906
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0		1011.2	1	56
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0		1011.2	1	56
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3		1011.2	1011.2	1	56
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3		1011.2	1011.2	1	56
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	seed: 3		60105.6	60105.6	60	528
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7		0	53084.4	53084.4	53	422

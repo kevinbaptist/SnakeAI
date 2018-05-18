@@ -24,7 +24,6 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
     private Experiment<SnakeExperimentsFactory, SnakeProblem> experiment;
 
 
-    private int seed;
     public SnakeExperimentsFactory(File configFile) throws IOException {
         super(configFile);
     }
@@ -58,14 +57,13 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
                 recombination = new RecombinationUniform<>(recombinationProbability);
         }
 
-        // TODO YOU MAY ADD NEW PARAMETERS (eg., NEW GENETIC OPERATORS, ...).
 
 
         //MUTATION
         double mutationProbability = Double.parseDouble(getParameterValue("Mutation probability"));
 
 
-       switch (getParameterValue("Mutation")){
+        switch (getParameterValue("Mutation")){
            case "uniform_distribution":
                 mutation = new MutationUniformDistribution<>(mutationProbability );
                 break;
@@ -76,10 +74,9 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
            case "gaussian":
                 mutation = new MutationGaussian<>(mutationProbability);
                 break;
-       }
+    }
 
         //PROBLEM
-        //TODO: ADICIONAR outras cobras.::::::::KEVIN
         problem = SnakeProblem.buildProblemFromFile(new File(getParameterValue("Problem file")), SnakeType.AI1);
 
         String textualRepresentation = buildTextualExperiment();
@@ -98,7 +95,6 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
 
     @Override
     public GeneticAlgorithm generateGAInstance(int seed) {
-        this.seed = seed;
         GeneticAlgorithm<SnakeIndividual, SnakeProblem> ga =
                 new GeneticAlgorithm<>(
                     populationSize,
@@ -132,7 +128,6 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
         sb.append("Selection:" + selection + "\t");
         sb.append("Recombination:" + recombination + "\t");
         sb.append("Mutation:" + mutation + "\t");
-        sb.append("seed: " + seed + "\t");
 
         return sb.toString();
     }

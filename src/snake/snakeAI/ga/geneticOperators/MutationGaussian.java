@@ -24,4 +24,9 @@ public class MutationGaussian <I extends RealVectorIndividual> extends Mutation<
             }
         }
     }
+
+    @Override
+    public String toString(){
+        return "Gaussian mutation (" + probability ;
+    }
 }

@@ -3,9 +3,7 @@ package snake.snakeAI.ga.geneticOperators;
 import snake.snakeAI.ga.GeneticAlgorithm;
 import snake.snakeAI.ga.RealVectorIndividual;
 
-//PLEASE, MODIFY THE CLASS NAME
 public class MutationUniformDistribution<I extends RealVectorIndividual> extends Mutation<I> {
-
 
     public MutationUniformDistribution(double probability) {
         super(probability);

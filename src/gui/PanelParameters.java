@@ -134,7 +134,7 @@ public class PanelParameters extends PanelAtributesValue {
             case 5:
                 return SnakeType.TWO_AI_DIF;
         }
-        return SnakeType.ADOC;//nunca chega ca
+        return SnakeType.ADOC;
     }
 
 
