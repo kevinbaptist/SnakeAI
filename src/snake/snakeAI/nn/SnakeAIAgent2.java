@@ -34,20 +34,21 @@ public class SnakeAIAgent2 extends SnakeAI {
         inputs[7] = perception.getW()!= null? 1:0;
 
 
-        inputs[8] = perception.getN()!= null && perception.getN().hasAgent()? 1:0;
-        inputs[9] = perception.getE()!= null && perception.getE().hasAgent()? 1:0;
-        inputs[10] =perception.getS()!= null &&  perception.getS().hasAgent()? 1:0;
-        inputs[11] = perception.getW()!= null && perception.getW().hasAgent()? 1:0;
+        inputs[8] = perception.getN()!= null && !perception.getN().hasAgent()? 1:0;
+        inputs[9] = perception.getE()!= null && !perception.getE().hasAgent()? 1:0;
+        inputs[10] =perception.getS()!= null && !perception.getS().hasAgent()? 1:0;
+        inputs[11] = perception.getW()!= null && !perception.getW().hasAgent()? 1:0;
 
         Cell food = environment.getFood().getCell();
         int columnFood = food.getColumn();
         int lineFood = food.getLine();
 
+        inputs[12] = perception.getN()!= null && Math.abs(perception.getN().getLine() - lineFood)> 0 ? 1:0;
+        inputs[13] = perception.getE()!= null && Math.abs(perception.getE().getColumn() - columnFood) > 0 ? 1:0;
+        inputs[14] = perception.getS()!= null && Math.abs(perception.getS().getLine() - lineFood) >0 ? 1:0;
+        inputs[15] = perception.getW()!= null && Math.abs(perception.getW().getColumn() - columnFood) >0 ? 1:0;
 
-        inputs[12] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
-        inputs[13] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
-        inputs[14] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
-        inputs[15] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
+
 
 
         forwardPropagation(inputs);
@@ -66,19 +67,8 @@ public class SnakeAIAgent2 extends SnakeAI {
             }
 
         }
-        if (index == 0)
-            return Action.NORTH;
 
-        if (index == 1)
-            return Action.EAST;
-
-        if (index == 2)
-            return Action.SOUTH;
-
-        if (index == 3)
-            return Action.WEST;
-        return null;
-//        return Action.values()[ index ];
+       return Action.values()[ index ];
 
     }
 
