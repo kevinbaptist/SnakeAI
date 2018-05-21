@@ -33,8 +33,9 @@ public class StatisticBestInRun<I extends Individual, P extends Problem<I>> impl
         //TODO: Experiments alterar
 
         snake.snakeAI.ga.utils.FileOperations.appendToTextFile("statistic_best_per_experiment_fitness.xls",
-                e.getSource() +
-                "\t" + this.bestInExperiment.getSeed() +
+                this.bestInExperiment.getSeed() +
+                "\t" + e.getSource() +
+
                 "\t" + this.bestInExperiment.getFitness() +
                 "\t"  + this.bestInExperiment.getTotalFoodSnake1() +
                 "\t" + this.bestInExperiment.getTotalMovements() +"\r\n");

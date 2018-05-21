@@ -11,7 +11,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SnakeProblem implements Problem<SnakeIndividual> {
-    private static final int NUM_NN_INPUTS = 17;
+    private static final int NUM_NN_INPUTS = 13;
     private static final int NUM_NN_OUTPUTS_SNAKE_1 = 2;//TODO: ir buscar ficheiro
     private static final int NUM_NN_OUTPUTS_SNAKE_2 = 4;
     private static int GENOME_SIZE;

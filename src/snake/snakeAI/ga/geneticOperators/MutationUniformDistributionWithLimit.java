@@ -27,6 +27,6 @@ public class MutationUniformDistributionWithLimit<I extends RealVectorIndividual
     
     @Override
     public String toString(){
-        return "Uniform distribution mutation with limit (" + probability + "), limit: " + limit;
+        return "Uniform distribution mutation with limit \t" + probability + "\t" + limit;
     }
 }

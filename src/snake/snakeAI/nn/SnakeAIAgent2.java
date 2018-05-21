@@ -22,7 +22,7 @@ public class SnakeAIAgent2 extends SnakeAI {
         //preencher os inputs
         //inputLayerSize - 1, porque o ultimo é o bias que ja foi atribuido no construtor
 
-        //13 neuronios de entrad
+        //13 neuronios de entrada
         inputs[0] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
         inputs[1] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
         inputs[2] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
@@ -69,7 +69,6 @@ public class SnakeAIAgent2 extends SnakeAI {
         }
 
        return Action.values()[ index ];
-
     }
 
     @Override

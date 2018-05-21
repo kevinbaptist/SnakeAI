@@ -132,12 +132,13 @@ public class SnakeExperimentsFactory extends ExperimentsFactory {
 
     private String buildTextualExperiment() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Population size:" + populationSize + "\t");
-        sb.append("Max generations:" + maxGenerations + "\t");
-        sb.append("Selection:" + selection + "\t");
-        sb.append("Recombination:" + recombination + "\t");
-        sb.append("Mutation:" + mutation + "\t");
-        sb.append("snake type: " + type + "\t");
+        sb.append(type + "\t");
+        sb.append(populationSize + "\t");
+        sb.append(maxGenerations + "\t");
+        sb.append(selection + "\t");
+        sb.append(recombination + "\t");
+        sb.append( mutation);
+
 
         return sb.toString();
     }
