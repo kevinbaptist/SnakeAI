@@ -21,7 +21,7 @@ public class PanelParameters extends PanelAtributesValue {
     public static final int TEXT_FIELD_LENGHT = 7;
 
     public static final String SEED = "1";
-    public static final String POPULATION_SIZE = "100";
+    public static final String POPULATION_SIZE = "80";
     public static final String GENERATIONS = "1000";
     public static final String TOURNAMENT_SIZE = "10";
     public static final String PROB_RECOMBINATION = "0.85";
@@ -151,10 +151,10 @@ public class PanelParameters extends PanelAtributesValue {
     //Atualização da combobox relativa ao algoritmo de seleção
     public void actionPerformedSelectionAlgorithm(ActionEvent e){
         if (comboBoxSelectionAlgorithm.getSelectedIndex() >= 2){
-            mainFrame.manageButtons(true, false, false, true, false,true, false, false);
+            mainFrame.manageButtons(true, false, false, false, true,true, false, false);
         }else{
             mainFrame.createProblem();
-            mainFrame.manageButtons(false, false, false,false, false, false, false, true);
+            mainFrame.manageButtons(false, false, false,false, true, false, false, true);
         }
 
     }

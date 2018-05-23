@@ -307,6 +307,8 @@ public class MainFrame extends JFrame implements GAListener {
             worker.execute();
 
             JOptionPane.showMessageDialog(this, "Ficheiro lido com Êxito");
+            manageButtons(true, true, false, false, true, true, false, true);
+
 
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
@@ -334,6 +336,8 @@ public class MainFrame extends JFrame implements GAListener {
 
     public void jButtonStop_actionPerformed(ActionEvent e) {
         worker.cancel(true);
+        manageButtons(true, true, false, true, true, true, false, true);
+
     }
 
     public void buttonExperiments_actionPerformed(ActionEvent e) {
@@ -343,7 +347,7 @@ public class MainFrame extends JFrame implements GAListener {
         try {
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 experimentsFactory = new SnakeExperimentsFactory(fc.getSelectedFile());
-                manageButtons(true, problem != null, false, false, true, true, true, false);
+                manageButtons(true, problem != null, false, true, true, true, true, false);
             }
         } catch (IOException e1) {
             e1.printStackTrace(System.err);

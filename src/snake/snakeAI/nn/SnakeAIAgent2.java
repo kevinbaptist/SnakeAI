@@ -23,33 +23,50 @@ public class SnakeAIAgent2 extends SnakeAI {
         //inputLayerSize - 1, porque o ultimo é o bias que ja foi atribuido no construtor
 
         //13 neuronios de entrada
-        inputs[0] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
-        inputs[1] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
-        inputs[2] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
-        inputs[3] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
-
-        inputs[4] = perception.getN()!= null? 1:0;
-        inputs[5] = perception.getE()!= null? 1:0;
-        inputs[6] = perception.getS()!= null? 1:0;
-        inputs[7] = perception.getW()!= null? 1:0;
+        inputs[0] = perception.getN()!= null && !perception.getN().hasAgent()? 1:0;
+        inputs[1] = perception.getE()!= null && !perception.getE().hasAgent()? 1:0;
+        inputs[2] = perception.getS()!= null &&  !perception.getS().hasAgent()? 1:0;
+        inputs[3] = perception.getW()!= null && !perception.getW().hasAgent()? 1:0;
 
 
-        inputs[8] = perception.getN()!= null && !perception.getN().hasAgent()? 1:0;
-        inputs[9] = perception.getE()!= null && !perception.getE().hasAgent()? 1:0;
-        inputs[10] =perception.getS()!= null && !perception.getS().hasAgent()? 1:0;
-        inputs[11] = perception.getW()!= null && !perception.getW().hasAgent()? 1:0;
+        inputs[8] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
+        inputs[9] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
+        inputs[10] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
+        inputs[11] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
 
         Cell food = environment.getFood().getCell();
         int columnFood = food.getColumn();
         int lineFood = food.getLine();
+        Cell tail = getTail();
+        int columnTail = tail.getColumn();
+        int lineTail = tail.getLine();
 
-        inputs[12] = perception.getN()!= null && Math.abs(perception.getN().getLine() - lineFood)> 0 ? 1:0;
-        inputs[13] = perception.getE()!= null && Math.abs(perception.getE().getColumn() - columnFood) > 0 ? 1:0;
-        inputs[14] = perception.getS()!= null && Math.abs(perception.getS().getLine() - lineFood) >0 ? 1:0;
-        inputs[15] = perception.getW()!= null && Math.abs(perception.getW().getColumn() - columnFood) >0 ? 1:0;
+       /* inputs[8] = perception.getN()!= null && perception.getN().getLine() - lineFood  > 0 ? 0:1;
+        inputs[9] = perception.getE()!= null && perception.getE().getColumn() - columnFood > 0 ? 1:0;
+        inputs[10] = perception.getS()!= null && perception.getS().getLine() - lineFood <0 ? 1:0;
+        inputs[11] = perception.getW()!= null && perception.getW().getColumn() - columnFood <0 ? 1:0;
+*/
 
 
-
+        inputs[4] = perception.getN()!= null && (perception.getN().getLine() >= lineFood || perception.getN().getLine() >= lineTail) ? 1:0;
+        inputs[5] = perception.getE()!= null && (perception.getE().getColumn() <= columnFood ||perception.getE().getColumn() <= columnTail) ? 1:0;
+        inputs[6] = perception.getS()!= null && (perception.getS().getLine() <= lineFood ||perception.getS().getLine() <= lineTail) ? 1:0;
+        inputs[7] = perception.getW()!= null && (perception.getW().getColumn() >= columnFood||perception.getW().getColumn() >= columnTail) ? 1:0;
+/*
+        inputs[8] = perception.getN()!= null && (perception.getN().getLine() >= lineFood || perception.getN().getLine() >= lineTail)? 1:0;
+        inputs[9] = perception.getE()!= null && (perception.getE().getColumn() <= columnFood || perception.getE().getColumn() <= columnTail)? 1:0;
+        inputs[10] = perception.getS()!= null && (perception.getS().getLine() <= lineFood || perception.getS().getLine() <= lineTail )? 1:0;
+        inputs[11] = perception.getW()!= null && (perception.getW().getColumn() >= columnFood || perception.getW().getColumn() >= columnTail)? 1:0;
+*//*
+        inputs[12] = perception.getN()!= null &&  perception.getN().getLine() >= lineTail? 1:0;
+        inputs[13] = perception.getE()!= null &&  perception.getE().getColumn() <= columnTail? 1:0;
+        inputs[14] = perception.getS()!= null &&  perception.getS().getLine() <= lineTail? 1:0;
+        inputs[15] = perception.getW()!= null &&  perception.getW().getColumn() >= columnTail? 1:0;
+*//*
+        inputs[12] = perception.getN()!= null  && perception.getN().getLine() >= lineTail? 1:0;
+        inputs[13] = perception.getE()!= null  &&   perception.getE().getColumn() <= columnTail? 1:0;
+        inputs[14] = perception.getS()!= null  && perception.getS().getLine() <= lineTail? 1:0;
+        inputs[15] = perception.getW()!= null  &&   perception.getW().getColumn() >= columnTail? 1:0;*/
 
         forwardPropagation(inputs);
 

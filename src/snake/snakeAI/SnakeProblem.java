@@ -11,16 +11,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SnakeProblem implements Problem<SnakeIndividual> {
-    private static final int NUM_NN_INPUTS = 13;
-    private static final int NUM_NN_OUTPUTS_SNAKE_1 = 2;//TODO: ir buscar ficheiro
-    private static final int NUM_NN_OUTPUTS_SNAKE_2 = 4;
     private static int GENOME_SIZE;
-
-
 
     final private int environmentSize;
     final private int maxIterations;
-    private int numInputs;
+    private int numInputs1;
+    private int numInputs2;
     private int numHiddenUnits1;
     private int numHiddenUnits2;
 
@@ -43,45 +39,46 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
     }
 
 
-    public SnakeProblem(int environmentSize, int maxIterations, int numHiddenUnits, int numEnvironmentRuns, SnakeType type) {
+    public SnakeProblem(int environmentSize, int maxIterations, int numInputsSnake1, int numInputsSnake2, int numHiddenUnitsSnake1, int numHiddenUnitsSnake2,
+                        int numOutputsSnake1, int numOutputsSnake2, int numEnvironmentRuns, SnakeType type) {
         this.environmentSize = environmentSize;
         this.maxIterations = maxIterations;
-        this.numInputs = NUM_NN_INPUTS;
-        this.numHiddenUnits1 = numHiddenUnits;
+        this.numInputs1 = numInputsSnake1;
+        this.numInputs2 = numInputsSnake2;
+        this.numHiddenUnits1 = numHiddenUnitsSnake1;
+        this.numHiddenUnits2 = numHiddenUnitsSnake2;
+        this.numOutputs1 = numOutputsSnake1;
+        this.numOutputs2 = numOutputsSnake2;
         this.numEnvironmentRuns = numEnvironmentRuns;
 
         this.type = type;
 
         switch (type){
             case AI1:
-                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_1;
-                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_1;
-                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs1, type);
+                GENOME_SIZE =  (numInputs1*numHiddenUnits1)+(numHiddenUnits1+1) *numOutputs1;
+                environment = new Environment(environmentSize, maxIterations, numInputs1, numHiddenUnits1, numOutputs1, type);
 
                 break;
 
             case AI2:
-                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_2;
-                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_2;
-                environment = new Environment(environmentSize, maxIterations, numInputs, numHiddenUnits, numOutputs1, type);
+                GENOME_SIZE =  (numInputs2*numHiddenUnits2)+(numHiddenUnits2+1) *numOutputs2;
+                environment = new Environment(environmentSize, maxIterations, numInputs2, numHiddenUnits2, numOutputs2, type);
                 break;
 
             case TWO_AI_EQUAL:
-                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_1;
 
-                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_1;
+                GENOME_SIZE =  (numInputs1*numHiddenUnits1)+(numHiddenUnits1+1) *numOutputs1;
 
-                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numHiddenUnits,
-                        numOutputs1, numOutputs1, type);
+                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs1, numInputs2, numHiddenUnits1, numHiddenUnits2,
+                        numOutputs1, numOutputs2, type);
 
                 break;
 
             case TWO_AI_DIF:
-                this.numOutputs1 = NUM_NN_OUTPUTS_SNAKE_2;
-                GENOME_SIZE =  (NUM_NN_INPUTS*numHiddenUnits)+(numHiddenUnits+1) *NUM_NN_OUTPUTS_SNAKE_2;
+                GENOME_SIZE =  (numInputs2*numHiddenUnits2)+(numHiddenUnits2+1) *numOutputs2;
 
-                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numHiddenUnits, numHiddenUnits,
-                        2, numOutputs1, type);
+                environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs1, numInputs2, numHiddenUnits1, numHiddenUnits2,
+                        numOutputs1, numOutputs2, type);
                 break;
 
         }
@@ -129,11 +126,16 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
 
         int environmentSize = Integer.parseInt(parametersValues.get(0));
         int maxIterations = Integer.parseInt(parametersValues.get(1));
-        int numHiddenUnits = Integer.parseInt(parametersValues.get(2));
-        int numEnvironmentRuns = Integer.parseInt(parametersValues.get(3));
+        int numInputsSnake1 = Integer.parseInt(parametersValues.get(2));
+        int numInputsSnake2 = Integer.parseInt(parametersValues.get(3));
+        int numHiddenUnitsSnake1 = Integer.parseInt(parametersValues.get(4));
+        int numHiddenUnitsSnake2 = Integer.parseInt(parametersValues.get(5));
+        int numOutputsSnake1 = Integer.parseInt(parametersValues.get(6));
+        int numOutputsSnake2 = Integer.parseInt(parametersValues.get(7));
+        int numEnvironmentRuns = Integer.parseInt(parametersValues.get(8));
 
 
-        return new SnakeProblem(environmentSize, maxIterations, numHiddenUnits, numEnvironmentRuns, type);
+        return new SnakeProblem(environmentSize, maxIterations, numInputsSnake1, numInputsSnake2, numHiddenUnitsSnake1, numHiddenUnitsSnake2, numOutputsSnake1, numOutputsSnake2, numEnvironmentRuns, type);
     }
 
     public int getGenomeSize(){
@@ -150,14 +152,23 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
         sb.append("Maximum number of iterations: ");
         sb.append(maxIterations);
         sb.append("\n");
-        sb.append("Number of inputs: ");
-        sb.append(numInputs);
+        sb.append("Number of inputs Snake_1: ");
+        sb.append(numInputs1);
         sb.append("\n");
-        sb.append("Number of hidden units: ");
+        sb.append("Number of inputs Snake_2: ");
+        sb.append(numInputs2);
+        sb.append("\n");
+        sb.append("Number of hidden units Snake_1: ");
         sb.append(numHiddenUnits1);
         sb.append("\n");
-        sb.append("Number of outputs: ");
+        sb.append("Number of hidden units Snake_2: ");
+        sb.append(numHiddenUnits2);
+        sb.append("\n");
+        sb.append("Number of outputs Snake_1: ");
         sb.append(numOutputs1);
+        sb.append("\n");
+        sb.append("Number of outputs Snake_2: ");
+        sb.append(numOutputs2);
         sb.append("\n");
         sb.append("Number of environment simulations: ");
         sb.append(numEnvironmentRuns);

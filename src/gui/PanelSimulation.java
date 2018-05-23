@@ -208,18 +208,15 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
 
     private void iniciarDados(SnakeType snakeType, int numExecucoes){
         //TODO
-        container.removeAll();
+        //container.removeAll();
 
         //Sanke 1
         labelSegundaria = new JLabel("Dados Snake 1 ");
         container.add(labelSegundaria);
         container.add(separator);
 
-//        mediaComidas += mediaComidas + mainFrame.getProblem().getEnvironment().getAgent().getTotalFood() ;
-//        mediaMovimentos +=  mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos();
-
-        totalComidas = new JLabel("Média Comidas: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalFood()
-                + " | " + "Média  Movimentos: " +mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
+        totalComidas = new JLabel("Comidas: " +  mainFrame.getProblem().getEnvironment().getAgent().getTotalFood()
+                + " | " + "Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
 
         container.add(totalComidas );
 
@@ -232,9 +229,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             container.add(labelSegundaria);
             container.add(separator2);
 
-//            mediaComidasSnake2 = ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent1().getTotalFood();
-
-            totalComidas = new JLabel("Média Comidas: " +
+            totalComidas = new JLabel("Média Comidas: " + ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent1().getTotalFood() +
                     " | " + "Média Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
 
             container.add(totalComidas );

@@ -51,6 +51,14 @@ public abstract class SnakeAgent {
     protected Cell getHead() {
         return body.get(0);
     }
+    protected int getSize() {
+        return body.size();
+    }
+
+    protected Cell getTail() {
+        return body.get(body.size()-1);
+    }
+
 
     protected void execute(Action action)
     {

@@ -32,3 +32,28 @@ Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:On
 Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake typeAI1		70115.2	70115.2	70	576
 Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1		2	71135.2	71	676
 Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1		4	75160.4	75	802
+Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3	3510954.6	351	4773
+Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2	3750931.4	375	4657
+Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		1	4060993.2	406	4966
+Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		1	3590932.6	359	4663
+Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		1	3740974.4	374	4872
+Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		1	3570958.6	357	4793
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		4	3550988.0	355	4940
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		4	3560955.6	356	4778
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		2	3900955.2	390	4776
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3	3620964.8	362	4824
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		4	3280956.0	328	4780
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		4	3720981.0	372	4905
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		3	3580987.0	358	4935
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3	3550989.4	355	4947
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		3	3930966.6	393	4833
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		4	3700964.2	370	4821
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		1	3681000.0	368	5000
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		4	3510958.2	351	4791
+Population size:50	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		1	3830984.2	383	4921
+5	AI2	60	1000	Tournament	8	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	4070988.4	407	4942
+3	AI2	60	1000	Tournament	8	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	3510941.4	351	4707
+1	AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3390959.0	339	4795
+5	AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	3450956.4	345	4782
+4	AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3570802.6	357	4013
+2	AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	3460866.0	346	4330

@@ -12,15 +12,15 @@ public class EnvironmentTwoSnake extends Environment {
     private SnakeAI snakeAIAgent1;
 
 
-    public EnvironmentTwoSnake(int size, int maxIterations, int numInputs, int numHiddenUnits1, int numHiddenUnits2,
+    public EnvironmentTwoSnake(int size, int maxIterations, int numInputs1, int numInputs2, int numHiddenUnits1, int numHiddenUnits2,
                                int numOutputs1, int numOutputs2, SnakeType type) {
-        super(size, maxIterations, numInputs, numHiddenUnits1, numOutputs1, SnakeType.AI1);
+        super(size, maxIterations, numInputs1, numHiddenUnits1, numOutputs1, SnakeType.AI1);
 
 
         if(type == SnakeType.TWO_AI_EQUAL){
-            snakeAIAgent1 = new SnakeAIAgent1(grid[0][1], Color.GREEN,numInputs, numHiddenUnits1, numOutputs1, this);
+            snakeAIAgent1 = new SnakeAIAgent1(grid[0][1], Color.GREEN,numInputs1, numHiddenUnits1, numOutputs1, this);
         }else if(type == SnakeType.TWO_AI_DIF){
-            snakeAIAgent1 = new SnakeAIAgent2(grid[0][1], Color.YELLOW,numInputs, numHiddenUnits2, numOutputs2, this);
+            snakeAIAgent1 = new SnakeAIAgent2(grid[0][1], Color.YELLOW,numInputs2, numHiddenUnits2, numOutputs2, this);
         }
     }
 

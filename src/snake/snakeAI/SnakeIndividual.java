@@ -10,7 +10,7 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
 
     private int maxFood;
 
-    protected static final int WEIGHT_FOOD = 1000;
+    protected static final int WEIGHT_FOOD = 10000;
     protected static final double WEIGHT_MOVEMENT = 0.2;
 
     public SnakeIndividual(SnakeProblem problem, int size /*TODO?*/) {
