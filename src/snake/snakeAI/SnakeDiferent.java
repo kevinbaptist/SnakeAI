@@ -58,9 +58,10 @@ public class SnakeDiferent extends SnakeIndividual {
 
         }
 
-        int diferencaComida = totalFoodSnake1 - totalFoodSnake2;
+        int diferencaComida = Math.abs(totalFoodSnake1 - totalFoodSnake2) * (WEIGHT_FOOD-10);
+
         fitness =  totalFoodSnake1*WEIGHT_FOOD + totalFoodSnake2*WEIGHT_FOOD
-                + Math.abs(diferencaComida) * (-500);
+                -diferencaComida;
 
         this.seed = seed;
         return fitness;

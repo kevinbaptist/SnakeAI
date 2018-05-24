@@ -19,59 +19,40 @@ public class SnakeAIAgent1 extends SnakeAI {
         //inputLayerSize - 1, porque o ultimo é o bias que ja foi atribuido no construtor
 
         //13 neuronios de entrad
+
         inputs[0] = perception.getN()!= null && !perception.getN().hasAgent()? 1:0;
         inputs[1] = perception.getE()!= null && !perception.getE().hasAgent()? 1:0;
         inputs[2] = perception.getS()!= null &&  !perception.getS().hasAgent()? 1:0;
         inputs[3] = perception.getW()!= null && !perception.getW().hasAgent()? 1:0;
 
 
-        inputs[8] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
-        inputs[9] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
-        inputs[10] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
-        inputs[11] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
+        inputs[4] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
+        inputs[5] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
+        inputs[6] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
+        inputs[7] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
 
-
-//        inputs[4] = perception.getN()!= null? 1:0;
-//        inputs[5] = perception.getE()!= null? 1:0;
-//        inputs[6] = perception.getS()!= null? 1:0;
-//        inputs[7] = perception.getW()!= null? 1:0;
-
-
-
-
-        Cell food = environment.getFood().getCell();
-        int columnFood = food.getColumn();
-        int lineFood = food.getLine();
-
-
-        inputs[4] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
-        inputs[5] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
-        inputs[6] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
-        inputs[7] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
-
-
-
-        /*
+/*
         inputs[4] = perception.getN()!= null? 1:0;
         inputs[5] = perception.getE()!= null? 1:0;
         inputs[6] = perception.getS()!= null? 1:0;
         inputs[7] = perception.getW()!= null? 1:0;
+*/
 
 
-        inputs[4] = perception.getN()!= null && !perception.getN().hasAgent()? 1:0;
-        inputs[5] = perception.getE()!= null && !perception.getE().hasAgent()? 1:0;
-        inputs[6] =perception.getS()!= null &&  !perception.getS().hasAgent()? 1:0;
-        inputs[7] = perception.getW()!= null && !perception.getW().hasAgent()? 1:0;
 
         Cell food = environment.getFood().getCell();
         int columnFood = food.getColumn();
         int lineFood = food.getLine();
 
 
-        inputs[8] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
-        inputs[9] = perception.getE()!= null && perception.getE().getColumn() <= columnFood? 1:0;
+        inputs[8] = perception.getN()!= null  && perception.getN().getLine() >= lineFood? 1:0;
+        inputs[9] = perception.getE()!= null  &&  perception.getE().getColumn() <= columnFood? 1:0;
         inputs[10] = perception.getS()!= null && perception.getS().getLine() <= lineFood? 1:0;
-        inputs[11] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;*/
+        inputs[11] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
+
+
+
+
 
         //fazer o forward propagation
         forwardPropagation(inputs);

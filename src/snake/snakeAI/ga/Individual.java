@@ -8,6 +8,7 @@ public abstract class Individual<P extends Problem, I extends Individual> implem
     protected int totalMovements;//TODO: Eu adicionei, não estava: para usar nas estistica de escrever no ficheiro
 
     protected int seed;
+
     public Individual(P problem) {
         this.problem = problem;
     }

@@ -13,23 +13,17 @@ public class SnakeIndividual extends RealVectorIndividual<SnakeProblem, SnakeInd
     protected static final int WEIGHT_FOOD = 10000;
     protected static final double WEIGHT_MOVEMENT = 0.2;
 
-    public SnakeIndividual(SnakeProblem problem, int size /*TODO?*/) {
+    public SnakeIndividual(SnakeProblem problem, int size) {
         super(problem, size);
-        //TODO?
-
-
     }
 
     public SnakeIndividual(SnakeIndividual original) {
         super(original);
-        //TODO
-
         this.maxFood = original.maxFood;
     }
 
     @Override
     public double computeFitness(int seed) {
-        //TODO
         int food;
 
         totalMovements = totalFoodSnake1 =  maxFood=0;

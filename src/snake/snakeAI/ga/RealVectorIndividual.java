@@ -47,4 +47,8 @@ public abstract class RealVectorIndividual <P extends Problem, I extends RealVec
         genome[index] = other.genome[index];
         other.genome[index] = aux;
     }
+
+    public double[] getGenome(){
+        return genome;
+    }
 }

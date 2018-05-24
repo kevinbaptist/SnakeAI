@@ -194,6 +194,8 @@ public class MainFrame extends JFrame implements GAListener {
             e1.printStackTrace(System.err);
         } catch (java.util.NoSuchElementException e2) {
             JOptionPane.showMessageDialog(this, "File format not valid", "Error!", JOptionPane.ERROR_MESSAGE);
+        }catch (IndexOutOfBoundsException e3){
+            JOptionPane.showMessageDialog(this, "File format not valid", "Error!", JOptionPane.ERROR_MESSAGE);
         }
     }
 
