@@ -13,9 +13,7 @@ public class SnakeAIAgent2 extends SnakeAI {
     public SnakeAIAgent2(Cell cell, Color color, int inputLayerSize, int hiddenLayerSize, int outputLayerSize, Environment environment) {
         super(cell, color, inputLayerSize, hiddenLayerSize, outputLayerSize, environment);
     }
-
-
-
+    
 
     @Override
     protected Action decide(Perception perception) {
@@ -28,12 +26,6 @@ public class SnakeAIAgent2 extends SnakeAI {
         inputs[2] = perception.getS()!= null &&  !perception.getS().hasAgent()? 1:0;
         inputs[3] = perception.getW()!= null && !perception.getW().hasAgent()? 1:0;
 
-
-        inputs[8] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
-        inputs[9] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
-        inputs[10] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
-        inputs[11] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
-
         Cell food = environment.getFood().getCell();
         int columnFood = food.getColumn();
         int lineFood = food.getLine();
@@ -41,36 +33,20 @@ public class SnakeAIAgent2 extends SnakeAI {
         int columnTail = tail.getColumn();
         int lineTail = tail.getLine();
 
-       /* inputs[8] = perception.getN()!= null && perception.getN().getLine() - lineFood  > 0 ? 0:1;
-        inputs[9] = perception.getE()!= null && perception.getE().getColumn() - columnFood > 0 ? 1:0;
-        inputs[10] = perception.getS()!= null && perception.getS().getLine() - lineFood <0 ? 1:0;
-        inputs[11] = perception.getW()!= null && perception.getW().getColumn() - columnFood <0 ? 1:0;
-*/
-
-
         inputs[4] = perception.getN()!= null && (perception.getN().getLine() >= lineFood || perception.getN().getLine() >= lineTail) ? 1:0;
         inputs[5] = perception.getE()!= null && (perception.getE().getColumn() <= columnFood ||perception.getE().getColumn() <= columnTail) ? 1:0;
         inputs[6] = perception.getS()!= null && (perception.getS().getLine() <= lineFood ||perception.getS().getLine() <= lineTail) ? 1:0;
         inputs[7] = perception.getW()!= null && (perception.getW().getColumn() >= columnFood||perception.getW().getColumn() >= columnTail) ? 1:0;
-/*     inputs[8] = perception.getN()!= null && (perception.getN().getLine() >= lineFood || perception.getN().getLine() >= lineTail)? 1:0;
-        inputs[9] = perception.getE()!= null && (perception.getE().getColumn() <= columnFood || perception.getE().getColumn() <= columnTail)? 1:0;
-        inputs[10] = perception.getS()!= null && (perception.getS().getLine() <= lineFood || perception.getS().getLine() <= lineTail )? 1:0;
-        inputs[11] = perception.getW()!= null && (perception.getW().getColumn() >= columnFood || perception.getW().getColumn() >= columnTail)? 1:0;
-*//*
-        inputs[4] = perception.getN()!= null &&  perception.getN().getLine() >= lineFood? 1:0;
-        inputs[5] = perception.getE()!= null &&  perception.getE().getColumn() <= columnFood? 1:0;
-        inputs[6] = perception.getS()!= null &&  perception.getS().getLine() <= lineFood? 1:0;
-        inputs[7] = perception.getW()!= null &&  perception.getW().getColumn() >= columnFood? 1:0;
-/*
-        inputs[12] = perception.getN()!= null  && perception.getN().getLine() >= lineTail? 1:0;
-        inputs[13] = perception.getE()!= null  &&   perception.getE().getColumn() <= columnTail? 1:0;
-        inputs[14] = perception.getS()!= null  && perception.getS().getLine() <= lineTail? 1:0;
-        inputs[15] = perception.getW()!= null  &&   perception.getW().getColumn() >= columnTail? 1:0;*/
+
+        inputs[8] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
+        inputs[9] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
+        inputs[10] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
+        inputs[11] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
+
+
 
         forwardPropagation(inputs);
 
-        //quando não come para
-        //fazer os 4 ifs
         double max = Integer.MIN_VALUE;
         int index = -1;
 

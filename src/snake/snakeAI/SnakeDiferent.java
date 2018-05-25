@@ -7,6 +7,8 @@ import snake.snakeAI.nn.SnakeAI;
 import snake.snakeAI.nn.SnakeAIAgent1;
 import snake.snakeAI.nn.SnakeAIAgent2;
 
+import java.util.Arrays;
+
 public class SnakeDiferent extends SnakeIndividual {
     private int totalFoodSnake2;
 
@@ -37,9 +39,9 @@ public class SnakeDiferent extends SnakeIndividual {
 
             //inicializar o ambiente
             ambiente.initialize(i);
+            aiAgent.setWeights(Arrays.copyOfRange(genome, 0, 77));
 
-            aiAgent.setWeights(genome);
-            aiAgent1.setWeights(genome);
+            aiAgent1.setWeights(Arrays.copyOfRange(genome, 77, genome.length));
 
             //simular o ambiente
             ambiente.simulate();
@@ -48,11 +50,11 @@ public class SnakeDiferent extends SnakeIndividual {
             //obter o numero de movimentos
             totalMovements += ambiente.getMovementNumber();
 
-            //obter o numero de comidas
+            //obter o numero de comidas Snake 1
             foodSnake = aiAgent.getTotalFood();
-
             this.totalFoodSnake1 += foodSnake;
 
+            //obter o numero de comidas Snake 2
             foodSnake = aiAgent1.getTotalFood();
             this.totalFoodSnake2 += foodSnake;
 
@@ -60,8 +62,7 @@ public class SnakeDiferent extends SnakeIndividual {
 
         int diferencaComida = Math.abs(totalFoodSnake1 - totalFoodSnake2) * (WEIGHT_FOOD-10);
 
-        fitness =  totalFoodSnake1*WEIGHT_FOOD + totalFoodSnake2*WEIGHT_FOOD
-                -diferencaComida;
+        fitness =  totalFoodSnake1*WEIGHT_FOOD + totalFoodSnake2*WEIGHT_FOOD - diferencaComida;
 
         this.seed = seed;
         return fitness;

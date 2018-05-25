@@ -59,7 +59,6 @@ public abstract  class SnakeAI extends SnakeAgent {
      * @param weights vector of weights comming from the individual.
      */
     public void setWeights(double[] weights) {
-        // TODO:
 
         int t = 0;
         for (int i = 0; i <inputLayerSize ; i++) {
@@ -73,8 +72,6 @@ public abstract  class SnakeAI extends SnakeAgent {
                 w2[i][j] = weights[t++];
             }
         }
-
-
     }
     
     /**

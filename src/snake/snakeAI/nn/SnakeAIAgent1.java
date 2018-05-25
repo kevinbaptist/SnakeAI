@@ -31,12 +31,6 @@ public class SnakeAIAgent1 extends SnakeAI {
         inputs[6] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
         inputs[7] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
 
-/*
-        inputs[4] = perception.getN()!= null? 1:0;
-        inputs[5] = perception.getE()!= null? 1:0;
-        inputs[6] = perception.getS()!= null? 1:0;
-        inputs[7] = perception.getW()!= null? 1:0;
-*/
 
 
 

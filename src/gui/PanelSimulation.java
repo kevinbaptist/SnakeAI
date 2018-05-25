@@ -9,6 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import java.util.Arrays;
 import javax.swing.*;
 
 public class PanelSimulation extends JPanel implements EnvironmentListener {
@@ -122,7 +123,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
                         ((EnvironmentTwoSnake)environment).getSnakeAIAgent1().setWeights(mainFrame.getBestInRun().getGenome());
 
                     }else if(snakeType == SnakeType.TWO_AI_DIF){
-                        ((EnvironmentTwoSnake)environment).getSnakeAIAgent2().setWeights(mainFrame.getBestInRun().getGenome());
+                        ((EnvironmentTwoSnake)environment).getSnakeAIAgent2().setWeights(Arrays.copyOfRange(mainFrame.getBestInRun().getGenome(), 77, mainFrame.getBestInRun().getGenome().length));
                     }
 
                     container.removeAll();
