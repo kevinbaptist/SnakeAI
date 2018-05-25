@@ -23,7 +23,7 @@ public class SnakeProblemForTwoSnake extends SnakeProblem {
                             "num hidden 2" + numHiddenUnits2 +
                             "num outp 2" + numOutputs2);
         //Implica que a segunda cobra tenha genoma maior
-        GENOME_SIZE =  (numInputs2*numHiddenUnits2)+(numHiddenUnits2+1) *numOutputs2;
+        GENOME_SIZE =  (numInputs2*numHiddenUnits2)+(numHiddenUnits2+1) *numOutputs2 + (numInputs * numHiddenUnits)+(numHiddenUnits +1) * numOutputs;
 
         environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numInputs2, numHiddenUnits, numHiddenUnits2,
                 numOutputs, numOutputs2, type);
