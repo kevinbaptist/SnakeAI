@@ -25,16 +25,9 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
     JLabel snakeOriginal;
     JLabel totalComidas;
     JLabel labelSegundaria;
-    JSeparator separator;
-    JSeparator separator2;
-    JSeparator separator3;
     JPanel container = new JPanel();
-
-    int mediaComidas =  0;
-    int mediaComidasSnake2 = 0;
-    int mediaMovimentos = 0;
-
-
+    JSeparator separator1;
+    JSeparator separator2;
     JPanel btnPnl = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
     private SwingWorker worker;
@@ -42,27 +35,17 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
     public PanelSimulation(MainFrame mainFrame) {
         this.mainFrame = mainFrame;
         environmentPanel.setPreferredSize(new Dimension(PANEL_SIZE, PANEL_SIZE));
-        container.setPreferredSize(new Dimension(PANEL_SIZE, PANEL_SIZE));
-
-        //Separador
-        separator = new JSeparator(SwingConstants.HORIZONTAL);
-        separator2 = new JSeparator(SwingConstants.HORIZONTAL);
-        separator.setPreferredSize(new Dimension(PANEL_SIZE, 1));
-        separator2.setPreferredSize(new Dimension(PANEL_SIZE, 1));
-        separator3 = new JSeparator(SwingConstants.HORIZONTAL);
-        separator3.setPreferredSize(new Dimension(PANEL_SIZE, 1));
-        separator3.setBackground(Color.white);
-
+        container.setPreferredSize(new Dimension(PANEL_SIZE, PANEL_SIZE+1000));
         setLayout(new BorderLayout());
         add(btnPnl, java.awt.BorderLayout.SOUTH);
         btnPnl.add(buttonSimulate);
         btnPnl.add(buttonStop);
         buttonStop.setEnabled(false);
+        JScrollPane scroller = new JScrollPane(container, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER) ;
+        setPreferredSize(new Dimension(300, 500));
 
         add(environmentPanel, java.awt.BorderLayout.NORTH);
-        add(container, BorderLayout.CENTER);
-//        add(buttonSimulate, java.awt.BorderLayout.SOUTH);
-//        add(buttonStop, BorderLayout.CENTER);
+        add(scroller, BorderLayout.CENTER);
 
         buttonSimulate.addActionListener(new SimulationPanel_jButtonSimulate_actionAdapter(this));
 
@@ -98,15 +81,10 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             }else
                 mainFrame.manageButtons(false, false, false, true, true, false, false, true);
 
-            //TODO
-            type = type == SnakeType.TWO_AI_EQUAL || type == SnakeType.TWO_AI_DIF? SnakeType.AI1 : type;
+        iniciarDados();
 
-            iniciarDados(type,1);
-            mediaComidas =  0;
-            mediaComidasSnake2 = 0;
-            mediaMovimentos = 0;
 
-            //TODO
+        //TODO
 
             worker.cancel(true);
             environment.removeEnvironmentListener(this);
@@ -147,12 +125,13 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
                         ((EnvironmentTwoSnake)environment).getSnakeAIAgent2().setWeights(mainFrame.getBestInRun().getGenome());
                     }
 
+                    container.removeAll();
                     for (int i = 0; i < environmentSimulations; i++) {
                         environment.initialize(i);
                         environmentUpdated();
                         environment.simulate();
 
-//                        iniciarDados(snakeType, i);
+                        iniciarDados();
                     }
 
                     return null;
@@ -199,40 +178,46 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             environmentPanel.add(labelSegundaria, BorderLayout.NORTH);
         }
 
-
-
-//        iniciarDados(snakeType, 0);
-
         //Todo
     }
 
-    private void iniciarDados(SnakeType snakeType, int numExecucoes){
+    private void iniciarDados(){
         //TODO
-        //container.removeAll();
+        separator1 = new JSeparator(SwingConstants.HORIZONTAL);
+        separator2 = new JSeparator(SwingConstants.HORIZONTAL);
+
+        separator1.setPreferredSize(new Dimension(PANEL_SIZE, 1));
+        separator2.setPreferredSize(new Dimension(PANEL_SIZE, 1));
 
         //Sanke 1
         labelSegundaria = new JLabel("Dados Snake 1 ");
         container.add(labelSegundaria);
-        container.add(separator);
+        container.add(separator1);
 
         totalComidas = new JLabel("Comidas: " +  mainFrame.getProblem().getEnvironment().getAgent().getTotalFood()
                 + " | " + "Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
 
         container.add(totalComidas );
 
-        container.add(separator3);
+        container.add(separator2);
 
         //Sanke 2 (if)
-        if( mainFrame.getPanelParameters().getAlgorithmSelected() !=  snakeType){
+        if( mainFrame.getPanelParameters().getAlgorithmSelected() == SnakeType.TWO_AI_EQUAL || mainFrame.getPanelParameters().getAlgorithmSelected() == SnakeType.TWO_AI_DIF ){
+
+            separator1 = new JSeparator(SwingConstants.HORIZONTAL);
+            separator2 = new JSeparator(SwingConstants.HORIZONTAL);
+            separator1.setPreferredSize(new Dimension(PANEL_SIZE, 1));
+            separator2.setPreferredSize(new Dimension(PANEL_SIZE, 1));
 
             labelSegundaria = new JLabel("Dados Snake 2 ");
             container.add(labelSegundaria);
-            container.add(separator2);
+            container.add(separator1);
 
-            totalComidas = new JLabel("Média Comidas: " + ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent1().getTotalFood() +
+            totalComidas = new JLabel("Média Comidas: " + ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent2().getTotalFood() +
                     " | " + "Média Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
 
             container.add(totalComidas );
+            container.add(separator2);
         }
         container.setVisible(false);
         container.setVisible(true);

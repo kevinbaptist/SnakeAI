@@ -1,0 +1,625 @@
+
+
+Population size:100	Max generations:300	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.1	
+
+fitness: 61117.4
+Total movements (avarage): 58
+Total Food (avarage): 6
+Total Food (max): 12
+
+Population size:100	Max generations:300	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.1	
+
+fitness: 61117.4
+Total movements (avarage): 58
+Total Food (avarage): 6
+Total Food (max): 12
+
+Population size:100	Max generations:300	Selection:Tournament(4)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.1	
+
+fitness: 75176.8
+Total movements (avarage): 88
+Total Food (avarage): 7
+Total Food (max): 14
+
+Population size:100	Max generations:300	Selection:Tournament(10)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.1	
+
+fitness: 4020.4
+Total movements (avarage): 10
+Total Food (avarage): 0
+Total Food (max): 1
+
+Population size:100	Max generations:300	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+fitness: 207601.8
+Total movements (avarage): 300
+Total Food (avarage): 20
+Total Food (max): 24
+
+Population size:100	Max generations:300	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.8	
+
+fitness: 177411.4
+Total movements (avarage): 205
+Total Food (avarage): 17
+Total Food (max): 26
+
+Population size:100	Max generations:300	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 231954.6
+Total movements (avarage): 477
+Total Food (avarage): 23
+Total Food (max): 27
+
+Population size:100	Max generations:300	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 231954.6
+Total movements (avarage): 477
+Total Food (avarage): 23
+Total Food (max): 27
+
+Population size:100	Max generations:300	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 231954.6
+Total movements (avarage): 477
+Total Food (avarage): 23
+Total Food (max): 27
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 211886.0
+Total movements (avarage): 443
+Total Food (avarage): 21
+Total Food (max): 26
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 211886.0
+Total movements (avarage): 443
+Total Food (avarage): 21
+Total Food (max): 26
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	
+
+Fitness: 115218.2
+Total movements (avarage): 109
+Total Food (avarage): 11
+Total Food (max): 21
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:snake.snakeAI.ga.geneticOperators.MutationGaussian@78221b26	seed: 0	
+
+Fitness: 86181.2
+Total movements (avarage): 90
+Total Food (avarage): 8
+Total Food (max): 16
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0	
+
+Fitness: 1011.2
+Total movements (avarage): 5
+Total Food (avarage): 0
+Total Food (max): 1
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0	
+
+Fitness: 1011.2
+Total movements (avarage): 5
+Total Food (avarage): 0
+Total Food (max): 1
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3	
+
+Fitness: 1011.2
+Total movements (avarage): 5
+Total Food (avarage): 0
+Total Food (max): 1
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3	
+
+Fitness: 1011.2
+Total movements (avarage): 5
+Total Food (avarage): 0
+Total Food (max): 1
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	seed: 3	
+
+Fitness: 60105.6
+Total movements (avarage): 52
+Total Food (avarage): 6
+Total Food (max): 11
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	
+
+Fitness: 53084.4
+Total movements (avarage): 42
+Total Food (avarage): 5
+Total Food (max): 10
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	
+
+Fitness: 60091.8
+Total movements (avarage): 45
+Total Food (avarage): 6
+Total Food (max): 10
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	
+
+Fitness: 48094.2
+Total movements (avarage): 47
+Total Food (avarage): 4
+Total Food (max): 10
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake typeAI1	
+
+Fitness: 70115.2
+Total movements (avarage): 57
+Total Food (avarage): 7
+Total Food (max): 13
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1	
+
+Seed used: 2
+Fitness: 71135.2
+Total movements (avarage): 67
+Total Food (avarage): 7
+Total Food (max): 19
+
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1	
+
+Seed used: 4
+Fitness: 75160.4
+Total movements (avarage): 80
+Total Food (avarage): 7
+Total Food (max): 15
+
+Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 3
+Fitness: 3510954.6
+Total movements (avarage): 477
+Total Food (avarage): 35
+Total Food (max): 39
+
+Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 2
+Fitness: 3750931.4
+Total movements (avarage): 465
+Total Food (avarage): 37
+Total Food (max): 41
+
+Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 1
+Fitness: 4060993.2
+Total movements (avarage): 496
+Total Food (avarage): 40
+Total Food (max): 46
+
+Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 1
+Fitness: 3590932.6
+Total movements (avarage): 466
+Total Food (avarage): 35
+Total Food (max): 40
+
+Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 1
+Fitness: 3740974.4
+Total movements (avarage): 487
+Total Food (avarage): 37
+Total Food (max): 40
+
+Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 1
+Fitness: 3570958.6
+Total movements (avarage): 479
+Total Food (avarage): 35
+Total Food (max): 38
+
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2	
+
+Seed used: 4
+Fitness: 3550988.0
+Total movements (avarage): 494
+Total Food (avarage): 35
+Total Food (max): 41
+
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 4
+Fitness: 3560955.6
+Total movements (avarage): 477
+Total Food (avarage): 35
+Total Food (max): 43
+
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2	
+
+Seed used: 2
+Fitness: 3900955.2
+Total movements (avarage): 477
+Total Food (avarage): 39
+Total Food (max): 45
+
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 3
+Fitness: 3620964.8
+Total movements (avarage): 482
+Total Food (avarage): 36
+Total Food (max): 44
+
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2	
+
+Seed used: 4
+Fitness: 3280956.0
+Total movements (avarage): 478
+Total Food (avarage): 32
+Total Food (max): 35
+
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 4
+Fitness: 3720981.0
+Total movements (avarage): 490
+Total Food (avarage): 37
+Total Food (max): 40
+
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2	
+
+Seed used: 3
+Fitness: 3580987.0
+Total movements (avarage): 493
+Total Food (avarage): 35
+Total Food (max): 38
+
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 3
+Fitness: 3550989.4
+Total movements (avarage): 494
+Total Food (avarage): 35
+Total Food (max): 38
+
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2	
+
+Seed used: 3
+Fitness: 3930966.6
+Total movements (avarage): 483
+Total Food (avarage): 39
+Total Food (max): 46
+
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 4
+Fitness: 3700964.2
+Total movements (avarage): 482
+Total Food (avarage): 37
+Total Food (max): 40
+
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2	
+
+Seed used: 1
+Fitness: 3681000.0
+Total movements (avarage): 500
+Total Food (avarage): 36
+Total Food (max): 42
+
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2	
+
+Seed used: 4
+Fitness: 3510958.2
+Total movements (avarage): 479
+Total Food (avarage): 35
+Total Food (max): 39
+
+Population size:50	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2	
+
+Seed used: 1
+Fitness: 3830984.2
+Total movements (avarage): 492
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	60	1000	Tournament	8	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 4070988.4
+Total movements (avarage): 494
+Total Food (avarage): 40
+Total Food (max): 48
+
+AI2	60	1000	Tournament	8	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3510941.4
+Total movements (avarage): 470
+Total Food (avarage): 35
+Total Food (max): 40
+
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3390959.0
+Total movements (avarage): 479
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3450956.4
+Total movements (avarage): 478
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3570802.6
+Total movements (avarage): 401
+Total Food (avarage): 35
+Total Food (max): 49
+
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3460866.0
+Total movements (avarage): 433
+Total Food (avarage): 34
+Total Food (max): 44
+
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3310992.2
+Total movements (avarage): 496
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3060970.6
+Total movements (avarage): 485
+Total Food (avarage): 30
+Total Food (max): 41
+
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.9	0.5
+
+Seed used: 1
+Fitness: 3210984.4
+Total movements (avarage): 492
+Total Food (avarage): 32
+Total Food (max): 37
+
+AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 2421000.0
+Total movements (avarage): 500
+Total Food (avarage): 24
+Total Food (max): 32
+
+AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 2980906.0
+Total movements (avarage): 453
+Total Food (avarage): 29
+Total Food (max): 37
+
+AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.9	NotApplied
+
+Seed used: 1
+Fitness: 3250999.4
+Total movements (avarage): 499
+Total Food (avarage): 32
+Total Food (max): 37
+
+AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3480953.2
+Total movements (avarage): 476
+Total Food (avarage): 34
+Total Food (max): 41
+
+AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 2530998.0
+Total movements (avarage): 499
+Total Food (avarage): 25
+Total Food (max): 32
+
+AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.9	0.5
+
+Seed used: 5
+Fitness: 3380979.0
+Total movements (avarage): 489
+Total Food (avarage): 33
+Total Food (max): 39
+
+AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 2490982.8
+Total movements (avarage): 491
+Total Food (avarage): 24
+Total Food (max): 31
+
+AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 2920928.4
+Total movements (avarage): 464
+Total Food (avarage): 29
+Total Food (max): 34
+
+AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.9	NotApplied
+
+Seed used: 5
+Fitness: 3360976.8
+Total movements (avarage): 488
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3520991.8
+Total movements (avarage): 495
+Total Food (avarage): 35
+Total Food (max): 42
+
+AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 3640973.6
+Total movements (avarage): 486
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.9	0.5
+
+Seed used: 1
+Fitness: 3401000.0
+Total movements (avarage): 500
+Total Food (avarage): 34
+Total Food (max): 40
+
+AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3590985.2
+Total movements (avarage): 492
+Total Food (avarage): 35
+Total Food (max): 40
+
+AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3420994.6
+Total movements (avarage): 497
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.9	NotApplied
+
+Seed used: 5
+Fitness: 3340927.8
+Total movements (avarage): 463
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	40	1000	Tournament	5	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3700939.4
+Total movements (avarage): 469
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	40	1000	Tournament	5	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3510983.6
+Total movements (avarage): 491
+Total Food (avarage): 35
+Total Food (max): 38
+
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3310992.2
+Total movements (avarage): 496
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3060970.6
+Total movements (avarage): 485
+Total Food (avarage): 30
+Total Food (max): 41
+
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.9	0.5
+
+Seed used: 1
+Fitness: 3210984.4
+Total movements (avarage): 492
+Total Food (avarage): 32
+Total Food (max): 37

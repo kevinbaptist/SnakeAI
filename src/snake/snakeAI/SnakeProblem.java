@@ -31,7 +31,7 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
      * */
     public SnakeProblem(SnakeType type) {
         this.environmentSize = 10;
-        this.maxIterations = 500;
+        this.maxIterations = 10;
         this.numEnvironmentRuns = 10;
 
         environment = new Environment(environmentSize, maxIterations,type );
