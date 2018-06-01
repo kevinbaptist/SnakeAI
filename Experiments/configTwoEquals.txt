@@ -27,7 +27,7 @@ Delta: 0.02
 
 //--------------------------------
 
-Problem file: ./DataSets/Two_AI_DIF.txt
+Problem file: ./DataSets/Two_AI_Equals.txt
 
 //--------------------------------
 

@@ -14,7 +14,7 @@ Tournament size: 12
 
 Recombination: uniform
 
-Recombination probability: 0.9
+Recombination probability: 0.3, 0.5, 0.9
 
 
 

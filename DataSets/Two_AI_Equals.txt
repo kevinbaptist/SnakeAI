@@ -1,5 +1,5 @@
 Environment size: 10
-Maximum number of iterations: 500
+Maximum number of iterations: 300
 Number of inputs Snake: 17
 Number of hidden units Snake_2: 8
 Number of outputs Snake: 4
