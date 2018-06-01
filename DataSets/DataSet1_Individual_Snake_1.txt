@@ -1,0 +1,6 @@
+Environment size: 10
+Maximum number of iterations: 500
+Number of inputs: 13
+Number of hidden units: 5
+Number of outputs: 2
+Number of environment simulations: 10
