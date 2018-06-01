@@ -25,6 +25,6 @@ public class MutationUniformDistribution <I extends RealVectorIndividual> extend
     
     @Override
     public String toString(){
-        return "Uniform distribution" + probability +"\tNotApplied";
+        return "Uniform distribution\t" + probability +"\tNotApplied";
     }
 }
