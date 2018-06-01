@@ -19,16 +19,15 @@ public class SnakeProblemForTwoSnake extends SnakeProblem {
         this.numOutputs2 = numOutputsSnake2;
 
 
-        System.out.println("num inputs2 " + numInputs2 +
-                            "num hidden 2" + numHiddenUnits2 +
-                            "num outp 2" + numOutputs2);
+
         //Implica que a segunda cobra tenha genoma maior
-        GENOME_SIZE =  ((numInputs2*numHiddenUnits2)+(numHiddenUnits2+1) *numOutputs2) +
-                (numInputs * numHiddenUnits)+(numHiddenUnits +1) * numOutputs;
+        int sizeDivision =(numInputs * numHiddenUnits)+(numHiddenUnits +1) * numOutputs;
+
+        GENOME_SIZE =  sizeDivision + ((numInputs2*numHiddenUnits2)+(numHiddenUnits2+1) *numOutputs2);
 
 
         environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numInputs2, numHiddenUnits, numHiddenUnits2,
-                numOutputs, numOutputs2, type);
+                numOutputs, numOutputs2, type, sizeDivision);
 
     }
 

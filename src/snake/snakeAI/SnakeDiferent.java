@@ -32,16 +32,17 @@ public class SnakeDiferent extends SnakeIndividual {
 
 
         SnakeAI aiAgent = ambiente.getAgentAI();
-        SnakeAIAgent2 aiAgent1 = ambiente.getSnakeAIAgent2();
+        SnakeAIAgent1 aiAgent1 = ambiente.getSnakeAIAgent1();
 
 
         for (int i = 0; i < problem.getNumEvironmentSimulations();i++) {
 
             //inicializar o ambiente
             ambiente.initialize(i);
-            aiAgent.setWeights(Arrays.copyOfRange(genome, 0, 77));
 
-            aiAgent1.setWeights(Arrays.copyOfRange(genome, 77, genome.length));
+            aiAgent.setWeights(Arrays.copyOfRange(genome, 0, ambiente.getSizeDivision()));
+
+            aiAgent1.setWeights(Arrays.copyOfRange(genome, ambiente.getSizeDivision(), genome.length));
 
             //simular o ambiente
             ambiente.simulate();

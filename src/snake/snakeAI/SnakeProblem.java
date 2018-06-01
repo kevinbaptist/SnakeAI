@@ -60,7 +60,7 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
             case TWO_AI_EQUAL:
                 GENOME_SIZE =  (numInputs * numHiddenUnits)+(numHiddenUnits +1) * numOutputs;
                 environment = new EnvironmentTwoSnake(environmentSize, maxIterations, numInputs, numInputs, numHiddenUnits, numHiddenUnits,
-                        numOutputs, numOutputs, type);
+                        numOutputs, numOutputs, type, 0);
                 break;
         }
     }
@@ -119,7 +119,6 @@ public class SnakeProblem implements Problem<SnakeIndividual> {
             case TWO_AI_EQUAL:
                 return new SnakeProblem(environmentSize, maxIterations, numInputsSnake, numHiddenUnitsSnake, numOutputsSnake, numEnvironmentRuns, type);
             default:
-
                 int numInputsSnake2 = Integer.parseInt(parametersValues.get(6));
                 int numHiddenUnitsSnake2 = Integer.parseInt(parametersValues.get(7));
                 int numOutputsSnake2 = Integer.parseInt(parametersValues.get(8));

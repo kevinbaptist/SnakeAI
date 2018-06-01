@@ -48,7 +48,7 @@ public  class Environment {
                 agent = new SnakeAdhocAgent(getCell(0,0), Color.BLACK, this);
                 break;
             case RANDOM:
-                agent = new SnakeRandomAgent(getCell(0,0), Color.BLACK, this);
+                agent = new SnakeRandomAgent(getCell(0,0), Color.CYAN, this);
                 break;
             default:
                 agent  = null;
@@ -64,7 +64,7 @@ public  class Environment {
         this(size, maxIterations, SnakeType.AI1);
 
         if(type == SnakeType.AI2){
-            agent = new SnakeAIAgent2(getCell(0,0), Color.YELLOW,numInputs, numHiddenUnits, numOutputs, this);
+            agent = new SnakeAIAgent2(getCell(0,0), Color.GREEN,numInputs, numHiddenUnits, numOutputs, this);
         }else if (type == SnakeType.AI1){
             agent = new SnakeAIAgent1(getCell(0,0), Color.BLUE,numInputs, numHiddenUnits, numOutputs, this);
         }

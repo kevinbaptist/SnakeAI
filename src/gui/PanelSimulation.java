@@ -3,7 +3,9 @@ package gui;
 import snake.Environment.Environment;
 import snake.Environment.EnvironmentTwoSnake;
 import snake.EnvironmentListener;
+import snake.SnakeAgent;
 import snake.SnakeType;
+import sun.management.Agent;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -120,10 +122,11 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
                         environment.getAgentAI().setWeights(mainFrame.getBestInRun().getGenome());
                     }
                     if( snakeType == SnakeType.TWO_AI_EQUAL ){
-                        ((EnvironmentTwoSnake)environment).getSnakeAIAgent1().setWeights(mainFrame.getBestInRun().getGenome());
+                        ((EnvironmentTwoSnake)environment).getSnakeAIAgent2().setWeights(mainFrame.getBestInRun().getGenome());
 
                     }else if(snakeType == SnakeType.TWO_AI_DIF){
-                        ((EnvironmentTwoSnake)environment).getSnakeAIAgent2().setWeights(Arrays.copyOfRange(mainFrame.getBestInRun().getGenome(), 77, mainFrame.getBestInRun().getGenome().length));
+                        int sizeDivision = ((EnvironmentTwoSnake)environment).getSizeDivision();
+                        ((EnvironmentTwoSnake)environment).getSnakeAIAgent1().setWeights(Arrays.copyOfRange(mainFrame.getBestInRun().getGenome(), sizeDivision, mainFrame.getBestInRun().getGenome().length));
                     }
 
                     container.removeAll();
@@ -195,15 +198,20 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
         container.add(labelSegundaria);
         container.add(separator1);
 
-        totalComidas = new JLabel("Comidas: " +  mainFrame.getProblem().getEnvironment().getAgent().getTotalFood()
-                + " | " + "Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
+        SnakeAgent agent = mainFrame.getProblem().getEnvironment().getAgent();
+
+
+        totalComidas = new JLabel("Comidas: " +  agent.getTotalFood()
+                + " | " + "Movimentos: " + agent.getTotalMovimentos());
 
         container.add(totalComidas );
 
         container.add(separator2);
 
+        SnakeType snakeType = mainFrame.getPanelParameters().getAlgorithmSelected();
+
         //Sanke 2 (if)
-        if( mainFrame.getPanelParameters().getAlgorithmSelected() == SnakeType.TWO_AI_EQUAL || mainFrame.getPanelParameters().getAlgorithmSelected() == SnakeType.TWO_AI_DIF ){
+        if(snakeType == SnakeType.TWO_AI_EQUAL || snakeType == SnakeType.TWO_AI_DIF ){
 
             separator1 = new JSeparator(SwingConstants.HORIZONTAL);
             separator2 = new JSeparator(SwingConstants.HORIZONTAL);
@@ -214,8 +222,14 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             container.add(labelSegundaria);
             container.add(separator1);
 
-            totalComidas = new JLabel("Média Comidas: " + ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent2().getTotalFood() +
-                    " | " + "Média Movimentos: " + mainFrame.getProblem().getEnvironment().getAgent().getTotalMovimentos());
+            SnakeAgent agent2 = snakeType == SnakeType.TWO_AI_EQUAL?
+                    ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent2():
+                    ((EnvironmentTwoSnake)mainFrame.getProblem().getEnvironment()).getSnakeAIAgent1();
+
+
+
+            totalComidas = new JLabel("Média Comidas: " + agent2.getTotalFood() +
+                    " | " + "Média Movimentos: " + agent2.getTotalMovimentos());
 
             container.add(totalComidas );
             container.add(separator2);
@@ -223,7 +237,6 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
         container.setVisible(false);
         container.setVisible(true);
 
-        //TODO
     }
 
 

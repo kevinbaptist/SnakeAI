@@ -2119,3 +2119,10 @@ Fitness: 4030972.2
 Total movements (avarage): 486
 Total Food (avarage): 40
 Total Food (max): 46
+
+TWO_AI_EQUAL	50	100	Tournament	2	One cut	0.85	Uniform distribution mutation with limit 	0.5	0.5
+
+fitness: 180029.0
+Total movements (avarage): 14
+Total Food (avarage) Snake 1: 0
+Total Food (avarage) Snake 2: 0

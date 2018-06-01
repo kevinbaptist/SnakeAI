@@ -268,3 +268,4 @@ New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data
 4	AI2	80	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3960992.4	396	4962
 2	AI2	80	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied	3730916.4	373	4582
 4	AI2	80	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied	4030972.2	403	4861
+1	TWO_AI_EQUAL	50	100	Tournament	2	One cut	0.85	Uniform distribution mutation with limit 	0.5	0.5	180029.0	9	145

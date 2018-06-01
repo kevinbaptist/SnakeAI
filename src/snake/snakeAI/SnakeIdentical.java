@@ -4,6 +4,7 @@ import snake.Environment.EnvironmentTwoSnake;
 import snake.SnakeType;
 import snake.snakeAI.nn.SnakeAI;
 import snake.snakeAI.nn.SnakeAIAgent1;
+import snake.snakeAI.nn.SnakeAIAgent2;
 
 public class SnakeIdentical extends SnakeIndividual {
     private int totalFoodSnake2;
@@ -30,7 +31,7 @@ public class SnakeIdentical extends SnakeIndividual {
 
 
         SnakeAI aiAgent = ambiente.getAgentAI();
-        SnakeAIAgent1 aiAgent1 = ambiente.getSnakeAIAgent1();
+        SnakeAIAgent2 aiAgent1 = ambiente.getSnakeAIAgent2();
 
 
         for (int i = 0; i < problem.getNumEvironmentSimulations();i++) {

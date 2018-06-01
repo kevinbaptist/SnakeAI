@@ -37,7 +37,7 @@ public class PanelParameters extends PanelAtributesValue {
             "Snake Aleatoria",
             "Snake AI1",
             "Snake AI2",
-            "Two IdenticalSnakes",
+            "Two snake AI2",
             "Two Diferent Snakes"};
     JComboBox comboBoxSelectionMethods = new JComboBox(selectionMethods);
     JComboBox comboBoxSelectionAlgorithm = new JComboBox(selectionAlgorithm);
