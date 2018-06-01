@@ -240,7 +240,7 @@ public class MainFrame extends JFrame implements GAListener {
                     //TODO gravar
 
                     //gravarBestGenoma();
-                    manageButtons(true, true, false, false, false, true, experimentsFactory != null, true);
+                    manageButtons(true, true, false, true, true, true, experimentsFactory != null, true);
                 }
             };
 

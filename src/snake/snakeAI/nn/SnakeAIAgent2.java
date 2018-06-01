@@ -23,7 +23,7 @@ public class SnakeAIAgent2 extends SnakeAI {
         //13 neuronios de entrada
         inputs[0] = perception.getN()!= null && !perception.getN().hasAgent()? 1:0;
         inputs[1] = perception.getE()!= null && !perception.getE().hasAgent()? 1:0;
-        inputs[2] = perception.getS()!= null &&  !perception.getS().hasAgent()? 1:0;
+        inputs[2] = perception.getS()!= null && !perception.getS().hasAgent()? 1:0;
         inputs[3] = perception.getW()!= null && !perception.getW().hasAgent()? 1:0;
 
         Cell food = environment.getFood().getCell();
