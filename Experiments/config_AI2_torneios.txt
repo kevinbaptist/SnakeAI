@@ -1,0 +1,36 @@
+Runs: 5
+
+Population size: 60, 70
+
+Max generations: 1000
+
+//--------------------------------
+
+Selection: tournament
+
+Tournament size: 2, 4, 6, 8, 14
+
+//--------------------------------
+
+Recombination: uniform
+
+Recombination probability: 0.9
+
+
+
+//--------------------------------
+Mutation:  gaussian
+
+Mutation probability: 0.8
+Mutation limit: 0.5
+Delta: 0.02
+
+
+//--------------------------------
+
+Problem file: ./DataSets/DataSetSnakeAI2.txt
+
+//--------------------------------
+
+Statistic: BestIndividual
+Statistic: BestAverage
