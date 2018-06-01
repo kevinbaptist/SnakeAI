@@ -1,0 +1,6 @@
+Environment size: 10
+Maximum number of iterations: 500
+Number of inputs Snake_2: 13
+Number of hidden units Snake_2: 5
+Number of outputs Snake_2: 4
+Number of environment simulations: 10

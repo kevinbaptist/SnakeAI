@@ -102,7 +102,6 @@ public  class Environment {
         agent.reset(cell);
 
 
-
         start();
 
         return cell;

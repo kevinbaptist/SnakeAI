@@ -154,9 +154,6 @@ public abstract class SnakeAgent {
         return body.size() != 1;
     }
 
-//    public boolean isDead() {
-////        return isDead;
-//    }
 
     public void reset(Cell head){
         body.clear();
@@ -166,7 +163,6 @@ public abstract class SnakeAgent {
 
         totalFood = 0;
         totalMovimentos = 0;
-//        isDead = false;
 
     }
 
