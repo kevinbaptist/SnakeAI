@@ -32,16 +32,26 @@ public class SnakeAIAgent2 extends SnakeAI {
         Cell tail = getTail();
         int columnTail = tail.getColumn();
         int lineTail = tail.getLine();
-
+/*
         inputs[4] = perception.getN()!= null && (perception.getN().getLine() >= lineFood || perception.getN().getLine() >= lineTail) ? 1:0;
         inputs[5] = perception.getE()!= null && (perception.getE().getColumn() <= columnFood ||perception.getE().getColumn() <= columnTail) ? 1:0;
         inputs[6] = perception.getS()!= null && (perception.getS().getLine() <= lineFood ||perception.getS().getLine() <= lineTail) ? 1:0;
         inputs[7] = perception.getW()!= null && (perception.getW().getColumn() >= columnFood||perception.getW().getColumn() >= columnTail) ? 1:0;
+*/
+        inputs[4] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
+        inputs[5] = perception.getE()!= null && perception.getE().getColumn() <= columnFood ? 1:0;
+        inputs[6] = perception.getS()!= null && perception.getS().getLine() <= lineFood  ? 1:0;
+        inputs[7] = perception.getW()!= null && perception.getW().getColumn() >= columnFood? 1:0;
 
         inputs[8] = perception.getN()!= null && perception.getN().hasFood()? 1:0;
         inputs[9] = perception.getE()!= null && perception.getE().hasFood()? 1:0;
         inputs[10] = perception.getS()!= null && perception.getS().hasFood()? 1:0;
         inputs[11] = perception.getW()!= null && perception.getW().hasFood()? 1:0;
+
+        inputs[12] = perception.getN()!= null && perception.getN().getLine() >= lineTail ? 1:0;
+        inputs[13] = perception.getE()!= null && perception.getE().getColumn() <= columnTail ? 1:0;
+        inputs[14] = perception.getS()!= null && perception.getS().getLine() <= lineTail ? 1:0;
+        inputs[15] = perception.getW()!= null && perception.getW().getColumn() >= columnTail ? 1:0;
 
 
 

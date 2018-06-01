@@ -1,62 +1,250 @@
-Tamanho da Pop	Max generations	Metodo Seleçao	Recombinacao	Mutação	xxxx	Fitness	Sd Fitness	Total Comidas (10 Iteraçoes	sd total Comidas	Total Movimentos (10 it)	sd total Moviments											
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		123094.73333333332	76082.6973553266	122.66666666666667	75.75545451575674	2140.3333333333335	1704.1874570858947											
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		71121.53333333333	46381.45202968771	71.0	46.3033476111609	607.6666666666666	404.9397760435769Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		71121.53333333333	46381.45202968771	71.0	46.3033476111609	607.6666666666666	404.9397760435769
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		71121.53333333333	46381.45202968771	71.0	46.3033476111609	607.6666666666666	404.9397760435769											
+Tamanho da Pop	Max generations	Metodo Seleçao	Recombinacao	Mutação	xxxx	Fitness	Sd Fitness	Total Comidas (10 Iteraçoes	sd total Comidas	Total Movimentos (10 it)	sd total Moviments																							
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		123094.73333333332	76082.6973553266	122.66666666666667	75.75545451575674	2140.3333333333335	1704.1874570858947																							
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		71121.53333333333	46381.45202968771	71.0	46.3033476111609	607.6666666666666	404.9397760435769Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		71121.53333333333	46381.45202968771	71.0	46.3033476111609	607.6666666666666	404.9397760435769												
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		71121.53333333333	46381.45202968771	71.0	46.3033476111609	607.6666666666666	404.9397760435769																							
 Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7		71121.53333333333	46381.45202968771	71.0	46.3033476111609	607.6666666666666	404.9397760435769											Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:snake.snakeAI.ga.geneticOperators.MutationGaussian@78221b26	seed: 0		86181.2	0.0	86.0	0.0	906.0	0.0
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0		1011.2	0.0	1.0	0.0	56.0	0.0
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0		1011.2000000000002	1.1368683772161603E-13	1.0	0.0	56.0	0.0
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3		1011.2000000000002	1.1368683772161603E-13	1.0	0.0	56.0	0.0
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3		1011.2000000000002	1.1368683772161603E-13	1.0	0.0	56.0	0.0
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	seed: 3		53419.73333333334	6252.452306806415	53.333333333333336	6.236095644623235	432.0	82.30431337420902
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7		45398.799999999996	5449.913547938168	45.333333333333336	5.436502143433364	327.3333333333333	67.06381703687582
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7		46103.13333333333	10032.347002681987	46.0	10.03327796219494	515.6666666666666	215.23527178931948
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7		31838.599999999995	13421.435181082536	31.666666666666668	13.474255287605157	859.6666666666666	280.38108986797874
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake typeAI1		62449.93333333333	6556.445297737351	62.333333333333336	6.548960901462833	583.0	74.05853540724841
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1		59334.479999999996	15307.282975420556	59.2	15.302287410710859	672.4	222.71560340488045
-Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1		53733.240000000005	16816.886574821154	53.6	16.788091017146648	666.2	398.8129386065603
-Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2616769.88	1254516.5667858617	261.6	125.42982101557827	3849.4	1119.153537277169
-Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3232907.0	455816.7979927549	323.2	45.582452764194244	4535.0	336.6143193626795
-Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3596903.7600000002	377674.5266706645	359.6	37.76029660900455	4518.8	361.1063001388926
-Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3022791.8400000003	551048.4609393319	302.2	55.08684053383349	3959.2	928.2188104105627
-Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3162933.56	380642.11292455596	316.2	38.0599527062239	4667.8	330.59304287900557
-Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2824865.4000000004	676950.7506731047	282.4	67.68633540087689	4327.0	831.2171798032089
-Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		2590734.88	1261753.6094973637	259.0	126.15387429643214	3674.4	1247.7943099726012
-Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3078764.4799999995	367545.9001097219	307.8	36.73908001025611	3822.4	910.5968592082888
-Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		3318873.3200000003	481151.5359961782	331.8	48.1057169159758	4366.6	650.2207625107029
-Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2466592.6399999997	634228.50952242	246.6	63.402208163438594	2963.2	1135.4627955155554
-Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		1818587.8800000001	1395140.1129286857	181.8	139.49250875943125	2939.4	1157.3964921322338
-Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3146876.16	320696.91645702865	314.6	32.0599438552222	4380.8	541.8728264085587
-Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		2772686.92	994127.169060696	277.2	99.38692066866747	3434.6	1310.9598925977864
-Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2808747.4400000004	753681.2630203025	280.8	75.34825810859863	3737.2	1253.6733864926703
-Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		2856790.36	1155541.8179816387	285.6	115.52419659967345	3951.8	1501.8680900798179
-Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2068676.6800000002	1482758.3602932778	206.8	148.25167789944234	3383.4	1366.5614658697207
-Population size:50	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		3398935.2800000003	251940.3043457589	339.8	25.190474390134064	4676.4	189.3299764960636
-AI2	60	1000	Tournament	8	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3274779.68	574337.8087349861	327.4	57.41985719243822	3898.4	905.2969899430794
-AI2	60	1000	Tournament	8	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2630798.7199999997	1277083.8243951858	263.0	127.68711759609894	3993.6	1078.5619314624453
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0		1011.2	0.0	1.0	0.0	56.0	0.0																						
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 0		1011.2000000000002	1.1368683772161603E-13	1.0	0.0	56.0	0.0																						
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3		1011.2000000000002	1.1368683772161603E-13	1.0	0.0	56.0	0.0																						
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Uniform distribution mutation (0.7	seed: 3		1011.2000000000002	1.1368683772161603E-13	1.0	0.0	56.0	0.0																						
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	seed: 3		53419.73333333334	6252.452306806415	53.333333333333336	6.236095644623235	432.0	82.30431337420902																						
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7		45398.799999999996	5449.913547938168	45.333333333333336	5.436502143433364	327.3333333333333	67.06381703687582																							
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7		46103.13333333333	10032.347002681987	46.0	10.03327796219494	515.6666666666666	215.23527178931948																							
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7		31838.599999999995	13421.435181082536	31.666666666666668	13.474255287605157	859.6666666666666	280.38108986797874																							
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake typeAI1		62449.93333333333	6556.445297737351	62.333333333333336	6.548960901462833	583.0	74.05853540724841																						
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1		59334.479999999996	15307.282975420556	59.2	15.302287410710859	672.4	222.71560340488045																						
+Population size:100	Max generations:100	Selection:Tournament(2)	Recombination:One cut recombination (0.7)	Mutation:Gaussian mutation (0.7	snake type: AI1		53733.240000000005	16816.886574821154	53.6	16.788091017146648	666.2	398.8129386065603																						
+Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2616769.88	1254516.5667858617	261.6	125.42982101557827	3849.4	1119.153537277169																						
+Population size:60	Max generations:1000	Selection:Tournament(8)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3232907.0	455816.7979927549	323.2	45.582452764194244	4535.0	336.6143193626795																						
+Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3596903.7600000002	377674.5266706645	359.6	37.76029660900455	4518.8	361.1063001388926																						
+Population size:60	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3022791.8400000003	551048.4609393319	302.2	55.08684053383349	3959.2	928.2188104105627																						
+Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:uniform recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3162933.56	380642.11292455596	316.2	38.0599527062239	4667.8	330.59304287900557																						
+Population size:60	Max generations:1000	Selection:Tournament(12)	Recombination:One cut recombination (0.9)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2824865.4000000004	676950.7506731047	282.4	67.68633540087689	4327.0	831.2171798032089																						
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		2590734.88	1261753.6094973637	259.0	126.15387429643214	3674.4	1247.7943099726012																						
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3078764.4799999995	367545.9001097219	307.8	36.73908001025611	3822.4	910.5968592082888																						
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		3318873.3200000003	481151.5359961782	331.8	48.1057169159758	4366.6	650.2207625107029																						
+Population size:40	Max generations:1000	Selection:Tournament(5)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2466592.6399999997	634228.50952242	246.6	63.402208163438594	2963.2	1135.4627955155554																						
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		1818587.8800000001	1395140.1129286857	181.8	139.49250875943125	2939.4	1157.3964921322338																						
+Population size:40	Max generations:1000	Selection:Tournament(10)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		3146876.16	320696.91645702865	314.6	32.0599438552222	4380.8	541.8728264085587																						
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		2772686.92	994127.169060696	277.2	99.38692066866747	3434.6	1310.9598925977864																						
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2808747.4400000004	753681.2630203025	280.8	75.34825810859863	3737.2	1253.6733864926703																						
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		2856790.36	1155541.8179816387	285.6	115.52419659967345	3951.8	1501.8680900798179																						
+Population size:40	Max generations:1000	Selection:Tournament(15)	Recombination:One cut recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.2), limit: 0.5	snake type: AI2		2068676.6800000002	1482758.3602932778	206.8	148.25167789944234	3383.4	1366.5614658697207																						
+Population size:50	Max generations:1000	Selection:Tournament(5)	Recombination:uniform recombination (0.95)	Mutation:Uniform distribution mutation with limit (0.25), limit: 0.5	snake type: AI2		3398935.2800000003	251940.3043457589	339.8	25.190474390134064	4676.4	189.3299764960636																						
+AI2	60	1000	Tournament	8	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3274779.68	574337.8087349861	327.4	57.41985719243822	3898.4	905.2969899430794																			
+AI2	60	1000	Tournament	8	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2630798.7199999997	1277083.8243951858	263.0	127.68711759609894	3993.6	1078.5619314624453																			
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3114811.2	280122.2044962806	311.4	28.011426240018555	4056.0	525.6390396460293																			
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2004648.2	1248652.8329065433	200.4	124.84326173246195	3241.0	1211.6676111871607																			
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	2516764.92	1284138.6125157212	251.6	128.40186914527374	3824.6	663.2081422901863																			
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2426759.4	896720.5720938938	242.6	89.65846306958424	3797.0	793.9836270352179																			
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	1682808.28	1352995.5361962824	168.2	135.27808396041098	4041.4	1110.0345219856904																			
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2612958.7600000002	345444.6866876004	261.2	34.54504305975026	4793.8	158.1687706217634																			
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.9	0.5	2390967.72	489093.6297708177	239.0	48.908077042549934	4838.6	216.93280065494935																			
+AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.2	NotApplied	1630815.72	824899.0642598993	163.0	82.46211251235322	4078.6	1488.4291854166256																			
+AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.8	NotApplied	2558915.76	226390.99753837913	255.8	22.639787984873003	4578.8	279.5721016124463																			
+AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.9	NotApplied	2402952.4400000004	787260.1578094438	240.2	78.72331293841742	4762.2	214.13491074553912																			
+AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	1920833.7600000002	1080770.3113477195	192.0	108.05739215805646	4168.8	1259.8675168445293																			
+AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	2376958.8	138079.9236167229	237.6	13.807244475274565	4794.0	112.47221879201993																			
+AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.9	0.5	2204826.2800000003	1132776.3324433619	220.4	113.24945915985649	4131.4	1655.1724502298848																			
+AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.2	NotApplied	1966886.0	827596.8291870432	196.6	82.73959149041045	4430.0	1015.8795204156839																			
+AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.8	NotApplied	2584974.56	238527.10628737856	258.4	23.85455931263456	4872.8	151.14813925417673																			
+AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.9	NotApplied	2310915.32	1185677.6761633093	231.0	118.55800268223145	4576.6	542.0337996841156																			
+AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2006908.1600000001	1135275.0004038485	200.6	113.52462287979644	4540.8	389.2928974435573																			
+AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	2454853.96	1226581.473157291	245.4	122.63702540423917	4269.8	1152.9604329724416																			
+AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.9	0.5	3012984.08	461574.7322594962	301.2	46.1579895576053	4920.4	67.1612983793494																			
+AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.2	NotApplied	2676996.16	561727.6148748025	267.6	56.173303267655534	4980.8	28.69425029513753																			
+AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.8	NotApplied	2918953.48	754170.5155083865	291.8	75.40928324815188	4767.4	391.8604853771301																			
+AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.9	NotApplied	2942912.56	345953.7823081319	294.2	34.59710970586994	4562.8	351.1873574034236																			
+AI2	40	1000	Tournament	5	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2388752.6	1233744.5166623243	238.8	123.34569307438343	3763.0	1552.371991502037																			
+AI2	40	1000	Tournament	5	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	2728937.7600000002	616688.8995596714	272.8	61.66814412644506	4688.8	234.52709864746973																			
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	1682808.28	1352995.5361962824	168.2	135.27808396041098	4041.4	1110.0345219856904																			
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2612958.7600000002	345444.6866876004	261.2	34.54504305975026	4793.8	158.1687706217634																			
+AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.9	0.5	2390967.72	489093.6297708177	239.0	48.908077042549934	4838.6	216.93280065494935																			
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	2274879.52	1158574.4665555072	227.4	115.8405801090447	4397.6	898.8100132953572																			
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2870943.68	328926.09431162133	287.0	32.89376840679705	4718.4	167.2645808292957																			
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied	2616974.0	533696.9804998039	261.6	53.36890480420223	4870.0	121.92292647406394																			
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied	2560955.76	528149.2353351262	256.0	52.81287721758776	4778.8	172.12483841677238																			
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	2708930.8	540735.972515223	270.8	54.07180411267965	4654.0	243.51509193477108																			
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	2720924.48	685936.436616672	272.0	68.59446041773344	4622.4	277.41564483640786																			
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied	2930966.2	218991.14337463057	293.0	21.89977168830762	4831.0	248.82363231815424																			
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied	2932918.04	464960.02158383303	293.2	46.490429122562425	4590.2	354.6561151312635																			
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2176886.68	795124.2505068561	217.6	79.49993710689337	4433.4	920.6531594471395																			
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	2698980.04	653035.6100355496	269.8	65.30359867572383	4900.2	123.9457946039316																			
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied	2510988.7600000002	463498.1839522636	251.0	46.35083602266522	4943.8	56.35743074342548																			
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied	3032972.28	420268.20317753474	303.2	42.02570641880991	4861.4	114.24464976531723																			
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2104796.9200000004	730087.2605140688	210.4	72.9893142864077	3984.6	1096.8698373097875																			
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	2982990.6399999997	205655.0763530976	298.2	20.565991344936428	4953.2	68.88367005321362																			
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied	2976982.0	491067.8717557645	297.6	49.10641505954187	4910.0	82.27028625208497																			
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied	2692947.84	391189.1218889687	269.2	39.11725961771862	4739.2	301.8386323849219																			
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	2110735.32	1287104.4769578115	211.0	128.68877184898454	3676.6	1234.9579102139473																			
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2730982.7199999997	500360.02422507893	273.0	50.03598704932281	4913.6	77.86552510578736																			
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied	2738893.1599999997	531186.5817796289	273.8	53.10894463270758	4465.8	663.753086621825																			
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied	2806994.96	422493.7146719113	280.6	42.249733726971584	4974.8	37.838604625435124																			
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	1186620.3599999999	815199.1188403618	118.6	81.50239260291687	3101.8	912.1143349383344																			
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	2662972.84	421849.5311556935	266.2	42.18720185079831	4864.2	131.93543875699206																			
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied	2646974.52	395034.95966747246	264.6	39.504936400404446	4872.6	244.92251836039904																			
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied	2892898.0	239808.0411938849	289.2	23.978323544401515	4490.0	368.14562336119116																			
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2278894.4	848846.7320390035	227.8	84.87732323771763	4472.0	849.9014060466072																			
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	2724969.52	376809.80271456	272.4	37.6807643234582	4847.6	171.88554331298488																			
+AI2	50	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied	3072990.4	530384.1146344563	307.2	53.03734533326494	4952.0	80.08994943187317																			
+AI2	50	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied	2910956.92	405876.3498972878	291.0	40.58571177150895	4784.6	255.2423162408616																			
+AI2	50	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	1830647.44	1081229.2544304442	183.0	108.08700199376428	3237.2	1864.378008881246																			
+AI2	50	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	2636797.5200000005	1290977.8263889407	263.6	129.05905624945504	3987.6	1960.024959024757																			
+AI2	50	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied	3046992.04	485572.0424191888	304.6	48.55759466859948	4960.2	38.45204805988883																			
+AI2	50	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied	2806988.68	477258.72396367317	280.6	47.7267220747455	4943.4	63.13350932745621																			
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	2318881.52	877731.2804695761	231.8	87.7528347120479	4407.6	1088.9761429893679																			
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2858976.36	572071.8174936345	285.8	57.20629336008408	4881.8	115.15971517852934																			
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied	2766938.5200000005	330073.4969371664	276.6	33.006665993402	4692.6	224.74038355400214																			
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied	3062989.56	462314.8003979176	306.2	46.23159093087756	4947.8	51.712280939830926																			
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	2732947.28	582310.1329183218	273.2	58.22508050659957	4736.4	400.6043434612261																			
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3412987.44	242114.3035310521	341.2	24.210741417808748	4937.2	57.94963330341271																			
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied	2652996.04	514061.5137228992	265.2	51.4058362445355	4980.2	35.73457709278228																			
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied	3162985.8800000004	530858.4519012894	316.2	53.08634476021117	4929.4	82.9206849947587																			
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2154900.2800000003	1218622.9259256702	215.4	121.85007180958081	4501.4	621.1207934049544																			
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3132949.96	370737.9684072599	313.2	37.06966414738607	4749.8	257.8149724123872																			
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied	3192985.6399999997	383478.113420047	319.2	38.34788129740677	4928.2	103.94690952596908																			
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied	2174946.08	922946.294420737	217.4	92.28781067941746	4730.4	419.07545859904513																			
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2554970.28	693674.7813394356	255.4	69.36454425713471	4851.4	180.7148029354541																			
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	2458972.44	244240.54776618557	245.8	24.424577785501228	4862.2	255.59374014243775																			
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied	2812979.52	343645.7200541651	281.2	34.36509857398928	4897.6	121.6085523308291																			
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied	3230984.3999999994	253613.03468807758	323.0	25.361387974635775	4922.0	63.9718688174732																			
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	2724962.6399999997	621290.7868782656	272.4	62.13082970635432	4813.2	233.44241259891058																			
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2906969.0	549477.3357032737	290.6	54.94579146759104	4845.0	203.1974409287676																			
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied	3046970.08	245514.7960853065	304.6	24.54872705457454	4850.4	146.35655092957063																			
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied	2962980.28	345970.08541737474	296.2	34.59710970586994	4901.4	89.95910181854865																			
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	2490895.6	1284214.5322233166	249.0	128.40404978037103	4478.0	905.1733535627305																			
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	2786970.5999999996	497557.88801741647	278.6	49.753793825194876	4853.0	241.26499953370777																			
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied	2862982.8	441595.99052496837	286.2	44.160615937733475	4914.0	105.7979205844803																			
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied	3146976.96	516025.2352347492	314.6	51.60077518797562	4884.8	113.91646061917479																			
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2344884.2800000003	448445.3561906441	234.4	44.83123910846097	4421.4	795.7536302147795																			
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	2898939.8	467241.8518994035	289.8	46.7221574844313	4699.0	253.29745359951806																			
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied	2924947.0	393442.85014644754	292.4	39.34259777899777	4735.0	329.0653430551446																			
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied	3366992.44	175341.82940674035	336.6	17.533967035442952	4962.2	22.19369279772972																			
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	1910800.72	1178839.6478785034	191.0	117.86602563928251	4003.6	908.437031389628																			
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3042983.6399999997	715967.3109377708	304.2	71.59720664942174	4918.2	47.81798824710216																			
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied	3022974.84	570654.7030052608	302.2	57.06627725723836	4874.2	124.7018845086152																			
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied	2852987.88	439080.7234235928	285.2	43.90626379003342	4939.4	100.27282782488983																			
+New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data	New Data																		
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	3196893.16	739699.8915546376	319.6	73.969182772287	4465.8	327.3355464962521
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3564972.1199999996	171768.5678450211	356.4	17.17672844286711	4860.6	80.54961204127554
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied	3470887.2	299283.95552785654	347.0	29.91320778519081	4436.0	831.2099614417527
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied	3306882.92	78410.80687819504	330.6	7.83836717690617	4414.6	491.8152498652314
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3406929.7600000002	154756.12591208913	340.6	15.473848907107758	4648.8	175.16552172159908
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3466864.0	413592.22914974607	346.6	41.34537459015216	4320.0	836.8550651098433
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied	3198833.88	264244.26681007404	319.8	26.40757467091592	4169.4	863.4522800942736
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied	3492856.4799999995	329951.57358719414	349.2	32.98120676991671	4282.4	806.7320744832203
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	3398922.6399999997	147177.25014239945	339.8	14.715977711317723	4613.2	223.57763752218156
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3544908.9599999995	235205.64540494853	354.4	23.516802503741875	4544.8	350.36974755249634
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied	3352882.76	236936.72697816687	335.2	23.68459414893994	4413.8	500.7775554075882
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied	3628933.8800000004	242643.3008458829	362.8	24.260255563369483	4669.4	313.26448889077744
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2780800.2800000003	1331473.7990807488	278.0	133.125504693879	4001.4	1131.7963774460493
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3226779.96	317635.136802625	322.6	31.752795152553105	3899.8	755.8376545264201
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied	3574957.4400000004	124841.97326748089	357.4	12.483589227461788	4787.2	72.33920099088736
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied	3630967.2	120169.11214191443	363.0	12.016655108639842	4836.0	88.45563859924364
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	3518948.7600000002	415490.880210084	351.8	41.54708172663875	4743.8	111.55160240893002
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3552966.16	117539.8545587938	355.2	11.754148203932091	4830.8	106.03093888106434
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied	3456910.4799999995	406005.77710659435	345.6	40.59359555397871	4552.4	469.14628848579844
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied	3372868.8	273939.07541898434	337.2	27.38174574419973	4344.0	765.5293593324818
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3030835.08	476121.3681894245	303.0	47.60252094164762	4175.4	625.4312432234258
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3424894.12	318772.2785046052	342.4	31.872244978978184	4470.6	492.51948184818036
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied	3056755.92	366916.6318698918	305.6	36.67478697961312	3779.6	1012.209780628502
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied	2900836.3200000003	1385389.946379526	290.0	138.51353724455961	4181.6	1276.0237615342435
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2528716.72	717580.1632085837	252.8	71.75067943929172	3583.6	770.5591735875968
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3574899.8800000004	109375.54954146559	357.4	10.9288608738514	4499.4	605.7536132785342
+AI2	50	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied	3614952.0	34397.463245070765	361.4	3.440930106817051	4760.0	192.2040582297887
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	2502778.8	1400278.6714631626	250.2	140.00771407318956	3894.0	1150.5937597605855
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3422889.9200000004	229433.67415305373	342.2	22.93817778290159	4449.6	450.4267310007256
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied	3436872.4799999995	189699.1071347929	343.6	18.958902921846505	4362.4	604.3123695573341
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied	3606861.6399999997	215778.35575825121	360.6	21.564786110694445	4308.2	708.7618499891202
 AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3114811.2	280122.2044962806	311.4	28.011426240018555	4056.0	525.6390396460293
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3502945.4	82329.40598818862	350.2	8.231646250902672	4727.0	193.02642306171455
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied	3384820.12	314879.3747647908	338.4	31.474434069574627	4100.6	812.5925424220924
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied	3448929.04	223191.60266000693	344.8	22.319498202244603	4645.2	153.12922647228388
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	3388918.96	225183.3613351893	338.8	22.51577224969199	4594.8	139.8404805483734
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3588934.4799999995	176965.7511091952	358.8	17.690675509996787	4672.4	344.44308673567537
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied	3310893.28	481110.7490158432	331.0	48.10821135731405	4466.4	374.7861256770319
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied	3540890.2	139023.82605582403	354.0	13.899640283115243	4451.0	255.49951076274098
 AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2004648.2	1248652.8329065433	200.4	124.84326173246195	3241.0	1211.6676111871607
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3436918.44	405637.3529890047	343.6	40.5590926920216	4592.2	255.92608307868892
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied	3418918.0	313648.1687082901	341.8	31.35857139603142	4590.0	321.4834365873303
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied	3504912.5199999996	191501.67684974874	350.4	19.147845831842286	4562.6	387.17778861913035
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	3322886.6399999997	656305.6342176124	332.2	65.61524213168767	4433.2	775.65750173643
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3580954.8	236072.2330602733	358.0	23.605084198112916	4774.0	143.35829240054446
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied	3430933.2399999998	274449.0001751553	343.0	27.44448942866309	4666.2	149.76167734103407
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied	3512956.4	209152.18285862566	351.2	20.913153755471697	4782.0	172.8097219487376
 AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	2516764.92	1284138.6125157212	251.6	128.40186914527374	3824.6	663.2081422901863
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3412840.3199999994	355342.2511365762	341.2	35.515630361856175	4201.6	1008.9946679740185
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied	3708932.44	175547.71729160825	370.8	17.55448660599335	4662.2	286.63105205123884
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied	3458930.1199999996	334662.17608112446	345.8	33.46281518342413	4650.6	332.3910949469014
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	3034855.84	766082.0348432396	303.4	76.58616062971169	4279.2	1127.2705797633505
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3372903.6399999997	322398.3457682722	337.2	32.2329024445519	4518.2	421.72616708001414
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied	3514965.3200000003	137651.84405068328	351.4	13.763720427268202	4826.6	135.14377529135405
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied	3624935.7600000002	182582.30197148462	362.4	18.24938355123263	4678.8	506.78413550544377
 AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2426759.4	896720.5720938938	242.6	89.65846306958424	3797.0	793.9836270352179
-AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	1682808.28	1352995.5361962824	168.2	135.27808396041098	4041.4	1110.0345219856904
-AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2612958.7600000002	345444.6866876004	261.2	34.54504305975026	4793.8	158.1687706217634
-AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.9	0.5	2390967.72	489093.6297708177	239.0	48.908077042549934	4838.6	216.93280065494935
-AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.2	NotApplied	1630815.72	824899.0642598993	163.0	82.46211251235322	4078.6	1488.4291854166256
-AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.8	NotApplied	2558915.76	226390.99753837913	255.8	22.639787984873003	4578.8	279.5721016124463
-AI2	40	1000	Tournament	5	uniform	0.85	Gaussian mutation	0.9	NotApplied	2402952.4400000004	787260.1578094438	240.2	78.72331293841742	4762.2	214.13491074553912
-AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	1920833.7600000002	1080770.3113477195	192.0	108.05739215805646	4168.8	1259.8675168445293
-AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	2376958.8	138079.9236167229	237.6	13.807244475274565	4794.0	112.47221879201993
-AI2	40	1000	Tournament	5	uniform	0.9	Uniform distribution mutation with limit 	0.9	0.5	2204826.2800000003	1132776.3324433619	220.4	113.24945915985649	4131.4	1655.1724502298848
-AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.2	NotApplied	1966886.0	827596.8291870432	196.6	82.73959149041045	4430.0	1015.8795204156839
-AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.8	NotApplied	2584974.56	238527.10628737856	258.4	23.85455931263456	4872.8	151.14813925417673
-AI2	40	1000	Tournament	5	uniform	0.9	Gaussian mutation	0.9	NotApplied	2310915.32	1185677.6761633093	231.0	118.55800268223145	4576.6	542.0337996841156
-AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2006908.1600000001	1135275.0004038485	200.6	113.52462287979644	4540.8	389.2928974435573
-AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	2454853.96	1226581.473157291	245.4	122.63702540423917	4269.8	1152.9604329724416
-AI2	40	1000	Tournament	5	One cut	0.85	Uniform distribution mutation with limit 	0.9	0.5	3012984.08	461574.7322594962	301.2	46.1579895576053	4920.4	67.1612983793494
-AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.2	NotApplied	2676996.16	561727.6148748025	267.6	56.173303267655534	4980.8	28.69425029513753
-AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.8	NotApplied	2918953.48	754170.5155083865	291.8	75.40928324815188	4767.4	391.8604853771301
-AI2	40	1000	Tournament	5	One cut	0.85	Gaussian mutation	0.9	NotApplied	2942912.56	345953.7823081319	294.2	34.59710970586994	4562.8	351.1873574034236
-AI2	40	1000	Tournament	5	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2388752.6	1233744.5166623243	238.8	123.34569307438343	3763.0	1552.371991502037
-AI2	40	1000	Tournament	5	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	2728937.7600000002	616688.8995596714	272.8	61.66814412644506	4688.8	234.52709864746973
-AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	1682808.28	1352995.5361962824	168.2	135.27808396041098	4041.4	1110.0345219856904
-AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	2612958.7600000002	345444.6866876004	261.2	34.54504305975026	4793.8	158.1687706217634
-AI2	40	1000	Tournament	5	uniform	0.85	Uniform distribution mutation with limit 	0.9	0.5	2390967.72	489093.6297708177	239.0	48.908077042549934	4838.6	216.93280065494935
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3380857.16	302264.2361746002	338.0	30.212580161250713	4285.8	878.4960785342187
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied	3318742.2	506527.0965379048	331.8	50.633585691712575	3711.0	1062.157238830485
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied	3466964.7199999997	256037.63648746954	346.6	25.601562452319197	4823.6	135.8390223757518
+AI2	70	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	3312930.7600000002	345930.0278586154	331.2	34.59132839311032	4653.8	200.8894223198424
+AI2	70	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3538977.4	157658.77124057512	353.8	15.765785740013087	4887.0	61.05079852057629
+AI2	70	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied	3594973.4	182839.03404964696	359.4	18.282231811242305	4867.0	96.46346458633964
+AI2	70	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied	3534910.04	219433.14548012658	353.4	21.932624102008404	4550.2	762.4844654155256
+AI2	70	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3488910.7199999997	281599.2162188126	348.8	28.15244216759889	4553.6	482.0541878253938
+AI2	70	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3504920.9200000004	142133.89350409567	350.4	14.207040508142432	4604.6	368.8710343738039
+AI2	70	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied	3536930.56	231596.0134396583	353.6	23.156856436053666	4652.8	253.03865317377895
+AI2	70	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied	3592942.2400000007	220361.28519554072	359.2	22.030887408363743	4711.2	322.99498448118356
+AI2	70	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2848845.12	1369862.3204409038	284.8	136.96481299954377	4225.6	1073.3561571072298
+AI2	70	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3482923.6399999997	219872.98613057137	348.2	21.985449733858072	4618.2	186.4118022014701
+AI2	70	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied	3462875.2800000003	385326.33965474204	346.2	38.51960539777115	4376.4	713.2973012706553
+AI2	70	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied	3594886.7600000002	299485.8896224234	359.4	29.937267744401797	4433.8	666.3882952153347
+AI2	70	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2032678.3199999998	1092052.8304056402	203.2	109.19230742135638	3391.6	949.6969200750311
+AI2	70	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3268945.12	777856.0855231729	326.8	77.77763174589465	4725.6	415.4946931069035
+AI2	70	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied	3510952.6	295194.9063133983	351.0	29.516097302997224	4763.0	194.51066808789693
+AI2	70	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied	3322856.88	328051.5610227784	332.2	32.79268211049533	4284.4	659.7249730001132
+AI2	70	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	2512725.44	1255655.1769201187	251.2	125.54266207150461	3627.2	1306.5823204069463
+AI2	70	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3654941.3600000003	197288.60970346574	365.4	19.724096937502615	4706.8	282.7864211732947
+AI2	70	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied	3578927.7600000002	296948.6756364581	357.8	29.68770789400893	4638.8	403.80212976159504
+AI2	70	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied	3710957.8	260479.0366514742	371.0	26.046112953759533	4789.0	182.68004817165996
+AI2	70	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	2936769.32	590939.7445988226	293.6	59.08163843361151	3846.6	1067.55001756358
+AI2	70	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	2740729.3199999994	1320182.5615389931	274.0	131.9878782312982	3646.6	1541.0358334574832
+AI2	70	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied	3680938.44	170893.9463425618	368.0	17.08800749063506	4692.2	205.94504121245552
+AI2	70	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied	3960975.12	194025.85508413447	396.0	19.40103090044444	4875.6	105.01542743806739
+AI2	70	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	2706760.84	1323001.6280361828	270.6	132.27940126867827	3804.2	1098.480659820645
+AI2	70	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3424915.2800000003	279877.309462117	342.4	27.98285189182832	4576.4	452.5415340054435
+AI2	70	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied	3534931.4799999995	140701.89637417687	353.4	14.065560778013793	4657.4	259.0023938113314
+AI2	70	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied	3612954.3599999994	89078.42759307336	361.2	8.908422980528035	4771.8	304.2389850101397
+AI2	70	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	3276844.3199999994	148710.168215121	327.6	14.867414032036642	4221.6	411.4173550058383
+AI2	70	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3658951.4799999995	102886.32415854701	365.8	10.283968105745954	4757.4	253.91226831328964
+AI2	70	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied	3608924.04	113966.89422560573	360.8	11.391224692718513	4620.2	316.9948895487118
+AI2	70	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied	3464925.4400000004	254364.38903574224	346.4	25.42911716910361	4627.2	456.3311955148366
+AI2	80	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	3166768.1199999996	498770.3927779451	316.6	49.86221013954355	3840.6	820.851167995758
+AI2	80	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3556950.6399999997	96894.50343010381	355.6	9.687104830649867	4753.2	178.53335822753124
+AI2	80	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied	3324973.8400000003	625568.0148395364	332.4	62.55429641519438	4869.2	133.25524379925918
+AI2	80	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied	3486921.2800000003	261834.28075356668	348.6	26.180909075125715	4606.4	385.2835838703746
+AI2	80	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3308840.6399999997	558940.93845312	330.8	55.88345014402744	4203.2	610.713811862807
+AI2	80	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3602932.6399999997	246919.45980930375	360.2	24.685218248984555	4663.2	484.5750303100646
+AI2	80	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied	3584966.7600000002	197868.53232768062	358.4	19.784842683225968	4833.8	118.90231284546151
+AI2	80	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied	3802969.28	185104.58326473064	380.2	18.50837648201484	4846.4	128.99705422993193
+AI2	80	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	3120943.8	556960.8171694811	312.0	55.695601262577284	4719.0	191.18681962938763
+AI2	80	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	2912825.2399999998	1409500.564911259	291.2	140.92749909084458	4126.2	1151.576727795417
+AI2	80	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied	3514916.3200000003	341418.6873399778	351.4	34.13268228545773	4581.6	495.6045197534018
+AI2	80	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied	3568946.6	195906.2947058107	356.8	19.58979326077741	4733.0	87.37276463521113
+AI2	80	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	2748861.6800000006	1338816.239088759	274.8	133.86171969611027	4308.4	1001.5958466367559
+AI2	80	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	2934797.72	1412807.7140760669	293.4	141.25947755814477	3988.6	1099.009117341617
+AI2	80	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied	3458923.04	213528.06161204746	345.8	21.348536249588637	4615.2	251.7835578428425
+AI2	80	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied	3580871.7199999997	465758.9696604647	358.0	46.55749134135129	4358.6	940.9991710942152
+AI2	80	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5	3532890.2	346074.124112786	353.2	34.60289005271092	4451.0	323.28130165538494
+AI2	80	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5	3214937.8	680800.3569636316	321.4	68.0781903402257	4689.0	176.1964812361473
+AI2	80	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied	3564950.44	47547.27533617881	356.4	4.758150901348127	4752.2	269.8098589747973
+AI2	80	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied	3572926.3200000003	242713.49272706214	357.2	24.260255563369487	4631.6	663.9233690720639
+AI2	80	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5	3558921.6399999997	146268.98040065216	355.8	14.620533505997653	4608.2	376.41222084305394
+AI2	80	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5	3452893.2	379900.2280979152	345.2	37.975781756271985	4466.0	789.1268592564824
+AI2	80	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied	3668961.72	115835.30368799322	366.8	11.582745788456206	4808.6	86.67317924248539
+AI2	80	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied	3810958.56	154004.53345734466	381.0	15.401298646542765	4792.8	167.7359830209368
+AI2	80	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5	3332909.52	358524.0406447435	333.2	35.84075892053627	4547.6	604.1571318787853
+AI2	80	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5	3450874.56	348329.81859136675	345.0	34.81953474703532	4372.8	750.3315000718015
+AI2	80	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied	3652980.6399999997	171289.32039224872	365.2	17.12775525280531	4903.2	77.53038114184658
+AI2	80	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied	3512883.4799999995	193423.5571633859	351.2	19.332873557751316	4417.4	547.3969674742453
+AI2	80	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5	3482951.56	159564.94337257918	348.2	15.954936540143304	4757.8	121.80870248056992
+AI2	80	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5	3598912.96	331536.2339065676	359.8	33.144531977386556	4564.8	619.5351160345957
+AI2	80	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied	3482965.3199999994	201814.6064600717	348.2	20.183161298468583	4826.6	128.5139681124196
+AI2	80	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied	3618909.9200000004	257084.31378688512	361.8	25.701361831622854	4549.6	661.7264087219129

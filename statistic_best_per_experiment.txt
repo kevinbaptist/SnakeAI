@@ -623,3 +623,1499 @@ Fitness: 3210984.4
 Total movements (avarage): 492
 Total Food (avarage): 32
 Total Food (max): 37
+
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3261000.0
+Total movements (avarage): 500
+Total Food (avarage): 32
+Total Food (max): 36
+
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3280941.8
+Total movements (avarage): 470
+Total Food (avarage): 32
+Total Food (max): 38
+
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3380989.2
+Total movements (avarage): 494
+Total Food (avarage): 33
+Total Food (max): 39
+
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 3360986.6
+Total movements (avarage): 493
+Total Food (avarage): 33
+Total Food (max): 39
+
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3461000.0
+Total movements (avarage): 500
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3230976.0
+Total movements (avarage): 488
+Total Food (avarage): 32
+Total Food (max): 36
+
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3300994.6
+Total movements (avarage): 497
+Total Food (avarage): 33
+Total Food (max): 36
+
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3441000.0
+Total movements (avarage): 500
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3051000.0
+Total movements (avarage): 500
+Total Food (avarage): 30
+Total Food (max): 34
+
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3731000.0
+Total movements (avarage): 500
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3360970.4
+Total movements (avarage): 485
+Total Food (avarage): 33
+Total Food (max): 40
+
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 3471000.0
+Total movements (avarage): 500
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3240997.6
+Total movements (avarage): 498
+Total Food (avarage): 32
+Total Food (max): 37
+
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3130996.8
+Total movements (avarage): 498
+Total Food (avarage): 31
+Total Food (max): 39
+
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3490993.0
+Total movements (avarage): 496
+Total Food (avarage): 34
+Total Food (max): 40
+
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3461000.0
+Total movements (avarage): 500
+Total Food (avarage): 34
+Total Food (max): 39
+
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3421000.0
+Total movements (avarage): 500
+Total Food (avarage): 34
+Total Food (max): 37
+
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3521000.0
+Total movements (avarage): 500
+Total Food (avarage): 35
+Total Food (max): 39
+
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 3
+Fitness: 3530993.8
+Total movements (avarage): 496
+Total Food (avarage): 35
+Total Food (max): 40
+
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3371000.0
+Total movements (avarage): 500
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 2540946.0
+Total movements (avarage): 473
+Total Food (avarage): 25
+Total Food (max): 29
+
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3290931.0
+Total movements (avarage): 465
+Total Food (avarage): 32
+Total Food (max): 37
+
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3151000.0
+Total movements (avarage): 500
+Total Food (avarage): 31
+Total Food (max): 39
+
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 3250982.0
+Total movements (avarage): 491
+Total Food (avarage): 32
+Total Food (max): 36
+
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3680998.8
+Total movements (avarage): 499
+Total Food (avarage): 36
+Total Food (max): 41
+
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3200978.0
+Total movements (avarage): 489
+Total Food (avarage): 32
+Total Food (max): 39
+
+AI2	50	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3561000.0
+Total movements (avarage): 500
+Total Food (avarage): 35
+Total Food (max): 40
+
+AI2	50	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3390998.8
+Total movements (avarage): 499
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	50	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3131000.0
+Total movements (avarage): 500
+Total Food (avarage): 31
+Total Food (max): 40
+
+AI2	50	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3540995.4
+Total movements (avarage): 497
+Total Food (avarage): 35
+Total Food (max): 38
+
+AI2	50	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3570998.6
+Total movements (avarage): 499
+Total Food (avarage): 35
+Total Food (max): 41
+
+AI2	50	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3520981.4
+Total movements (avarage): 490
+Total Food (avarage): 35
+Total Food (max): 42
+
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3181000.0
+Total movements (avarage): 500
+Total Food (avarage): 31
+Total Food (max): 38
+
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3270998.8
+Total movements (avarage): 499
+Total Food (avarage): 32
+Total Food (max): 37
+
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3400974.6
+Total movements (avarage): 487
+Total Food (avarage): 34
+Total Food (max): 40
+
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 2
+Fitness: 3610999.0
+Total movements (avarage): 499
+Total Food (avarage): 36
+Total Food (max): 39
+
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3501000.0
+Total movements (avarage): 500
+Total Food (avarage): 35
+Total Food (max): 38
+
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3690989.2
+Total movements (avarage): 494
+Total Food (avarage): 36
+Total Food (max): 41
+
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3521000.0
+Total movements (avarage): 500
+Total Food (avarage): 35
+Total Food (max): 39
+
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3670979.2
+Total movements (avarage): 489
+Total Food (avarage): 36
+Total Food (max): 43
+
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3301000.0
+Total movements (avarage): 500
+Total Food (avarage): 33
+Total Food (max): 38
+
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3420993.6
+Total movements (avarage): 496
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3631000.0
+Total movements (avarage): 500
+Total Food (avarage): 36
+Total Food (max): 39
+
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3430999.4
+Total movements (avarage): 499
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3470990.6
+Total movements (avarage): 495
+Total Food (avarage): 34
+Total Food (max): 39
+
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 2890991.8
+Total movements (avarage): 495
+Total Food (avarage): 28
+Total Food (max): 31
+
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3210993.0
+Total movements (avarage): 496
+Total Food (avarage): 32
+Total Food (max): 36
+
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3451000.0
+Total movements (avarage): 500
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3400976.0
+Total movements (avarage): 488
+Total Food (avarage): 34
+Total Food (max): 39
+
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3620996.2
+Total movements (avarage): 498
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 3
+Fitness: 3330996.6
+Total movements (avarage): 498
+Total Food (avarage): 33
+Total Food (max): 38
+
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3420952.4
+Total movements (avarage): 476
+Total Food (avarage): 34
+Total Food (max): 40
+
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3711000.0
+Total movements (avarage): 500
+Total Food (avarage): 37
+Total Food (max): 40
+
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3460990.8
+Total movements (avarage): 495
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3370952.8
+Total movements (avarage): 476
+Total Food (avarage): 33
+Total Food (max): 38
+
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3840991.8
+Total movements (avarage): 495
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 2880943.0
+Total movements (avarage): 471
+Total Food (avarage): 28
+Total Food (max): 33
+
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 3450993.2
+Total movements (avarage): 496
+Total Food (avarage): 34
+Total Food (max): 40
+
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 3
+Fitness: 3430994.4
+Total movements (avarage): 497
+Total Food (avarage): 34
+Total Food (max): 37
+
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3590990.2
+Total movements (avarage): 495
+Total Food (avarage): 35
+Total Food (max): 41
+
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3290978.8
+Total movements (avarage): 489
+Total Food (avarage): 32
+Total Food (max): 41
+
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3930983.2
+Total movements (avarage): 491
+Total Food (avarage): 39
+Total Food (max): 50
+
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3680998.0
+Total movements (avarage): 499
+Total Food (avarage): 36
+Total Food (max): 43
+
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 2
+Fitness: 3230998.6
+Total movements (avarage): 499
+Total Food (avarage): 32
+Total Food (max): 41
+
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3610960.2
+Total movements (avarage): 480
+Total Food (avarage): 36
+Total Food (max): 40
+
+AI2	50	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3840960.2
+Total movements (avarage): 480
+Total Food (avarage): 38
+Total Food (max): 43
+
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3750983.4
+Total movements (avarage): 491
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	50	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3440972.0
+Total movements (avarage): 486
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3600994.0
+Total movements (avarage): 497
+Total Food (avarage): 36
+Total Food (max): 41
+
+AI2	50	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3940927.2
+Total movements (avarage): 463
+Total Food (avarage): 39
+Total Food (max): 44
+
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3420972.4
+Total movements (avarage): 486
+Total Food (avarage): 34
+Total Food (max): 41
+
+AI2	50	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3920978.6
+Total movements (avarage): 489
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3610942.6
+Total movements (avarage): 471
+Total Food (avarage): 36
+Total Food (max): 40
+
+AI2	50	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 3830979.4
+Total movements (avarage): 489
+Total Food (avarage): 38
+Total Food (max): 43
+
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 3
+Fitness: 3560946.0
+Total movements (avarage): 473
+Total Food (avarage): 35
+Total Food (max): 41
+
+AI2	50	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 2
+Fitness: 3920999.2
+Total movements (avarage): 499
+Total Food (avarage): 39
+Total Food (max): 44
+
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3580921.2
+Total movements (avarage): 460
+Total Food (avarage): 35
+Total Food (max): 40
+
+AI2	50	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3570788.8
+Total movements (avarage): 394
+Total Food (avarage): 35
+Total Food (max): 50
+
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3730947.0
+Total movements (avarage): 473
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	50	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 2
+Fitness: 3800966.2
+Total movements (avarage): 483
+Total Food (avarage): 38
+Total Food (max): 43
+
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 4060963.4
+Total movements (avarage): 481
+Total Food (avarage): 40
+Total Food (max): 45
+
+AI2	50	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3690988.6
+Total movements (avarage): 494
+Total Food (avarage): 36
+Total Food (max): 44
+
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 4010972.8
+Total movements (avarage): 486
+Total Food (avarage): 40
+Total Food (max): 46
+
+AI2	50	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3720967.6
+Total movements (avarage): 483
+Total Food (avarage): 37
+Total Food (max): 44
+
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3470917.8
+Total movements (avarage): 458
+Total Food (avarage): 34
+Total Food (max): 39
+
+AI2	50	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3950977.8
+Total movements (avarage): 488
+Total Food (avarage): 39
+Total Food (max): 46
+
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3470786.6
+Total movements (avarage): 393
+Total Food (avarage): 34
+Total Food (max): 48
+
+AI2	50	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 3770977.0
+Total movements (avarage): 488
+Total Food (avarage): 37
+Total Food (max): 40
+
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3140703.8
+Total movements (avarage): 351
+Total Food (avarage): 31
+Total Food (max): 43
+
+AI2	50	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3720942.0
+Total movements (avarage): 471
+Total Food (avarage): 37
+Total Food (max): 45
+
+AI2	50	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3660977.4
+Total movements (avarage): 488
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3640979.6
+Total movements (avarage): 489
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	60	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3830987.2
+Total movements (avarage): 493
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3620899.2
+Total movements (avarage): 449
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	60	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3840996.0
+Total movements (avarage): 498
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3390959.0
+Total movements (avarage): 479
+Total Food (avarage): 33
+Total Food (max): 37
+
+AI2	60	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 3591000.0
+Total movements (avarage): 500
+Total Food (avarage): 35
+Total Food (max): 46
+
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3710998.6
+Total movements (avarage): 499
+Total Food (avarage): 37
+Total Food (max): 41
+
+AI2	60	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3810951.6
+Total movements (avarage): 475
+Total Food (avarage): 38
+Total Food (max): 41
+
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3630955.6
+Total movements (avarage): 477
+Total Food (avarage): 36
+Total Food (max): 40
+
+AI2	60	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 3730991.2
+Total movements (avarage): 495
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3840835.6
+Total movements (avarage): 417
+Total Food (avarage): 38
+Total Food (max): 49
+
+AI2	60	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3700893.2
+Total movements (avarage): 446
+Total Food (avarage): 37
+Total Food (max): 48
+
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3450956.4
+Total movements (avarage): 478
+Total Food (avarage): 34
+Total Food (max): 38
+
+AI2	60	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3930991.4
+Total movements (avarage): 495
+Total Food (avarage): 39
+Total Food (max): 43
+
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3690975.6
+Total movements (avarage): 487
+Total Food (avarage): 36
+Total Food (max): 41
+
+AI2	60	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3780931.0
+Total movements (avarage): 465
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3710978.0
+Total movements (avarage): 489
+Total Food (avarage): 37
+Total Food (max): 40
+
+AI2	60	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3970969.6
+Total movements (avarage): 484
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3650976.2
+Total movements (avarage): 488
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	60	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3740989.8
+Total movements (avarage): 494
+Total Food (avarage): 37
+Total Food (max): 41
+
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3570802.6
+Total movements (avarage): 401
+Total Food (avarage): 35
+Total Food (max): 49
+
+AI2	60	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3770974.4
+Total movements (avarage): 487
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3960974.6
+Total movements (avarage): 487
+Total Food (avarage): 39
+Total Food (max): 49
+
+AI2	60	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3920918.4
+Total movements (avarage): 459
+Total Food (avarage): 39
+Total Food (max): 46
+
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3540969.0
+Total movements (avarage): 484
+Total Food (avarage): 35
+Total Food (max): 40
+
+AI2	60	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 3810945.4
+Total movements (avarage): 472
+Total Food (avarage): 38
+Total Food (max): 44
+
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3690987.2
+Total movements (avarage): 493
+Total Food (avarage): 36
+Total Food (max): 41
+
+AI2	60	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3840993.4
+Total movements (avarage): 496
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3460866.0
+Total movements (avarage): 433
+Total Food (avarage): 34
+Total Food (max): 44
+
+AI2	60	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3731000.0
+Total movements (avarage): 500
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3890979.6
+Total movements (avarage): 489
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	60	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3791000.0
+Total movements (avarage): 500
+Total Food (avarage): 37
+Total Food (max): 41
+
+AI2	70	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3880916.6
+Total movements (avarage): 458
+Total Food (avarage): 38
+Total Food (max): 43
+
+AI2	70	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3740968.8
+Total movements (avarage): 484
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	70	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3820989.8
+Total movements (avarage): 494
+Total Food (avarage): 38
+Total Food (max): 43
+
+AI2	70	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3850982.0
+Total movements (avarage): 491
+Total Food (avarage): 38
+Total Food (max): 44
+
+AI2	70	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3900986.4
+Total movements (avarage): 493
+Total Food (avarage): 39
+Total Food (max): 44
+
+AI2	70	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3710988.6
+Total movements (avarage): 494
+Total Food (avarage): 37
+Total Food (max): 46
+
+AI2	70	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3910960.2
+Total movements (avarage): 480
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	70	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3910982.6
+Total movements (avarage): 491
+Total Food (avarage): 39
+Total Food (max): 44
+
+AI2	70	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3760992.2
+Total movements (avarage): 496
+Total Food (avarage): 37
+Total Food (max): 45
+
+AI2	70	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3720935.6
+Total movements (avarage): 467
+Total Food (avarage): 37
+Total Food (max): 41
+
+AI2	70	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3970977.4
+Total movements (avarage): 488
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	70	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3920966.6
+Total movements (avarage): 483
+Total Food (avarage): 39
+Total Food (max): 43
+
+AI2	70	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3500793.6
+Total movements (avarage): 396
+Total Food (avarage): 35
+Total Food (max): 47
+
+AI2	70	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3860978.4
+Total movements (avarage): 489
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	70	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3900980.0
+Total movements (avarage): 490
+Total Food (avarage): 39
+Total Food (max): 44
+
+AI2	70	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3800995.2
+Total movements (avarage): 497
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	70	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3530987.2
+Total movements (avarage): 493
+Total Food (avarage): 35
+Total Food (max): 40
+
+AI2	70	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3890988.2
+Total movements (avarage): 494
+Total Food (avarage): 38
+Total Food (max): 45
+
+AI2	70	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3860978.2
+Total movements (avarage): 489
+Total Food (avarage): 38
+Total Food (max): 43
+
+AI2	70	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 4090996.0
+Total movements (avarage): 498
+Total Food (avarage): 40
+Total Food (max): 47
+
+AI2	70	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3810939.0
+Total movements (avarage): 469
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	70	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3840966.6
+Total movements (avarage): 483
+Total Food (avarage): 38
+Total Food (max): 44
+
+AI2	70	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3830999.0
+Total movements (avarage): 499
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	70	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 4200991.8
+Total movements (avarage): 495
+Total Food (avarage): 42
+Total Food (max): 45
+
+AI2	70	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3730911.2
+Total movements (avarage): 455
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	70	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3820966.4
+Total movements (avarage): 483
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	70	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 3
+Fitness: 3730982.8
+Total movements (avarage): 491
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	70	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 2
+Fitness: 3700992.2
+Total movements (avarage): 496
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	70	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 3
+Fitness: 3560915.8
+Total movements (avarage): 457
+Total Food (avarage): 35
+Total Food (max): 44
+
+AI2	70	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3740966.6
+Total movements (avarage): 483
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	70	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 1
+Fitness: 3730973.6
+Total movements (avarage): 486
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	70	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 3
+Fitness: 3730992.2
+Total movements (avarage): 496
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	80	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3920943.2
+Total movements (avarage): 471
+Total Food (avarage): 39
+Total Food (max): 46
+
+AI2	80	1000	Tournament	10	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 1
+Fitness: 3660989.8
+Total movements (avarage): 494
+Total Food (avarage): 36
+Total Food (max): 40
+
+AI2	80	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3900984.4
+Total movements (avarage): 492
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	80	1000	Tournament	10	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 3980921.8
+Total movements (avarage): 460
+Total Food (avarage): 39
+Total Food (max): 49
+
+AI2	80	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 2
+Fitness: 3680966.6
+Total movements (avarage): 483
+Total Food (avarage): 36
+Total Food (max): 40
+
+AI2	80	1000	Tournament	10	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3890977.0
+Total movements (avarage): 488
+Total Food (avarage): 38
+Total Food (max): 44
+
+AI2	80	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 4
+Fitness: 3920995.6
+Total movements (avarage): 497
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	80	1000	Tournament	10	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 4100997.6
+Total movements (avarage): 498
+Total Food (avarage): 41
+Total Food (max): 46
+
+AI2	80	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3680979.2
+Total movements (avarage): 489
+Total Food (avarage): 36
+Total Food (max): 45
+
+AI2	80	1000	Tournament	10	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3990949.6
+Total movements (avarage): 474
+Total Food (avarage): 39
+Total Food (max): 43
+
+AI2	80	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3960999.0
+Total movements (avarage): 499
+Total Food (avarage): 39
+Total Food (max): 43
+
+AI2	80	1000	Tournament	10	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 2
+Fitness: 3780975.4
+Total movements (avarage): 487
+Total Food (avarage): 37
+Total Food (max): 43
+
+AI2	80	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 1
+Fitness: 3700967.2
+Total movements (avarage): 483
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	80	1000	Tournament	10	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3900860.6
+Total movements (avarage): 430
+Total Food (avarage): 39
+Total Food (max): 51
+
+AI2	80	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3650992.8
+Total movements (avarage): 496
+Total Food (avarage): 36
+Total Food (max): 43
+
+AI2	80	1000	Tournament	10	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 2
+Fitness: 4040989.0
+Total movements (avarage): 494
+Total Food (avarage): 40
+Total Food (max): 46
+
+AI2	80	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3950972.4
+Total movements (avarage): 486
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	80	1000	Tournament	12	uniform	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 3
+Fitness: 3970978.2
+Total movements (avarage): 489
+Total Food (avarage): 39
+Total Food (max): 48
+
+AI2	80	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3620844.2
+Total movements (avarage): 422
+Total Food (avarage): 36
+Total Food (max): 45
+
+AI2	80	1000	Tournament	12	uniform	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 3820996.6
+Total movements (avarage): 498
+Total Food (avarage): 38
+Total Food (max): 42
+
+AI2	80	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3690937.4
+Total movements (avarage): 468
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	80	1000	Tournament	12	uniform	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 2
+Fitness: 3830997.6
+Total movements (avarage): 498
+Total Food (avarage): 38
+Total Food (max): 44
+
+AI2	80	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 3
+Fitness: 3830967.0
+Total movements (avarage): 483
+Total Food (avarage): 38
+Total Food (max): 44
+
+AI2	80	1000	Tournament	12	uniform	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 1
+Fitness: 3980936.0
+Total movements (avarage): 468
+Total Food (avarage): 39
+Total Food (max): 52
+
+AI2	80	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 5
+Fitness: 3670974.6
+Total movements (avarage): 487
+Total Food (avarage): 36
+Total Food (max): 42
+
+AI2	80	1000	Tournament	12	One cut	0.85	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 5
+Fitness: 3880996.2
+Total movements (avarage): 498
+Total Food (avarage): 38
+Total Food (max): 44
+
+AI2	80	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.2	NotApplied
+
+Seed used: 5
+Fitness: 3920989.2
+Total movements (avarage): 494
+Total Food (avarage): 39
+Total Food (max): 45
+
+AI2	80	1000	Tournament	12	One cut	0.85	Gaussian mutation	0.8	NotApplied
+
+Seed used: 5
+Fitness: 3780996.4
+Total movements (avarage): 498
+Total Food (avarage): 37
+Total Food (max): 42
+
+AI2	80	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.2	0.5
+
+Seed used: 4
+Fitness: 3640976.8
+Total movements (avarage): 488
+Total Food (avarage): 36
+Total Food (max): 41
+
+AI2	80	1000	Tournament	12	One cut	0.9	Uniform distribution mutation with limit 	0.8	0.5
+
+Seed used: 4
+Fitness: 3960992.4
+Total movements (avarage): 496
+Total Food (avarage): 39
+Total Food (max): 47
+
+AI2	80	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.2	NotApplied
+
+Seed used: 2
+Fitness: 3730916.4
+Total movements (avarage): 458
+Total Food (avarage): 37
+Total Food (max): 45
+
+AI2	80	1000	Tournament	12	One cut	0.9	Gaussian mutation	0.8	NotApplied
+
+Seed used: 4
+Fitness: 4030972.2
+Total movements (avarage): 486
+Total Food (avarage): 40
+Total Food (max): 46
