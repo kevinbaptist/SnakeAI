@@ -32,12 +32,7 @@ public class SnakeAIAgent2 extends SnakeAI {
         Cell tail = getTail();
         int columnTail = tail.getColumn();
         int lineTail = tail.getLine();
-/*
-        inputs[4] = perception.getN()!= null && (perception.getN().getLine() >= lineFood || perception.getN().getLine() >= lineTail) ? 1:0;
-        inputs[5] = perception.getE()!= null && (perception.getE().getColumn() <= columnFood ||perception.getE().getColumn() <= columnTail) ? 1:0;
-        inputs[6] = perception.getS()!= null && (perception.getS().getLine() <= lineFood ||perception.getS().getLine() <= lineTail) ? 1:0;
-        inputs[7] = perception.getW()!= null && (perception.getW().getColumn() >= columnFood||perception.getW().getColumn() >= columnTail) ? 1:0;
-*/
+
         inputs[4] = perception.getN()!= null && perception.getN().getLine() >= lineFood? 1:0;
         inputs[5] = perception.getE()!= null && perception.getE().getColumn() <= columnFood ? 1:0;
         inputs[6] = perception.getS()!= null && perception.getS().getLine() <= lineFood  ? 1:0;
