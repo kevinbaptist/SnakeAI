@@ -95,6 +95,7 @@ public class MainFrame extends JFrame implements GAListener {
         buttonSave.setEnabled(false);
         buttonSave.addActionListener(new ButtonSave_actionAdapter(this));
         panelButtons.add(buttonLoad);
+        buttonLoad.setEnabled(false);
         buttonLoad.addActionListener(new ButtonLoad_actionAdapter(this));
         panelNorthLeft.add(panelButtons, java.awt.BorderLayout.SOUTH);
 
@@ -189,6 +190,7 @@ public class MainFrame extends JFrame implements GAListener {
                 problemPanel.textArea.setText(problem.toString());
                 problemPanel.textArea.setCaretPosition(0);
                 buttonRun.setEnabled(true);
+                buttonLoad.setEnabled(true);
             }
         } catch (IOException e1) {
             e1.printStackTrace(System.err);
@@ -240,7 +242,7 @@ public class MainFrame extends JFrame implements GAListener {
                     //TODO gravar
 
                     //gravarBestGenoma();
-                    manageButtons(true, true, false, true, true, true, experimentsFactory != null, true);
+                    manageButtons(true, true, false, true, false, true, experimentsFactory != null, true);
                 }
             };
 
@@ -261,7 +263,7 @@ public class MainFrame extends JFrame implements GAListener {
 
             bw.close();
             JOptionPane.showMessageDialog(this, "Guardado com sucesso");
-            manageButtons(true, true, false, false, true, true, experimentsFactory != null, true);
+            manageButtons(true, true, false, false, false, true, experimentsFactory != null, true);
 
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(this, "Não foi possivel guardar os valores");
@@ -274,7 +276,7 @@ public class MainFrame extends JFrame implements GAListener {
         try {
             BufferedReader readFromFile = new BufferedReader(new FileReader("BestRun.txt"));
             int i = 0;
-            int tamanho =( problem.getGenomeSize() == 0) ? 340 :problem.getGenomeSize();
+            int tamanho =  problem.getGenomeSize();
             double[] prepGenoma = new double[tamanho];
 
             String rawInput;
@@ -309,7 +311,7 @@ public class MainFrame extends JFrame implements GAListener {
             worker.execute();
 
             JOptionPane.showMessageDialog(this, "Ficheiro lido com Êxito");
-            manageButtons(true, true, false, false, true, true, false, true);
+            manageButtons(true, true, false, false, false, true, false, true);
 
 
         } catch (FileNotFoundException ex) {
@@ -338,7 +340,7 @@ public class MainFrame extends JFrame implements GAListener {
 
     public void jButtonStop_actionPerformed(ActionEvent e) {
         worker.cancel(true);
-        manageButtons(true, true, false, true, true, true, false, true);
+        manageButtons(true, true, false, true, false, true, false, true);
 
     }
 
@@ -349,7 +351,7 @@ public class MainFrame extends JFrame implements GAListener {
         try {
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 experimentsFactory = new SnakeExperimentsFactory(fc.getSelectedFile());
-                manageButtons(true, problem != null, false, true, true, true, true, false);
+                manageButtons(true, problem != null, false, true, false, true, true, false);
             }
         } catch (IOException e1) {
             e1.printStackTrace(System.err);
@@ -385,7 +387,7 @@ public class MainFrame extends JFrame implements GAListener {
 
             @Override
             public void done() {
-                manageButtons(true, problem != null, false, true, true,true, false, false);
+                manageButtons(true, problem != null, false, true, false,true, false, false);
                 textFieldExperimentsStatus.setText("Finished");
             }
         };

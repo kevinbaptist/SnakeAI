@@ -82,7 +82,7 @@ public class PanelSimulation extends JPanel implements EnvironmentListener {
             if (type != SnakeType.ADOC && type != SnakeType.RANDOM){
                 mainFrame.manageButtons(true, false, false, false, false, true, false, true);
             }else
-                mainFrame.manageButtons(false, false, false, true, true, false, false, true);
+                mainFrame.manageButtons(false, false, false, true, false, false, false, true);
 
         iniciarDados();
 
